@@ -12,14 +12,13 @@ In order to flash the ContikiOS into the FW mote using the **TI MSP-FET Flash Em
 
 1. Get the raw ContikiOS ported to FW-node (.zip/.tar) (the ContikiOS folder available in this repo has all the modifications mentioned below). 
 
-2. Install all packets required to program the FW mote using the TI MSP-FET Flash Emulation tools (debugger/Programmer). 
+2. Install all packets required to program the FW mote using the TI MSP-FET Flash Emulation tools (debugger/Programmer).
 
    a. Download the MSP430Flasher from the TI Web site (http://www.ti.com/tool/MSP430-FLASHER).  
    b. Run the installation file by double-clicking the exe file (Perhaps, it is needed to change some privileges before: (1) ```sudo chmod +x some-app.run```; (2) ```sudo ./some-app.run```)  
    c. Copy the generated folder into the Contiki folder. 
   
-3. Connect the debugger to the FW1’s JTAG. 
-   - **Warning:** If the power supply of FW1 is USB, please verify that the knob is settled as USB not BAT. 
+3. Connect the debugger to the FW1’s JTAG. **Warning:** If the power supply of FW1 is USB, please verify that the knob is settled as USB not BAT. 
   
 4.  Flash the ContikiOS by going into the folder ```contiki_FW/examples/FW1``` and writing the command: ```make TARGET=feuerwhere example-broadcast.upload ```
 
@@ -29,29 +28,26 @@ In order to flash the ContikiOS into the FW mote using the **TI MSP-FET Flash Em
 
 Here, we present a simple example for communicating two FW-nodes using the reliable unicast module available in the RIME stack of ContikiOS. Hence, follow the step below: 
 
-1. A simple reliable unicast example is available at ```../examples/rime/```. To flash this example into a FW-node using the TI MSP-FET Flash Emulation tools, follow the step below: 
+1. A simple reliable unicast example is available at ```../examples/rime/```. To flash this example into a FW-node using the TI MSP-FET Flash Emulation tools, follow the step below:
    a. Clean-up the targe: ```(sudo) make TARGET=feuerwhere clean``` 
-   b. Compile and upload the example into the FW mote:```sudo make TARGET=feuerwhere example-runicast.upload``` 
+   b. Compile and upload the example into the FW mote:```sudo make TARGET=feuerwhere example-runicast.upload```    
       I. Some problems may arise during the testing process. 
          1. Both FW motes have the same ```Node_Id``` and ```Rime address```. To change, follow these steps: 
             - ```(sudo) make TARGET=feuerwhere clean```  (Do every time you flash a file into the FW mote)
             - ```(sudo)  make TARGET=feuerwhere nodeid=1 example-runicast.upload``` 
-     II. The FW motes are not able to communicated with each other. 
-     
-         1. Add the following lines 323 to 325 in ```/platform/feuerwhere/contiki-feuerwhere-main.c``` to enable RIME Stack for FW motes: 
+         2. The FW motes are not able to communicated with each other. Add the following lines 323 to 325 in ```/platform/feuerwhere/contiki-feuerwhere-main.c``` to enable RIME Stack for FW motes: 
       ``` 
       NETSTACK_RDC.init();
       NETSTACK_MAC.init(); 
       NETSTACK_NETWORK.init();
       ``` 
-         2.Comment the following code line: 
-       ```
-       //netstack_init(); 
-       ``` 
+      Comment the following code line: 
+      ```//netstack_init(); ``` 
+      
 2. The same example can be flashed into the FW motes using the SMC programmer and the python script developed by the IHP as follows:  
-   a. ```sudo make TARGET=feuerwhere clean ```
-   b. ```sudo make TARGET=feuerwhere nodeid=1 example-runicast.hex```  
-   c. ```sudo python mb_program.py -p /dev/ttyUSB4 -f example-runicast.hex``` 
+   a. ```sudo make TARGET=feuerwhere clean```
+   b. ```sudo make TARGET=feuerwhere nodeid=1 example-runicast.hex```
+   c. ```sudo python mb_program.py -p /dev/ttyUSB0 -f example-runicast.hex``` 
 
 ## Essential commands
 ### Flashing the FW mote with the MSP430 programmer and the Linux console (terminal)
