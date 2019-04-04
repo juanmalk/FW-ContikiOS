@@ -1,0 +1,12 @@
+#To flash with the MSP430 programmer
+sudo make TARGET=feuerwhere clean
+sudo make TARGET=feuerwhere nodeid=1 example-collect.upload
+
+#To flast with the SCM programmer
+sudo make TARGET=feuerwhere clean
+sudo make TARGET=feuerwhere nodeid=1 example-broadcast.hex
+sudo python mb_program.py -p /dev/ttyUSB0 -f example-broadcast.hex
+
+
+#To read serial port FW1 using python IHP script
+sudo python terminal.py -p /dev/ttyUSB0

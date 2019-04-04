@@ -1,0 +1,89 @@
+# $Id: Makefile.feuerwhere, v 0,1  15/02/2016 08:40:24 Norman Vetter $
+
+MODULES += core/net \
+           core/net/mac core/net/mac/contikimac \
+           core/net/llsec dev/cc2520 dev/ds2411
+
+CONTIKI_TARGET_DIRS = . dev
+
+ifdef IAR
+CFLAGS+=-e --vla -Ohz --multiplier=32 --multiplier_location=4C0 --hw_workaround=CPU40 --core=430X  --data_model small --double=32 -D__MSP430F5438A__=1
+#CFLAGS+=--no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --debug -D__MSP430F5438A__ -e --double=32 --dlib_config 'C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0 Evaluation\430\LIB\DLIB\dl430xsfn.h' --core=430X --data_model=small -Ol --multiplier=32 --multiplier_location=4C0 --hw_workaround=CPU40
+endif
+
+CLEAN += *.feuerwhere symbols.c symbols.h
+
+CONTIKI_TARGET_SOURCEFILES += contiki-feuerwhere-platform.c \
+							  msp430.c watchdog.c uart1x.c flash.c\
+							  node-id.c button-isr.c button-sensor.c\
+							  button2-sensor.c
+
+ARCH=spi.c sensors.c\
+     cc2520.c cc2520-arch.c cc2520-arch-sfd.c \
+     uip-ipchksum.c \
+     slip_uart1.c uart1-putchar.c
+
+ifeq ($(WITH_SLIP),1)
+ARCH += slip_uart0.c
+else
+ARCH += uart1-putchar.c
+endif
+
+ifdef NODEID
+CFLAGS+=-DNODEID=$(NODEID)
+
+ifdef BURN_NODEID
+CFLAGS+=-DBURN_NODEID
+endif # BURN_NODEID
+endif # NODEID
+
+CFLAGS+=-g
+help:
+	@echo A few useful make commands:
+	@echo make help - shows this help
+	@echo make TARGET=exp5438 savetarget - stores selection of target to avoid using TARGET= on every make invokation
+	@echo make program.upload - compiles and uploads program to connected board
+	@echo make program.upload IAR=1 - uses the IAR compiler instead of mspgcc
+	@echo make program.upload NODEID=x - uploads with node_id set to x
+
+ifndef CONTIKI_TARGET_MAIN
+CONTIKI_TARGET_MAIN = contiki-feuerwhere-main.c
+endif
+
+CONTIKI_TARGET_SOURCEFILES += $(ARCH) $(UIPDRIVERS)
+
+ifdef IAR
+MCU=msp430f5438a
+else
+MCU=msp430f5438
+endif
+
+# Platform has a MSP430X MCU with 20-bit support
+CPU_HAS_MSP430X=1
+
+include $(CONTIKI)/cpu/msp430/Makefile.msp430
+
+contiki-$(TARGET).a: ${addprefix $(OBJECTDIR)/,symbols.o}
+#	$(AR) rcf $@ $^
+
+
+ifdef IAR
+LDFLAGSNO += -xm "$(IAR_PATH)/lib/dlib/dl430xsfn.r43" -f "$(IAR_PATH)/config/lnk430f5437.xcl"
+LDFLAGS += $(LDFLAGSNO) -Felf -yn
+endif
+
+%.hex: %.ihex
+	mv $< $@
+
+%.upload: %.hex
+	../../MSPFlasher_1.3.18/./MSP430Flasher -e ERASE_MAIN -w $< -v -z [VCC]
+
+%.upload-clean: %.hex
+	../../MSPFlasher_1.3.18/./MSP430Flasher -w $< -v -z [VCC]
+
+SERIALDUMP = $(CONTIKI)/tools/sky/serialdump-linux
+MOTELIST = $(CONTIKI)/tools/sky/motelist-linux
+# change the device if needed. automatic device recognition is shown in sky
+# plattform
+login:
+	$(SERIALDUMP) -b115200 /dev/ttyUSB0

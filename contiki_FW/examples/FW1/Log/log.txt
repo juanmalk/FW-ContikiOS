@@ -1,0 +1,1601 @@
+Tue Feb  5 13:51:38 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 13:51:38 2019:	*     / |__                                                                   *
+Tue Feb  5 13:51:38 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 13:51:38 2019:	*      | /                                                                    *
+Tue Feb  5 13:51:38 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 13:51:38 2019:	*
+Tue Feb  5 13:51:38 2019:	* Evaluating triggers...done
+Tue Feb  5 13:51:38 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 13:51:39 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 13:51:39 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 13:51:39 2019:	* Checking firmware compatibility: 
+Tue Feb  5 13:51:39 2019:	* FET firmware is up to date.
+Tue Feb  5 13:51:39 2019:	* Reading FW version...done
+Tue Feb  5 13:51:39 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 13:51:40 2019:	* Accessing device...done
+Tue Feb  5 13:51:40 2019:	* Reading device information...done
+Tue Feb  5 13:51:40 2019:	* Loading file into device...done
+Tue Feb  5 13:51:41 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 13:51:42 2019:	* 
+Tue Feb  5 13:51:42 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:51:42 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 13:51:42 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:51:42 2019:	* Driver      : loaded
+Tue Feb  5 13:51:42 2019:	* Dll Version : 31300001
+Tue Feb  5 13:51:42 2019:	* FwVersion   : 31200000
+Tue Feb  5 13:51:42 2019:	* Interface   : TIUSB
+Tue Feb  5 13:51:42 2019:	* HwVersion   : U 3.0
+Tue Feb  5 13:51:42 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 13:51:42 2019:	* Device      : MSP430F5438A
+Tue Feb  5 13:51:42 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 13:51:42 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 13:51:42 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 13:51:42 2019:	* Verified    : TRUE
+Tue Feb  5 13:51:42 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 13:51:42 2019:	* InfoA Access: FALSE
+Tue Feb  5 13:51:42 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 13:51:42 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:51:42 2019:	* Starting target code execution...done
+Tue Feb  5 13:51:43 2019:	* Disconnecting from device...done
+Tue Feb  5 13:51:43 2019:	* 
+Tue Feb  5 13:51:43 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:51:43 2019:	* Driver      : closed (No error)
+Tue Feb  5 13:51:43 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:51:43 2019:	*/
+Tue Feb  5 13:52:03 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 13:52:03 2019:	*     / |__                                                                   *
+Tue Feb  5 13:52:03 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 13:52:03 2019:	*      | /                                                                    *
+Tue Feb  5 13:52:03 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 13:52:03 2019:	*
+Tue Feb  5 13:52:03 2019:	* Evaluating triggers...done
+Tue Feb  5 13:52:03 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 13:52:03 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 13:52:03 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 13:52:04 2019:	* Checking firmware compatibility: 
+Tue Feb  5 13:52:04 2019:	* FET firmware is up to date.
+Tue Feb  5 13:52:04 2019:	* Reading FW version...done
+Tue Feb  5 13:52:04 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 13:52:04 2019:	* Accessing device...done
+Tue Feb  5 13:52:05 2019:	* Reading device information...done
+Tue Feb  5 13:52:05 2019:	* Loading file into device...done
+Tue Feb  5 13:52:06 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 13:52:07 2019:	* 
+Tue Feb  5 13:52:07 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:52:07 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 13:52:07 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:52:07 2019:	* Driver      : loaded
+Tue Feb  5 13:52:07 2019:	* Dll Version : 31300001
+Tue Feb  5 13:52:07 2019:	* FwVersion   : 31200000
+Tue Feb  5 13:52:07 2019:	* Interface   : TIUSB
+Tue Feb  5 13:52:07 2019:	* HwVersion   : U 3.0
+Tue Feb  5 13:52:07 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 13:52:07 2019:	* Device      : MSP430F5438A
+Tue Feb  5 13:52:07 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 13:52:07 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 13:52:07 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 13:52:07 2019:	* Verified    : TRUE
+Tue Feb  5 13:52:07 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 13:52:07 2019:	* InfoA Access: FALSE
+Tue Feb  5 13:52:07 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 13:52:07 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:52:07 2019:	* Starting target code execution...done
+Tue Feb  5 13:52:08 2019:	* Disconnecting from device...done
+Tue Feb  5 13:52:08 2019:	* 
+Tue Feb  5 13:52:08 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:52:08 2019:	* Driver      : closed (No error)
+Tue Feb  5 13:52:08 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:52:08 2019:	*/
+Tue Feb  5 13:57:44 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 13:57:44 2019:	*     / |__                                                                   *
+Tue Feb  5 13:57:44 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 13:57:44 2019:	*      | /                                                                    *
+Tue Feb  5 13:57:44 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 13:57:44 2019:	*
+Tue Feb  5 13:57:44 2019:	* Evaluating triggers...done
+Tue Feb  5 13:57:44 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 13:57:44 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 13:57:44 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 13:57:45 2019:	* Checking firmware compatibility: 
+Tue Feb  5 13:57:45 2019:	* FET firmware is up to date.
+Tue Feb  5 13:57:45 2019:	* Reading FW version...done
+Tue Feb  5 13:57:45 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 13:57:45 2019:	* Accessing device...done
+Tue Feb  5 13:57:46 2019:	* Reading device information...done
+Tue Feb  5 13:57:46 2019:	* Loading file into device...done
+Tue Feb  5 13:57:47 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 13:57:48 2019:	* 
+Tue Feb  5 13:57:48 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:57:48 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 13:57:48 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:57:48 2019:	* Driver      : loaded
+Tue Feb  5 13:57:48 2019:	* Dll Version : 31300001
+Tue Feb  5 13:57:48 2019:	* FwVersion   : 31200000
+Tue Feb  5 13:57:48 2019:	* Interface   : TIUSB
+Tue Feb  5 13:57:48 2019:	* HwVersion   : U 3.0
+Tue Feb  5 13:57:48 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 13:57:48 2019:	* Device      : MSP430F5438A
+Tue Feb  5 13:57:48 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 13:57:48 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 13:57:48 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 13:57:48 2019:	* Verified    : TRUE
+Tue Feb  5 13:57:48 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 13:57:48 2019:	* InfoA Access: FALSE
+Tue Feb  5 13:57:48 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 13:57:48 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:57:48 2019:	* Starting target code execution...done
+Tue Feb  5 13:57:49 2019:	* Disconnecting from device...done
+Tue Feb  5 13:57:49 2019:	* 
+Tue Feb  5 13:57:49 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:57:49 2019:	* Driver      : closed (No error)
+Tue Feb  5 13:57:49 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 13:57:49 2019:	*/
+Tue Feb  5 14:05:19 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 14:05:19 2019:	*     / |__                                                                   *
+Tue Feb  5 14:05:19 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 14:05:19 2019:	*      | /                                                                    *
+Tue Feb  5 14:05:19 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 14:05:19 2019:	*
+Tue Feb  5 14:05:19 2019:	* Evaluating triggers...done
+Tue Feb  5 14:05:19 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 14:05:19 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 14:05:19 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 14:05:19 2019:	* Checking firmware compatibility: 
+Tue Feb  5 14:05:19 2019:	* FET firmware is up to date.
+Tue Feb  5 14:05:19 2019:	* Reading FW version...done
+Tue Feb  5 14:05:19 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 14:05:20 2019:	* Accessing device...done
+Tue Feb  5 14:05:20 2019:	* Reading device information...done
+Tue Feb  5 14:05:20 2019:	* Loading file into device...done
+Tue Feb  5 14:05:22 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 14:05:23 2019:	* 
+Tue Feb  5 14:05:23 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:05:23 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 14:05:23 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:05:23 2019:	* Driver      : loaded
+Tue Feb  5 14:05:23 2019:	* Dll Version : 31300001
+Tue Feb  5 14:05:23 2019:	* FwVersion   : 31200000
+Tue Feb  5 14:05:23 2019:	* Interface   : TIUSB
+Tue Feb  5 14:05:23 2019:	* HwVersion   : U 3.0
+Tue Feb  5 14:05:23 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 14:05:23 2019:	* Device      : MSP430F5438A
+Tue Feb  5 14:05:23 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 14:05:23 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 14:05:23 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 14:05:23 2019:	* Verified    : TRUE
+Tue Feb  5 14:05:23 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 14:05:23 2019:	* InfoA Access: FALSE
+Tue Feb  5 14:05:23 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 14:05:23 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:05:23 2019:	* Starting target code execution...done
+Tue Feb  5 14:05:23 2019:	* Disconnecting from device...done
+Tue Feb  5 14:05:23 2019:	* 
+Tue Feb  5 14:05:23 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:05:23 2019:	* Driver      : closed (No error)
+Tue Feb  5 14:05:23 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:05:23 2019:	*/
+Tue Feb  5 14:21:43 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 14:21:43 2019:	*     / |__                                                                   *
+Tue Feb  5 14:21:43 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 14:21:43 2019:	*      | /                                                                    *
+Tue Feb  5 14:21:43 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 14:21:43 2019:	*
+Tue Feb  5 14:21:43 2019:	* Evaluating triggers...done
+Tue Feb  5 14:21:43 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 14:21:43 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 14:21:43 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 14:21:44 2019:	* Checking firmware compatibility: 
+Tue Feb  5 14:21:44 2019:	* FET firmware is up to date.
+Tue Feb  5 14:21:44 2019:	* Reading FW version...done
+Tue Feb  5 14:21:44 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 14:21:45 2019:	* Accessing device...done
+Tue Feb  5 14:21:45 2019:	* Reading device information...done
+Tue Feb  5 14:21:45 2019:	* Loading file into device...done
+Tue Feb  5 14:21:46 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 14:21:47 2019:	* 
+Tue Feb  5 14:21:47 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:21:47 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 14:21:47 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:21:47 2019:	* Driver      : loaded
+Tue Feb  5 14:21:47 2019:	* Dll Version : 31300001
+Tue Feb  5 14:21:47 2019:	* FwVersion   : 31200000
+Tue Feb  5 14:21:47 2019:	* Interface   : TIUSB
+Tue Feb  5 14:21:47 2019:	* HwVersion   : U 3.0
+Tue Feb  5 14:21:47 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 14:21:47 2019:	* Device      : MSP430F5438A
+Tue Feb  5 14:21:47 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 14:21:47 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 14:21:47 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 14:21:47 2019:	* Verified    : TRUE
+Tue Feb  5 14:21:47 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 14:21:47 2019:	* InfoA Access: FALSE
+Tue Feb  5 14:21:47 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 14:21:47 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:21:47 2019:	* Starting target code execution...done
+Tue Feb  5 14:21:48 2019:	* Disconnecting from device...done
+Tue Feb  5 14:21:48 2019:	* 
+Tue Feb  5 14:21:48 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:21:48 2019:	* Driver      : closed (No error)
+Tue Feb  5 14:21:48 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:21:48 2019:	*/
+Tue Feb  5 14:22:12 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 14:22:12 2019:	*     / |__                                                                   *
+Tue Feb  5 14:22:12 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 14:22:12 2019:	*      | /                                                                    *
+Tue Feb  5 14:22:12 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 14:22:12 2019:	*
+Tue Feb  5 14:22:12 2019:	* Evaluating triggers...done
+Tue Feb  5 14:22:12 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 14:22:12 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 14:22:12 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 14:22:13 2019:	* Checking firmware compatibility: 
+Tue Feb  5 14:22:13 2019:	* FET firmware is up to date.
+Tue Feb  5 14:22:13 2019:	* Reading FW version...done
+Tue Feb  5 14:22:13 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 14:22:14 2019:	* Accessing device...done
+Tue Feb  5 14:22:14 2019:	* Reading device information...done
+Tue Feb  5 14:22:14 2019:	* Loading file into device...done
+Tue Feb  5 14:22:15 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 14:22:16 2019:	* 
+Tue Feb  5 14:22:16 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:22:16 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 14:22:16 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:22:16 2019:	* Driver      : loaded
+Tue Feb  5 14:22:16 2019:	* Dll Version : 31300001
+Tue Feb  5 14:22:16 2019:	* FwVersion   : 31200000
+Tue Feb  5 14:22:16 2019:	* Interface   : TIUSB
+Tue Feb  5 14:22:16 2019:	* HwVersion   : U 3.0
+Tue Feb  5 14:22:16 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 14:22:16 2019:	* Device      : MSP430F5438A
+Tue Feb  5 14:22:16 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 14:22:16 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 14:22:16 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 14:22:16 2019:	* Verified    : TRUE
+Tue Feb  5 14:22:16 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 14:22:16 2019:	* InfoA Access: FALSE
+Tue Feb  5 14:22:16 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 14:22:16 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:22:16 2019:	* Starting target code execution...done
+Tue Feb  5 14:22:17 2019:	* Disconnecting from device...done
+Tue Feb  5 14:22:17 2019:	* 
+Tue Feb  5 14:22:17 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:22:17 2019:	* Driver      : closed (No error)
+Tue Feb  5 14:22:17 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:22:17 2019:	*/
+Tue Feb  5 14:27:11 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 14:27:11 2019:	*     / |__                                                                   *
+Tue Feb  5 14:27:11 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 14:27:11 2019:	*      | /                                                                    *
+Tue Feb  5 14:27:11 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 14:27:11 2019:	*
+Tue Feb  5 14:27:11 2019:	* Evaluating triggers...done
+Tue Feb  5 14:27:11 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 14:27:11 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 14:27:11 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 14:27:12 2019:	* Checking firmware compatibility: 
+Tue Feb  5 14:27:12 2019:	* FET firmware is up to date.
+Tue Feb  5 14:27:12 2019:	* Reading FW version...done
+Tue Feb  5 14:27:12 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 14:27:13 2019:	* Accessing device...done
+Tue Feb  5 14:27:13 2019:	* Reading device information...done
+Tue Feb  5 14:27:13 2019:	* Loading file into device...done
+Tue Feb  5 14:27:14 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 14:27:15 2019:	* 
+Tue Feb  5 14:27:15 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:27:15 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 14:27:15 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:27:15 2019:	* Driver      : loaded
+Tue Feb  5 14:27:15 2019:	* Dll Version : 31300001
+Tue Feb  5 14:27:15 2019:	* FwVersion   : 31200000
+Tue Feb  5 14:27:15 2019:	* Interface   : TIUSB
+Tue Feb  5 14:27:15 2019:	* HwVersion   : U 3.0
+Tue Feb  5 14:27:15 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 14:27:15 2019:	* Device      : MSP430F5438A
+Tue Feb  5 14:27:15 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 14:27:15 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 14:27:15 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 14:27:15 2019:	* Verified    : TRUE
+Tue Feb  5 14:27:15 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 14:27:15 2019:	* InfoA Access: FALSE
+Tue Feb  5 14:27:15 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 14:27:15 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:27:15 2019:	* Starting target code execution...done
+Tue Feb  5 14:27:16 2019:	* Disconnecting from device...done
+Tue Feb  5 14:27:16 2019:	* 
+Tue Feb  5 14:27:16 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:27:16 2019:	* Driver      : closed (No error)
+Tue Feb  5 14:27:16 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:27:16 2019:	*/
+Tue Feb  5 14:29:02 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 14:29:02 2019:	*     / |__                                                                   *
+Tue Feb  5 14:29:02 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 14:29:02 2019:	*      | /                                                                    *
+Tue Feb  5 14:29:02 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 14:29:02 2019:	*
+Tue Feb  5 14:29:02 2019:	* Evaluating triggers...done
+Tue Feb  5 14:29:02 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 14:29:02 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 14:29:02 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 14:29:02 2019:	* Checking firmware compatibility: 
+Tue Feb  5 14:29:02 2019:	* FET firmware is up to date.
+Tue Feb  5 14:29:02 2019:	* Reading FW version...done
+Tue Feb  5 14:29:02 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 14:29:03 2019:	* Accessing device...done
+Tue Feb  5 14:29:03 2019:	* Reading device information...done
+Tue Feb  5 14:29:03 2019:	* Loading file into device...done
+Tue Feb  5 14:29:04 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 14:29:06 2019:	* 
+Tue Feb  5 14:29:06 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:29:06 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 14:29:06 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:29:06 2019:	* Driver      : loaded
+Tue Feb  5 14:29:06 2019:	* Dll Version : 31300001
+Tue Feb  5 14:29:06 2019:	* FwVersion   : 31200000
+Tue Feb  5 14:29:06 2019:	* Interface   : TIUSB
+Tue Feb  5 14:29:06 2019:	* HwVersion   : U 3.0
+Tue Feb  5 14:29:06 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 14:29:06 2019:	* Device      : MSP430F5438A
+Tue Feb  5 14:29:06 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 14:29:06 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 14:29:06 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 14:29:06 2019:	* Verified    : TRUE
+Tue Feb  5 14:29:06 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 14:29:06 2019:	* InfoA Access: FALSE
+Tue Feb  5 14:29:06 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 14:29:06 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:29:06 2019:	* Starting target code execution...done
+Tue Feb  5 14:29:06 2019:	* Disconnecting from device...done
+Tue Feb  5 14:29:06 2019:	* 
+Tue Feb  5 14:29:06 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:29:06 2019:	* Driver      : closed (No error)
+Tue Feb  5 14:29:06 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:29:06 2019:	*/
+Tue Feb  5 14:39:49 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 14:39:49 2019:	*     / |__                                                                   *
+Tue Feb  5 14:39:49 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 14:39:49 2019:	*      | /                                                                    *
+Tue Feb  5 14:39:49 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 14:39:49 2019:	*
+Tue Feb  5 14:39:49 2019:	* Evaluating triggers...done
+Tue Feb  5 14:39:49 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 14:39:49 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 14:39:49 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 14:39:50 2019:	* Checking firmware compatibility: 
+Tue Feb  5 14:39:50 2019:	* FET firmware is up to date.
+Tue Feb  5 14:39:50 2019:	* Reading FW version...done
+Tue Feb  5 14:39:50 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 14:39:50 2019:	* Accessing device...done
+Tue Feb  5 14:39:51 2019:	* Reading device information...done
+Tue Feb  5 14:39:51 2019:	* Loading file into device...done
+Tue Feb  5 14:39:52 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 14:39:53 2019:	* 
+Tue Feb  5 14:39:53 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:39:53 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 14:39:53 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:39:53 2019:	* Driver      : loaded
+Tue Feb  5 14:39:53 2019:	* Dll Version : 31300001
+Tue Feb  5 14:39:53 2019:	* FwVersion   : 31200000
+Tue Feb  5 14:39:53 2019:	* Interface   : TIUSB
+Tue Feb  5 14:39:53 2019:	* HwVersion   : U 3.0
+Tue Feb  5 14:39:53 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 14:39:53 2019:	* Device      : MSP430F5438A
+Tue Feb  5 14:39:53 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 14:39:53 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 14:39:53 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 14:39:53 2019:	* Verified    : TRUE
+Tue Feb  5 14:39:53 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 14:39:53 2019:	* InfoA Access: FALSE
+Tue Feb  5 14:39:53 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 14:39:53 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:39:53 2019:	* Starting target code execution...done
+Tue Feb  5 14:39:54 2019:	* Disconnecting from device...done
+Tue Feb  5 14:39:54 2019:	* 
+Tue Feb  5 14:39:54 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:39:54 2019:	* Driver      : closed (No error)
+Tue Feb  5 14:39:54 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:39:54 2019:	*/
+Tue Feb  5 14:41:54 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 14:41:54 2019:	*     / |__                                                                   *
+Tue Feb  5 14:41:54 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 14:41:54 2019:	*      | /                                                                    *
+Tue Feb  5 14:41:54 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 14:41:54 2019:	*
+Tue Feb  5 14:41:54 2019:	* Evaluating triggers...done
+Tue Feb  5 14:41:54 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 14:41:54 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 14:41:54 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 14:41:55 2019:	* Checking firmware compatibility: 
+Tue Feb  5 14:41:55 2019:	* FET firmware is up to date.
+Tue Feb  5 14:41:55 2019:	* Reading FW version...done
+Tue Feb  5 14:41:55 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 14:41:55 2019:	* Accessing device...done
+Tue Feb  5 14:41:56 2019:	* Reading device information...done
+Tue Feb  5 14:41:56 2019:	* Loading file into device...done
+Tue Feb  5 14:41:57 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 14:41:58 2019:	* 
+Tue Feb  5 14:41:58 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:41:58 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 14:41:58 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:41:58 2019:	* Driver      : loaded
+Tue Feb  5 14:41:58 2019:	* Dll Version : 31300001
+Tue Feb  5 14:41:58 2019:	* FwVersion   : 31200000
+Tue Feb  5 14:41:58 2019:	* Interface   : TIUSB
+Tue Feb  5 14:41:58 2019:	* HwVersion   : U 3.0
+Tue Feb  5 14:41:58 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 14:41:58 2019:	* Device      : MSP430F5438A
+Tue Feb  5 14:41:58 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 14:41:58 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 14:41:58 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 14:41:58 2019:	* Verified    : TRUE
+Tue Feb  5 14:41:58 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 14:41:58 2019:	* InfoA Access: FALSE
+Tue Feb  5 14:41:58 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 14:41:58 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:41:58 2019:	* Starting target code execution...done
+Tue Feb  5 14:41:59 2019:	* Disconnecting from device...done
+Tue Feb  5 14:41:59 2019:	* 
+Tue Feb  5 14:41:59 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:41:59 2019:	* Driver      : closed (No error)
+Tue Feb  5 14:41:59 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:41:59 2019:	*/
+Tue Feb  5 14:44:30 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 14:44:30 2019:	*     / |__                                                                   *
+Tue Feb  5 14:44:30 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 14:44:30 2019:	*      | /                                                                    *
+Tue Feb  5 14:44:30 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 14:44:30 2019:	*
+Tue Feb  5 14:44:30 2019:	* Evaluating triggers...done
+Tue Feb  5 14:44:30 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 14:44:30 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 14:44:30 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 14:44:30 2019:	* Checking firmware compatibility: 
+Tue Feb  5 14:44:30 2019:	* FET firmware is up to date.
+Tue Feb  5 14:44:30 2019:	* Reading FW version...done
+Tue Feb  5 14:44:30 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 14:44:31 2019:	* Accessing device...done
+Tue Feb  5 14:44:32 2019:	* Reading device information...done
+Tue Feb  5 14:44:32 2019:	* Loading file into device...done
+Tue Feb  5 14:44:33 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 14:44:34 2019:	* 
+Tue Feb  5 14:44:34 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:44:34 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 14:44:34 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:44:34 2019:	* Driver      : loaded
+Tue Feb  5 14:44:34 2019:	* Dll Version : 31300001
+Tue Feb  5 14:44:34 2019:	* FwVersion   : 31200000
+Tue Feb  5 14:44:34 2019:	* Interface   : TIUSB
+Tue Feb  5 14:44:34 2019:	* HwVersion   : U 3.0
+Tue Feb  5 14:44:34 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 14:44:34 2019:	* Device      : MSP430F5438A
+Tue Feb  5 14:44:34 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 14:44:34 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 14:44:34 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 14:44:34 2019:	* Verified    : TRUE
+Tue Feb  5 14:44:34 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 14:44:34 2019:	* InfoA Access: FALSE
+Tue Feb  5 14:44:34 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 14:44:34 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:44:34 2019:	* Starting target code execution...done
+Tue Feb  5 14:44:35 2019:	* Disconnecting from device...done
+Tue Feb  5 14:44:35 2019:	* 
+Tue Feb  5 14:44:35 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:44:35 2019:	* Driver      : closed (No error)
+Tue Feb  5 14:44:35 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:44:35 2019:	*/
+Tue Feb  5 14:44:58 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 14:44:58 2019:	*     / |__                                                                   *
+Tue Feb  5 14:44:58 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 14:44:58 2019:	*      | /                                                                    *
+Tue Feb  5 14:44:58 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 14:44:58 2019:	*
+Tue Feb  5 14:44:58 2019:	* Evaluating triggers...done
+Tue Feb  5 14:44:58 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 14:44:59 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 14:44:59 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 14:44:59 2019:	* Checking firmware compatibility: 
+Tue Feb  5 14:44:59 2019:	* FET firmware is up to date.
+Tue Feb  5 14:44:59 2019:	* Reading FW version...done
+Tue Feb  5 14:44:59 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 14:45:00 2019:	* Accessing device...done
+Tue Feb  5 14:45:00 2019:	* Reading device information...done
+Tue Feb  5 14:45:00 2019:	* Loading file into device...done
+Tue Feb  5 14:45:01 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 14:45:02 2019:	* 
+Tue Feb  5 14:45:02 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:45:02 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 14:45:02 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:45:02 2019:	* Driver      : loaded
+Tue Feb  5 14:45:02 2019:	* Dll Version : 31300001
+Tue Feb  5 14:45:02 2019:	* FwVersion   : 31200000
+Tue Feb  5 14:45:02 2019:	* Interface   : TIUSB
+Tue Feb  5 14:45:02 2019:	* HwVersion   : U 3.0
+Tue Feb  5 14:45:02 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 14:45:02 2019:	* Device      : MSP430F5438A
+Tue Feb  5 14:45:02 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 14:45:02 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 14:45:02 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 14:45:02 2019:	* Verified    : TRUE
+Tue Feb  5 14:45:02 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 14:45:02 2019:	* InfoA Access: FALSE
+Tue Feb  5 14:45:02 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 14:45:02 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:45:02 2019:	* Starting target code execution...done
+Tue Feb  5 14:45:03 2019:	* Disconnecting from device...done
+Tue Feb  5 14:45:03 2019:	* 
+Tue Feb  5 14:45:03 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:45:03 2019:	* Driver      : closed (No error)
+Tue Feb  5 14:45:03 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:45:03 2019:	*/
+Tue Feb  5 14:56:55 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 14:56:55 2019:	*     / |__                                                                   *
+Tue Feb  5 14:56:55 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 14:56:55 2019:	*      | /                                                                    *
+Tue Feb  5 14:56:55 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 14:56:55 2019:	*
+Tue Feb  5 14:56:55 2019:	* Evaluating triggers...done
+Tue Feb  5 14:56:55 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 14:56:56 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 14:56:56 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 14:56:56 2019:	* Checking firmware compatibility: 
+Tue Feb  5 14:56:56 2019:	* FET firmware is up to date.
+Tue Feb  5 14:56:56 2019:	* Reading FW version...done
+Tue Feb  5 14:56:56 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 14:56:57 2019:	* Accessing device...done
+Tue Feb  5 14:56:57 2019:	* Reading device information...done
+Tue Feb  5 14:56:57 2019:	* Loading file into device...done
+Tue Feb  5 14:56:58 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 14:57:00 2019:	* 
+Tue Feb  5 14:57:00 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:57:00 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 14:57:00 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:57:00 2019:	* Driver      : loaded
+Tue Feb  5 14:57:00 2019:	* Dll Version : 31300001
+Tue Feb  5 14:57:00 2019:	* FwVersion   : 31200000
+Tue Feb  5 14:57:00 2019:	* Interface   : TIUSB
+Tue Feb  5 14:57:00 2019:	* HwVersion   : U 3.0
+Tue Feb  5 14:57:00 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 14:57:00 2019:	* Device      : MSP430F5438A
+Tue Feb  5 14:57:00 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 14:57:00 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 14:57:00 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 14:57:00 2019:	* Verified    : TRUE
+Tue Feb  5 14:57:00 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 14:57:00 2019:	* InfoA Access: FALSE
+Tue Feb  5 14:57:00 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 14:57:00 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:57:00 2019:	* Starting target code execution...done
+Tue Feb  5 14:57:00 2019:	* Disconnecting from device...done
+Tue Feb  5 14:57:00 2019:	* 
+Tue Feb  5 14:57:00 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:57:00 2019:	* Driver      : closed (No error)
+Tue Feb  5 14:57:00 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:57:00 2019:	*/
+Tue Feb  5 14:57:28 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 14:57:28 2019:	*     / |__                                                                   *
+Tue Feb  5 14:57:28 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 14:57:28 2019:	*      | /                                                                    *
+Tue Feb  5 14:57:28 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 14:57:28 2019:	*
+Tue Feb  5 14:57:28 2019:	* Evaluating triggers...done
+Tue Feb  5 14:57:28 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 14:57:28 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 14:57:28 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 14:57:29 2019:	* Checking firmware compatibility: 
+Tue Feb  5 14:57:29 2019:	* FET firmware is up to date.
+Tue Feb  5 14:57:29 2019:	* Reading FW version...done
+Tue Feb  5 14:57:29 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 14:57:29 2019:	* Accessing device...done
+Tue Feb  5 14:57:30 2019:	* Reading device information...done
+Tue Feb  5 14:57:30 2019:	* Loading file into device...done
+Tue Feb  5 14:57:31 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 14:57:32 2019:	* 
+Tue Feb  5 14:57:32 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:57:32 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 14:57:32 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:57:32 2019:	* Driver      : loaded
+Tue Feb  5 14:57:32 2019:	* Dll Version : 31300001
+Tue Feb  5 14:57:32 2019:	* FwVersion   : 31200000
+Tue Feb  5 14:57:32 2019:	* Interface   : TIUSB
+Tue Feb  5 14:57:32 2019:	* HwVersion   : U 3.0
+Tue Feb  5 14:57:32 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 14:57:32 2019:	* Device      : MSP430F5438A
+Tue Feb  5 14:57:32 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 14:57:32 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 14:57:32 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 14:57:32 2019:	* Verified    : TRUE
+Tue Feb  5 14:57:32 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 14:57:32 2019:	* InfoA Access: FALSE
+Tue Feb  5 14:57:32 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 14:57:32 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:57:32 2019:	* Starting target code execution...done
+Tue Feb  5 14:57:33 2019:	* Disconnecting from device...done
+Tue Feb  5 14:57:33 2019:	* 
+Tue Feb  5 14:57:33 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:57:33 2019:	* Driver      : closed (No error)
+Tue Feb  5 14:57:33 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 14:57:33 2019:	*/
+Tue Feb  5 15:12:29 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 15:12:29 2019:	*     / |__                                                                   *
+Tue Feb  5 15:12:29 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 15:12:29 2019:	*      | /                                                                    *
+Tue Feb  5 15:12:29 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 15:12:29 2019:	*
+Tue Feb  5 15:12:29 2019:	* Evaluating triggers...done
+Tue Feb  5 15:12:29 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 15:12:29 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 15:12:29 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 15:12:30 2019:	* Checking firmware compatibility: 
+Tue Feb  5 15:12:30 2019:	* FET firmware is up to date.
+Tue Feb  5 15:12:30 2019:	* Reading FW version...done
+Tue Feb  5 15:12:30 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 15:12:31 2019:	* Accessing device...done
+Tue Feb  5 15:12:31 2019:	* Reading device information...done
+Tue Feb  5 15:12:31 2019:	* Loading file into device...done
+Tue Feb  5 15:12:32 2019:	* Verifying memory (radio-test.hex)...done
+Tue Feb  5 15:12:33 2019:	* 
+Tue Feb  5 15:12:33 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:12:33 2019:	* Arguments   : -e ERASE_MAIN -w radio-test.hex -v -z [VCC] 
+Tue Feb  5 15:12:33 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:12:33 2019:	* Driver      : loaded
+Tue Feb  5 15:12:33 2019:	* Dll Version : 31300001
+Tue Feb  5 15:12:33 2019:	* FwVersion   : 31200000
+Tue Feb  5 15:12:33 2019:	* Interface   : TIUSB
+Tue Feb  5 15:12:33 2019:	* HwVersion   : U 3.0
+Tue Feb  5 15:12:33 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 15:12:33 2019:	* Device      : MSP430F5438A
+Tue Feb  5 15:12:33 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 15:12:33 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 15:12:33 2019:	* Prog.File   : radio-test.hex
+Tue Feb  5 15:12:33 2019:	* Verified    : TRUE
+Tue Feb  5 15:12:33 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 15:12:33 2019:	* InfoA Access: FALSE
+Tue Feb  5 15:12:33 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 15:12:33 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:12:33 2019:	* Starting target code execution...done
+Tue Feb  5 15:12:34 2019:	* Disconnecting from device...done
+Tue Feb  5 15:12:34 2019:	* 
+Tue Feb  5 15:12:34 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:12:34 2019:	* Driver      : closed (No error)
+Tue Feb  5 15:12:34 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:12:34 2019:	*/
+Tue Feb  5 15:12:59 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 15:12:59 2019:	*     / |__                                                                   *
+Tue Feb  5 15:12:59 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 15:12:59 2019:	*      | /                                                                    *
+Tue Feb  5 15:12:59 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 15:12:59 2019:	*
+Tue Feb  5 15:12:59 2019:	* Evaluating triggers...done
+Tue Feb  5 15:12:59 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 15:13:00 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 15:13:00 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 15:13:00 2019:	* Checking firmware compatibility: 
+Tue Feb  5 15:13:00 2019:	* FET firmware is up to date.
+Tue Feb  5 15:13:00 2019:	* Reading FW version...done
+Tue Feb  5 15:13:00 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 15:13:01 2019:	* Accessing device...done
+Tue Feb  5 15:13:01 2019:	* Reading device information...done
+Tue Feb  5 15:13:01 2019:	* Loading file into device...done
+Tue Feb  5 15:13:03 2019:	* Verifying memory (example-collect.hex)...done
+Tue Feb  5 15:13:04 2019:	* 
+Tue Feb  5 15:13:04 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:13:04 2019:	* Arguments   : -e ERASE_MAIN -w example-collect.hex -v -z [VCC] 
+Tue Feb  5 15:13:04 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:13:04 2019:	* Driver      : loaded
+Tue Feb  5 15:13:04 2019:	* Dll Version : 31300001
+Tue Feb  5 15:13:04 2019:	* FwVersion   : 31200000
+Tue Feb  5 15:13:04 2019:	* Interface   : TIUSB
+Tue Feb  5 15:13:04 2019:	* HwVersion   : U 3.0
+Tue Feb  5 15:13:04 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 15:13:04 2019:	* Device      : MSP430F5438A
+Tue Feb  5 15:13:04 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 15:13:04 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 15:13:04 2019:	* Prog.File   : example-collect.hex
+Tue Feb  5 15:13:04 2019:	* Verified    : TRUE
+Tue Feb  5 15:13:04 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 15:13:04 2019:	* InfoA Access: FALSE
+Tue Feb  5 15:13:04 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 15:13:04 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:13:04 2019:	* Starting target code execution...done
+Tue Feb  5 15:13:05 2019:	* Disconnecting from device...done
+Tue Feb  5 15:13:05 2019:	* 
+Tue Feb  5 15:13:05 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:13:05 2019:	* Driver      : closed (No error)
+Tue Feb  5 15:13:05 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:13:05 2019:	*/
+Tue Feb  5 15:13:28 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 15:13:28 2019:	*     / |__                                                                   *
+Tue Feb  5 15:13:28 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 15:13:28 2019:	*      | /                                                                    *
+Tue Feb  5 15:13:28 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 15:13:28 2019:	*
+Tue Feb  5 15:13:28 2019:	* Evaluating triggers...done
+Tue Feb  5 15:13:28 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 15:13:28 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 15:13:28 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 15:13:28 2019:	* Checking firmware compatibility: 
+Tue Feb  5 15:13:28 2019:	* FET firmware is up to date.
+Tue Feb  5 15:13:28 2019:	* Reading FW version...done
+Tue Feb  5 15:13:28 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 15:13:29 2019:	* Accessing device...done
+Tue Feb  5 15:13:29 2019:	* Reading device information...done
+Tue Feb  5 15:13:29 2019:	* Loading file into device...done
+Tue Feb  5 15:13:31 2019:	* Verifying memory (example-collect.hex)...done
+Tue Feb  5 15:13:32 2019:	* 
+Tue Feb  5 15:13:32 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:13:32 2019:	* Arguments   : -e ERASE_MAIN -w example-collect.hex -v -z [VCC] 
+Tue Feb  5 15:13:32 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:13:32 2019:	* Driver      : loaded
+Tue Feb  5 15:13:32 2019:	* Dll Version : 31300001
+Tue Feb  5 15:13:32 2019:	* FwVersion   : 31200000
+Tue Feb  5 15:13:32 2019:	* Interface   : TIUSB
+Tue Feb  5 15:13:32 2019:	* HwVersion   : U 3.0
+Tue Feb  5 15:13:32 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 15:13:32 2019:	* Device      : MSP430F5438A
+Tue Feb  5 15:13:32 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 15:13:32 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 15:13:32 2019:	* Prog.File   : example-collect.hex
+Tue Feb  5 15:13:32 2019:	* Verified    : TRUE
+Tue Feb  5 15:13:32 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 15:13:32 2019:	* InfoA Access: FALSE
+Tue Feb  5 15:13:32 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 15:13:32 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:13:32 2019:	* Starting target code execution...done
+Tue Feb  5 15:13:33 2019:	* Disconnecting from device...done
+Tue Feb  5 15:13:33 2019:	* 
+Tue Feb  5 15:13:33 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:13:33 2019:	* Driver      : closed (No error)
+Tue Feb  5 15:13:33 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:13:33 2019:	*/
+Tue Feb  5 15:26:16 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 15:26:16 2019:	*     / |__                                                                   *
+Tue Feb  5 15:26:16 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 15:26:16 2019:	*      | /                                                                    *
+Tue Feb  5 15:26:16 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 15:26:16 2019:	*
+Tue Feb  5 15:26:16 2019:	* Evaluating triggers...done
+Tue Feb  5 15:26:16 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 15:26:16 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 15:26:16 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 15:26:16 2019:	* Checking firmware compatibility: 
+Tue Feb  5 15:26:16 2019:	* FET firmware is up to date.
+Tue Feb  5 15:26:16 2019:	* Reading FW version...done
+Tue Feb  5 15:26:16 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 15:26:17 2019:	* Accessing device...done
+Tue Feb  5 15:26:18 2019:	* Reading device information...done
+Tue Feb  5 15:26:18 2019:	* Loading file into device...done
+Tue Feb  5 15:26:19 2019:	* Verifying memory (example-neighbors.hex)...done
+Tue Feb  5 15:26:20 2019:	* 
+Tue Feb  5 15:26:20 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:26:20 2019:	* Arguments   : -e ERASE_MAIN -w example-neighbors.hex -v -z [VCC] 
+Tue Feb  5 15:26:20 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:26:20 2019:	* Driver      : loaded
+Tue Feb  5 15:26:20 2019:	* Dll Version : 31300001
+Tue Feb  5 15:26:20 2019:	* FwVersion   : 31200000
+Tue Feb  5 15:26:20 2019:	* Interface   : TIUSB
+Tue Feb  5 15:26:20 2019:	* HwVersion   : U 3.0
+Tue Feb  5 15:26:20 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 15:26:20 2019:	* Device      : MSP430F5438A
+Tue Feb  5 15:26:20 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 15:26:20 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 15:26:20 2019:	* Prog.File   : example-neighbors.hex
+Tue Feb  5 15:26:20 2019:	* Verified    : TRUE
+Tue Feb  5 15:26:20 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 15:26:20 2019:	* InfoA Access: FALSE
+Tue Feb  5 15:26:20 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 15:26:20 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:26:20 2019:	* Starting target code execution...done
+Tue Feb  5 15:26:21 2019:	* Disconnecting from device...done
+Tue Feb  5 15:26:21 2019:	* 
+Tue Feb  5 15:26:21 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:26:21 2019:	* Driver      : closed (No error)
+Tue Feb  5 15:26:21 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:26:21 2019:	*/
+Tue Feb  5 15:26:49 2019:	* -----/|-------------------------------------------------------------------- *
+Tue Feb  5 15:26:49 2019:	*     / |__                                                                   *
+Tue Feb  5 15:26:49 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Tue Feb  5 15:26:49 2019:	*      | /                                                                    *
+Tue Feb  5 15:26:49 2019:	* -----|/-------------------------------------------------------------------- *
+Tue Feb  5 15:26:49 2019:	*
+Tue Feb  5 15:26:49 2019:	* Evaluating triggers...done
+Tue Feb  5 15:26:49 2019:	* Checking for available FET debuggers: 
+Tue Feb  5 15:26:49 2019:	* Found USB FET @ ttyACM0 <- Selected
+Tue Feb  5 15:26:49 2019:	* Initializing interface @ ttyACM0...done
+Tue Feb  5 15:26:50 2019:	* Checking firmware compatibility: 
+Tue Feb  5 15:26:50 2019:	* FET firmware is up to date.
+Tue Feb  5 15:26:50 2019:	* Reading FW version...done
+Tue Feb  5 15:26:50 2019:	* Setting VCC to 3000 mV...done
+Tue Feb  5 15:26:51 2019:	* Accessing device...done
+Tue Feb  5 15:26:51 2019:	* Reading device information...done
+Tue Feb  5 15:26:51 2019:	* Loading file into device...done
+Tue Feb  5 15:26:52 2019:	* Verifying memory (example-neighbors.hex)...done
+Tue Feb  5 15:26:53 2019:	* 
+Tue Feb  5 15:26:53 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:26:53 2019:	* Arguments   : -e ERASE_MAIN -w example-neighbors.hex -v -z [VCC] 
+Tue Feb  5 15:26:53 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:26:53 2019:	* Driver      : loaded
+Tue Feb  5 15:26:53 2019:	* Dll Version : 31300001
+Tue Feb  5 15:26:53 2019:	* FwVersion   : 31200000
+Tue Feb  5 15:26:53 2019:	* Interface   : TIUSB
+Tue Feb  5 15:26:53 2019:	* HwVersion   : U 3.0
+Tue Feb  5 15:26:53 2019:	* JTAG Mode   : AUTO
+Tue Feb  5 15:26:53 2019:	* Device      : MSP430F5438A
+Tue Feb  5 15:26:53 2019:	* EEM         : Level 7, ClockCntrl 2
+Tue Feb  5 15:26:53 2019:	* Erase Mode  : ERASE_MAIN
+Tue Feb  5 15:26:53 2019:	* Prog.File   : example-neighbors.hex
+Tue Feb  5 15:26:53 2019:	* Verified    : TRUE
+Tue Feb  5 15:26:53 2019:	* BSL Unlock  : FALSE
+Tue Feb  5 15:26:53 2019:	* InfoA Access: FALSE
+Tue Feb  5 15:26:53 2019:	* VCC ON      : 3000 mV
+Tue Feb  5 15:26:53 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:26:53 2019:	* Starting target code execution...done
+Tue Feb  5 15:26:54 2019:	* Disconnecting from device...done
+Tue Feb  5 15:26:54 2019:	* 
+Tue Feb  5 15:26:54 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:26:54 2019:	* Driver      : closed (No error)
+Tue Feb  5 15:26:54 2019:	* ----------------------------------------------------------------------------
+Tue Feb  5 15:26:54 2019:	*/
+Thu Feb  7 08:29:20 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Feb  7 08:29:20 2019:	*     / |__                                                                   *
+Thu Feb  7 08:29:20 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Feb  7 08:29:20 2019:	*      | /                                                                    *
+Thu Feb  7 08:29:20 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Feb  7 08:29:20 2019:	*
+Thu Feb  7 08:29:20 2019:	* Evaluating triggers...done
+Thu Feb  7 08:29:20 2019:	* Checking for available FET debuggers: 
+Thu Feb  7 08:29:20 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Feb  7 08:29:20 2019:	* Initializing interface @ ttyACM0...done
+Thu Feb  7 08:29:20 2019:	* Checking firmware compatibility: 
+Thu Feb  7 08:29:20 2019:	* FET firmware is up to date.
+Thu Feb  7 08:29:20 2019:	* Reading FW version...done
+Thu Feb  7 08:29:20 2019:	* Setting VCC to 3000 mV...done
+Thu Feb  7 08:29:21 2019:	* Accessing device...done
+Thu Feb  7 08:29:21 2019:	* Reading device information...done
+Thu Feb  7 08:29:21 2019:	* Loading file into device...done
+Thu Feb  7 08:29:22 2019:	* Verifying memory (cp.hex)...done
+Thu Feb  7 08:29:24 2019:	* 
+Thu Feb  7 08:29:24 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:29:24 2019:	* Arguments   : -e ERASE_MAIN -w cp.hex -v -z [VCC] 
+Thu Feb  7 08:29:24 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:29:24 2019:	* Driver      : loaded
+Thu Feb  7 08:29:24 2019:	* Dll Version : 31300001
+Thu Feb  7 08:29:24 2019:	* FwVersion   : 31200000
+Thu Feb  7 08:29:24 2019:	* Interface   : TIUSB
+Thu Feb  7 08:29:24 2019:	* HwVersion   : U 3.0
+Thu Feb  7 08:29:24 2019:	* JTAG Mode   : AUTO
+Thu Feb  7 08:29:24 2019:	* Device      : MSP430F5438A
+Thu Feb  7 08:29:24 2019:	* EEM         : Level 7, ClockCntrl 2
+Thu Feb  7 08:29:24 2019:	* Erase Mode  : ERASE_MAIN
+Thu Feb  7 08:29:24 2019:	* Prog.File   : cp.hex
+Thu Feb  7 08:29:24 2019:	* Verified    : TRUE
+Thu Feb  7 08:29:24 2019:	* BSL Unlock  : FALSE
+Thu Feb  7 08:29:24 2019:	* InfoA Access: FALSE
+Thu Feb  7 08:29:24 2019:	* VCC ON      : 3000 mV
+Thu Feb  7 08:29:24 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:29:24 2019:	* Starting target code execution...done
+Thu Feb  7 08:29:24 2019:	* Disconnecting from device...done
+Thu Feb  7 08:29:24 2019:	* 
+Thu Feb  7 08:29:24 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:29:24 2019:	* Driver      : closed (No error)
+Thu Feb  7 08:29:24 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:29:24 2019:	*/
+Thu Feb  7 08:30:00 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Feb  7 08:30:00 2019:	*     / |__                                                                   *
+Thu Feb  7 08:30:00 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Feb  7 08:30:00 2019:	*      | /                                                                    *
+Thu Feb  7 08:30:00 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Feb  7 08:30:00 2019:	*
+Thu Feb  7 08:30:00 2019:	* Evaluating triggers...done
+Thu Feb  7 08:30:00 2019:	* Checking for available FET debuggers: 
+Thu Feb  7 08:30:00 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Feb  7 08:30:00 2019:	* Initializing interface @ ttyACM0...done
+Thu Feb  7 08:30:01 2019:	* Checking firmware compatibility: 
+Thu Feb  7 08:30:01 2019:	* FET firmware is up to date.
+Thu Feb  7 08:30:01 2019:	* Reading FW version...done
+Thu Feb  7 08:30:01 2019:	* Setting VCC to 3000 mV...done
+Thu Feb  7 08:30:01 2019:	* Accessing device...done
+Thu Feb  7 08:30:02 2019:	* Reading device information...done
+Thu Feb  7 08:30:02 2019:	* Loading file into device...done
+Thu Feb  7 08:30:03 2019:	* Verifying memory (cp.hex)...done
+Thu Feb  7 08:30:04 2019:	* 
+Thu Feb  7 08:30:04 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:30:04 2019:	* Arguments   : -e ERASE_MAIN -w cp.hex -v -z [VCC] 
+Thu Feb  7 08:30:04 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:30:04 2019:	* Driver      : loaded
+Thu Feb  7 08:30:04 2019:	* Dll Version : 31300001
+Thu Feb  7 08:30:04 2019:	* FwVersion   : 31200000
+Thu Feb  7 08:30:04 2019:	* Interface   : TIUSB
+Thu Feb  7 08:30:04 2019:	* HwVersion   : U 3.0
+Thu Feb  7 08:30:04 2019:	* JTAG Mode   : AUTO
+Thu Feb  7 08:30:04 2019:	* Device      : MSP430F5438A
+Thu Feb  7 08:30:04 2019:	* EEM         : Level 7, ClockCntrl 2
+Thu Feb  7 08:30:04 2019:	* Erase Mode  : ERASE_MAIN
+Thu Feb  7 08:30:04 2019:	* Prog.File   : cp.hex
+Thu Feb  7 08:30:04 2019:	* Verified    : TRUE
+Thu Feb  7 08:30:04 2019:	* BSL Unlock  : FALSE
+Thu Feb  7 08:30:04 2019:	* InfoA Access: FALSE
+Thu Feb  7 08:30:04 2019:	* VCC ON      : 3000 mV
+Thu Feb  7 08:30:04 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:30:04 2019:	* Starting target code execution...done
+Thu Feb  7 08:30:05 2019:	* Disconnecting from device...done
+Thu Feb  7 08:30:05 2019:	* 
+Thu Feb  7 08:30:05 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:30:05 2019:	* Driver      : closed (No error)
+Thu Feb  7 08:30:05 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:30:05 2019:	*/
+Thu Feb  7 08:33:27 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Feb  7 08:33:27 2019:	*     / |__                                                                   *
+Thu Feb  7 08:33:27 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Feb  7 08:33:27 2019:	*      | /                                                                    *
+Thu Feb  7 08:33:27 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Feb  7 08:33:27 2019:	*
+Thu Feb  7 08:33:27 2019:	* Evaluating triggers...done
+Thu Feb  7 08:33:27 2019:	* Checking for available FET debuggers: 
+Thu Feb  7 08:33:27 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Feb  7 08:33:27 2019:	* Initializing interface @ ttyACM0...done
+Thu Feb  7 08:33:28 2019:	* Checking firmware compatibility: 
+Thu Feb  7 08:33:28 2019:	* FET firmware is up to date.
+Thu Feb  7 08:33:28 2019:	* Reading FW version...done
+Thu Feb  7 08:33:28 2019:	* Setting VCC to 3000 mV...done
+Thu Feb  7 08:33:29 2019:	* Accessing device...done
+Thu Feb  7 08:33:29 2019:	* Reading device information...done
+Thu Feb  7 08:33:29 2019:	* Loading file into device...done
+Thu Feb  7 08:33:30 2019:	* Verifying memory (cp.hex)...done
+Thu Feb  7 08:33:31 2019:	* 
+Thu Feb  7 08:33:31 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:33:31 2019:	* Arguments   : -e ERASE_MAIN -w cp.hex -v -z [VCC] 
+Thu Feb  7 08:33:31 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:33:31 2019:	* Driver      : loaded
+Thu Feb  7 08:33:31 2019:	* Dll Version : 31300001
+Thu Feb  7 08:33:31 2019:	* FwVersion   : 31200000
+Thu Feb  7 08:33:31 2019:	* Interface   : TIUSB
+Thu Feb  7 08:33:31 2019:	* HwVersion   : U 3.0
+Thu Feb  7 08:33:31 2019:	* JTAG Mode   : AUTO
+Thu Feb  7 08:33:31 2019:	* Device      : MSP430F5438A
+Thu Feb  7 08:33:31 2019:	* EEM         : Level 7, ClockCntrl 2
+Thu Feb  7 08:33:31 2019:	* Erase Mode  : ERASE_MAIN
+Thu Feb  7 08:33:31 2019:	* Prog.File   : cp.hex
+Thu Feb  7 08:33:31 2019:	* Verified    : TRUE
+Thu Feb  7 08:33:31 2019:	* BSL Unlock  : FALSE
+Thu Feb  7 08:33:31 2019:	* InfoA Access: FALSE
+Thu Feb  7 08:33:31 2019:	* VCC ON      : 3000 mV
+Thu Feb  7 08:33:31 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:33:31 2019:	* Starting target code execution...done
+Thu Feb  7 08:33:32 2019:	* Disconnecting from device...done
+Thu Feb  7 08:33:32 2019:	* 
+Thu Feb  7 08:33:32 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:33:32 2019:	* Driver      : closed (No error)
+Thu Feb  7 08:33:32 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:33:32 2019:	*/
+Thu Feb  7 08:33:54 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Feb  7 08:33:54 2019:	*     / |__                                                                   *
+Thu Feb  7 08:33:54 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Feb  7 08:33:54 2019:	*      | /                                                                    *
+Thu Feb  7 08:33:54 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Feb  7 08:33:54 2019:	*
+Thu Feb  7 08:33:54 2019:	* Evaluating triggers...done
+Thu Feb  7 08:33:54 2019:	* Checking for available FET debuggers: 
+Thu Feb  7 08:33:54 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Feb  7 08:33:54 2019:	* Initializing interface @ ttyACM0...done
+Thu Feb  7 08:33:55 2019:	* Checking firmware compatibility: 
+Thu Feb  7 08:33:55 2019:	* FET firmware is up to date.
+Thu Feb  7 08:33:55 2019:	* Reading FW version...done
+Thu Feb  7 08:33:55 2019:	* Setting VCC to 3000 mV...done
+Thu Feb  7 08:33:55 2019:	* Accessing device...done
+Thu Feb  7 08:33:56 2019:	* Reading device information...done
+Thu Feb  7 08:33:56 2019:	* Loading file into device...done
+Thu Feb  7 08:33:57 2019:	* Verifying memory (cp.hex)...done
+Thu Feb  7 08:33:58 2019:	* 
+Thu Feb  7 08:33:58 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:33:58 2019:	* Arguments   : -e ERASE_MAIN -w cp.hex -v -z [VCC] 
+Thu Feb  7 08:33:58 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:33:58 2019:	* Driver      : loaded
+Thu Feb  7 08:33:58 2019:	* Dll Version : 31300001
+Thu Feb  7 08:33:58 2019:	* FwVersion   : 31200000
+Thu Feb  7 08:33:58 2019:	* Interface   : TIUSB
+Thu Feb  7 08:33:58 2019:	* HwVersion   : U 3.0
+Thu Feb  7 08:33:58 2019:	* JTAG Mode   : AUTO
+Thu Feb  7 08:33:58 2019:	* Device      : MSP430F5438A
+Thu Feb  7 08:33:58 2019:	* EEM         : Level 7, ClockCntrl 2
+Thu Feb  7 08:33:58 2019:	* Erase Mode  : ERASE_MAIN
+Thu Feb  7 08:33:58 2019:	* Prog.File   : cp.hex
+Thu Feb  7 08:33:58 2019:	* Verified    : TRUE
+Thu Feb  7 08:33:58 2019:	* BSL Unlock  : FALSE
+Thu Feb  7 08:33:58 2019:	* InfoA Access: FALSE
+Thu Feb  7 08:33:58 2019:	* VCC ON      : 3000 mV
+Thu Feb  7 08:33:58 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:33:58 2019:	* Starting target code execution...done
+Thu Feb  7 08:33:59 2019:	* Disconnecting from device...done
+Thu Feb  7 08:33:59 2019:	* 
+Thu Feb  7 08:33:59 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:33:59 2019:	* Driver      : closed (No error)
+Thu Feb  7 08:33:59 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:33:59 2019:	*/
+Thu Feb  7 08:42:43 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Feb  7 08:42:43 2019:	*     / |__                                                                   *
+Thu Feb  7 08:42:43 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Feb  7 08:42:43 2019:	*      | /                                                                    *
+Thu Feb  7 08:42:43 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Feb  7 08:42:43 2019:	*
+Thu Feb  7 08:42:43 2019:	* Evaluating triggers...done
+Thu Feb  7 08:42:43 2019:	* Checking for available FET debuggers: 
+Thu Feb  7 08:42:43 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Feb  7 08:42:43 2019:	* Initializing interface @ ttyACM0...done
+Thu Feb  7 08:42:43 2019:	* Checking firmware compatibility: 
+Thu Feb  7 08:42:43 2019:	* FET firmware is up to date.
+Thu Feb  7 08:42:43 2019:	* Reading FW version...done
+Thu Feb  7 08:42:43 2019:	* Setting VCC to 3000 mV...done
+Thu Feb  7 08:42:44 2019:	* Accessing device...done
+Thu Feb  7 08:42:45 2019:	* Reading device information...done
+Thu Feb  7 08:42:45 2019:	* Loading file into device...done
+Thu Feb  7 08:42:46 2019:	* Verifying memory (example-broadcast.hex)...done
+Thu Feb  7 08:42:47 2019:	* 
+Thu Feb  7 08:42:47 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:42:47 2019:	* Arguments   : -e ERASE_MAIN -w example-broadcast.hex -v -z [VCC] 
+Thu Feb  7 08:42:47 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:42:47 2019:	* Driver      : loaded
+Thu Feb  7 08:42:47 2019:	* Dll Version : 31300001
+Thu Feb  7 08:42:47 2019:	* FwVersion   : 31200000
+Thu Feb  7 08:42:47 2019:	* Interface   : TIUSB
+Thu Feb  7 08:42:47 2019:	* HwVersion   : U 3.0
+Thu Feb  7 08:42:47 2019:	* JTAG Mode   : AUTO
+Thu Feb  7 08:42:47 2019:	* Device      : MSP430F5438A
+Thu Feb  7 08:42:47 2019:	* EEM         : Level 7, ClockCntrl 2
+Thu Feb  7 08:42:47 2019:	* Erase Mode  : ERASE_MAIN
+Thu Feb  7 08:42:47 2019:	* Prog.File   : example-broadcast.hex
+Thu Feb  7 08:42:47 2019:	* Verified    : TRUE
+Thu Feb  7 08:42:47 2019:	* BSL Unlock  : FALSE
+Thu Feb  7 08:42:47 2019:	* InfoA Access: FALSE
+Thu Feb  7 08:42:47 2019:	* VCC ON      : 3000 mV
+Thu Feb  7 08:42:47 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:42:47 2019:	* Starting target code execution...done
+Thu Feb  7 08:42:48 2019:	* Disconnecting from device...done
+Thu Feb  7 08:42:48 2019:	* 
+Thu Feb  7 08:42:48 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:42:48 2019:	* Driver      : closed (No error)
+Thu Feb  7 08:42:48 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:42:48 2019:	*/
+Thu Feb  7 08:43:09 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Feb  7 08:43:09 2019:	*     / |__                                                                   *
+Thu Feb  7 08:43:09 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Feb  7 08:43:09 2019:	*      | /                                                                    *
+Thu Feb  7 08:43:09 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Feb  7 08:43:09 2019:	*
+Thu Feb  7 08:43:09 2019:	* Evaluating triggers...done
+Thu Feb  7 08:43:09 2019:	* Checking for available FET debuggers: 
+Thu Feb  7 08:43:09 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Feb  7 08:43:09 2019:	* Initializing interface @ ttyACM0...done
+Thu Feb  7 08:43:09 2019:	* Checking firmware compatibility: 
+Thu Feb  7 08:43:09 2019:	* FET firmware is up to date.
+Thu Feb  7 08:43:09 2019:	* Reading FW version...done
+Thu Feb  7 08:43:09 2019:	* Setting VCC to 3000 mV...done
+Thu Feb  7 08:43:10 2019:	* Accessing device...done
+Thu Feb  7 08:43:11 2019:	* Reading device information...done
+Thu Feb  7 08:43:11 2019:	* Loading file into device...done
+Thu Feb  7 08:43:12 2019:	* Verifying memory (example-broadcast.hex)...done
+Thu Feb  7 08:43:13 2019:	* 
+Thu Feb  7 08:43:13 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:43:13 2019:	* Arguments   : -e ERASE_MAIN -w example-broadcast.hex -v -z [VCC] 
+Thu Feb  7 08:43:13 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:43:13 2019:	* Driver      : loaded
+Thu Feb  7 08:43:13 2019:	* Dll Version : 31300001
+Thu Feb  7 08:43:13 2019:	* FwVersion   : 31200000
+Thu Feb  7 08:43:13 2019:	* Interface   : TIUSB
+Thu Feb  7 08:43:13 2019:	* HwVersion   : U 3.0
+Thu Feb  7 08:43:13 2019:	* JTAG Mode   : AUTO
+Thu Feb  7 08:43:13 2019:	* Device      : MSP430F5438A
+Thu Feb  7 08:43:13 2019:	* EEM         : Level 7, ClockCntrl 2
+Thu Feb  7 08:43:13 2019:	* Erase Mode  : ERASE_MAIN
+Thu Feb  7 08:43:13 2019:	* Prog.File   : example-broadcast.hex
+Thu Feb  7 08:43:13 2019:	* Verified    : TRUE
+Thu Feb  7 08:43:13 2019:	* BSL Unlock  : FALSE
+Thu Feb  7 08:43:13 2019:	* InfoA Access: FALSE
+Thu Feb  7 08:43:13 2019:	* VCC ON      : 3000 mV
+Thu Feb  7 08:43:13 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:43:13 2019:	* Starting target code execution...done
+Thu Feb  7 08:43:13 2019:	* Disconnecting from device...done
+Thu Feb  7 08:43:13 2019:	* 
+Thu Feb  7 08:43:13 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:43:13 2019:	* Driver      : closed (No error)
+Thu Feb  7 08:43:13 2019:	* ----------------------------------------------------------------------------
+Thu Feb  7 08:43:13 2019:	*/
+Wed Feb 13 09:18:16 2019:	* -----/|-------------------------------------------------------------------- *
+Wed Feb 13 09:18:16 2019:	*     / |__                                                                   *
+Wed Feb 13 09:18:16 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Wed Feb 13 09:18:16 2019:	*      | /                                                                    *
+Wed Feb 13 09:18:16 2019:	* -----|/-------------------------------------------------------------------- *
+Wed Feb 13 09:18:16 2019:	*
+Wed Feb 13 09:18:16 2019:	* Evaluating triggers...done
+Wed Feb 13 09:18:16 2019:	* Checking for available FET debuggers: 
+Wed Feb 13 09:18:16 2019:	* Found USB FET @ ttyACM0 <- Selected
+Wed Feb 13 09:18:16 2019:	* Initializing interface @ ttyACM0...done
+Wed Feb 13 09:18:17 2019:	* Checking firmware compatibility: 
+Wed Feb 13 09:18:17 2019:	* FET firmware is up to date.
+Wed Feb 13 09:18:17 2019:	* Reading FW version...done
+Wed Feb 13 09:18:17 2019:	* Setting VCC to 3000 mV...done
+Wed Feb 13 09:18:23 2019:	* Accessing device...done
+Wed Feb 13 09:18:23 2019:	* Reading device information...done
+Wed Feb 13 09:18:23 2019:	* Loading file into device...done
+Wed Feb 13 09:18:24 2019:	* Verifying memory (example-collect.hex)...done
+Wed Feb 13 09:18:26 2019:	* 
+Wed Feb 13 09:18:26 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:18:26 2019:	* Arguments   : -e ERASE_MAIN -w example-collect.hex -v -z [VCC] 
+Wed Feb 13 09:18:26 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:18:26 2019:	* Driver      : loaded
+Wed Feb 13 09:18:26 2019:	* Dll Version : 31300001
+Wed Feb 13 09:18:26 2019:	* FwVersion   : 31200000
+Wed Feb 13 09:18:26 2019:	* Interface   : TIUSB
+Wed Feb 13 09:18:26 2019:	* HwVersion   : U 3.0
+Wed Feb 13 09:18:26 2019:	* JTAG Mode   : AUTO
+Wed Feb 13 09:18:26 2019:	* Device      : MSP430F5438A
+Wed Feb 13 09:18:26 2019:	* EEM         : Level 7, ClockCntrl 2
+Wed Feb 13 09:18:26 2019:	* Erase Mode  : ERASE_MAIN
+Wed Feb 13 09:18:26 2019:	* Prog.File   : example-collect.hex
+Wed Feb 13 09:18:26 2019:	* Verified    : TRUE
+Wed Feb 13 09:18:26 2019:	* BSL Unlock  : FALSE
+Wed Feb 13 09:18:26 2019:	* InfoA Access: FALSE
+Wed Feb 13 09:18:26 2019:	* VCC ON      : 3000 mV
+Wed Feb 13 09:18:26 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:18:26 2019:	* Starting target code execution...done
+Wed Feb 13 09:18:26 2019:	* Disconnecting from device...done
+Wed Feb 13 09:18:26 2019:	* 
+Wed Feb 13 09:18:26 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:18:26 2019:	* Driver      : closed (No error)
+Wed Feb 13 09:18:26 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:18:26 2019:	*/
+Wed Feb 13 09:18:48 2019:	* -----/|-------------------------------------------------------------------- *
+Wed Feb 13 09:18:48 2019:	*     / |__                                                                   *
+Wed Feb 13 09:18:48 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Wed Feb 13 09:18:48 2019:	*      | /                                                                    *
+Wed Feb 13 09:18:48 2019:	* -----|/-------------------------------------------------------------------- *
+Wed Feb 13 09:18:48 2019:	*
+Wed Feb 13 09:18:48 2019:	* Evaluating triggers...done
+Wed Feb 13 09:18:48 2019:	* Checking for available FET debuggers: 
+Wed Feb 13 09:18:48 2019:	* Found USB FET @ ttyACM0 <- Selected
+Wed Feb 13 09:18:48 2019:	* Initializing interface @ ttyACM0...done
+Wed Feb 13 09:18:49 2019:	* Checking firmware compatibility: 
+Wed Feb 13 09:18:49 2019:	* FET firmware is up to date.
+Wed Feb 13 09:18:49 2019:	* Reading FW version...done
+Wed Feb 13 09:18:49 2019:	* Setting VCC to 3000 mV...done
+Wed Feb 13 09:18:50 2019:	* Accessing device...done
+Wed Feb 13 09:18:50 2019:	* Reading device information...done
+Wed Feb 13 09:18:50 2019:	* Loading file into device...done
+Wed Feb 13 09:18:51 2019:	* Verifying memory (example-collect.hex)...done
+Wed Feb 13 09:18:53 2019:	* 
+Wed Feb 13 09:18:53 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:18:53 2019:	* Arguments   : -e ERASE_MAIN -w example-collect.hex -v -z [VCC] 
+Wed Feb 13 09:18:53 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:18:53 2019:	* Driver      : loaded
+Wed Feb 13 09:18:53 2019:	* Dll Version : 31300001
+Wed Feb 13 09:18:53 2019:	* FwVersion   : 31200000
+Wed Feb 13 09:18:53 2019:	* Interface   : TIUSB
+Wed Feb 13 09:18:53 2019:	* HwVersion   : U 3.0
+Wed Feb 13 09:18:53 2019:	* JTAG Mode   : AUTO
+Wed Feb 13 09:18:53 2019:	* Device      : MSP430F5438A
+Wed Feb 13 09:18:53 2019:	* EEM         : Level 7, ClockCntrl 2
+Wed Feb 13 09:18:53 2019:	* Erase Mode  : ERASE_MAIN
+Wed Feb 13 09:18:53 2019:	* Prog.File   : example-collect.hex
+Wed Feb 13 09:18:53 2019:	* Verified    : TRUE
+Wed Feb 13 09:18:53 2019:	* BSL Unlock  : FALSE
+Wed Feb 13 09:18:53 2019:	* InfoA Access: FALSE
+Wed Feb 13 09:18:53 2019:	* VCC ON      : 3000 mV
+Wed Feb 13 09:18:53 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:18:53 2019:	* Starting target code execution...done
+Wed Feb 13 09:18:53 2019:	* Disconnecting from device...done
+Wed Feb 13 09:18:53 2019:	* 
+Wed Feb 13 09:18:53 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:18:53 2019:	* Driver      : closed (No error)
+Wed Feb 13 09:18:53 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:18:53 2019:	*/
+Wed Feb 13 09:24:33 2019:	* -----/|-------------------------------------------------------------------- *
+Wed Feb 13 09:24:33 2019:	*     / |__                                                                   *
+Wed Feb 13 09:24:33 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Wed Feb 13 09:24:33 2019:	*      | /                                                                    *
+Wed Feb 13 09:24:33 2019:	* -----|/-------------------------------------------------------------------- *
+Wed Feb 13 09:24:33 2019:	*
+Wed Feb 13 09:24:33 2019:	* Evaluating triggers...done
+Wed Feb 13 09:24:33 2019:	* Checking for available FET debuggers: 
+Wed Feb 13 09:24:33 2019:	* Found USB FET @ ttyACM0 <- Selected
+Wed Feb 13 09:24:33 2019:	* Initializing interface @ ttyACM0...done
+Wed Feb 13 09:24:34 2019:	* Checking firmware compatibility: 
+Wed Feb 13 09:24:34 2019:	* FET firmware is up to date.
+Wed Feb 13 09:24:34 2019:	* Reading FW version...done
+Wed Feb 13 09:24:34 2019:	* Setting VCC to 3000 mV...done
+Wed Feb 13 09:24:34 2019:	* Accessing device...done
+Wed Feb 13 09:24:35 2019:	* Reading device information...done
+Wed Feb 13 09:24:35 2019:	* Loading file into device...done
+Wed Feb 13 09:24:36 2019:	* Verifying memory (example-collect.hex)...done
+Wed Feb 13 09:24:37 2019:	* 
+Wed Feb 13 09:24:37 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:24:37 2019:	* Arguments   : -e ERASE_MAIN -w example-collect.hex -v -z [VCC] 
+Wed Feb 13 09:24:37 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:24:37 2019:	* Driver      : loaded
+Wed Feb 13 09:24:37 2019:	* Dll Version : 31300001
+Wed Feb 13 09:24:37 2019:	* FwVersion   : 31200000
+Wed Feb 13 09:24:37 2019:	* Interface   : TIUSB
+Wed Feb 13 09:24:37 2019:	* HwVersion   : U 3.0
+Wed Feb 13 09:24:37 2019:	* JTAG Mode   : AUTO
+Wed Feb 13 09:24:37 2019:	* Device      : MSP430F5438A
+Wed Feb 13 09:24:37 2019:	* EEM         : Level 7, ClockCntrl 2
+Wed Feb 13 09:24:37 2019:	* Erase Mode  : ERASE_MAIN
+Wed Feb 13 09:24:37 2019:	* Prog.File   : example-collect.hex
+Wed Feb 13 09:24:37 2019:	* Verified    : TRUE
+Wed Feb 13 09:24:37 2019:	* BSL Unlock  : FALSE
+Wed Feb 13 09:24:37 2019:	* InfoA Access: FALSE
+Wed Feb 13 09:24:37 2019:	* VCC ON      : 3000 mV
+Wed Feb 13 09:24:37 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:24:37 2019:	* Starting target code execution...done
+Wed Feb 13 09:24:38 2019:	* Disconnecting from device...done
+Wed Feb 13 09:24:38 2019:	* 
+Wed Feb 13 09:24:38 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:24:38 2019:	* Driver      : closed (No error)
+Wed Feb 13 09:24:38 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:24:38 2019:	*/
+Wed Feb 13 09:25:02 2019:	* -----/|-------------------------------------------------------------------- *
+Wed Feb 13 09:25:02 2019:	*     / |__                                                                   *
+Wed Feb 13 09:25:02 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Wed Feb 13 09:25:02 2019:	*      | /                                                                    *
+Wed Feb 13 09:25:02 2019:	* -----|/-------------------------------------------------------------------- *
+Wed Feb 13 09:25:02 2019:	*
+Wed Feb 13 09:25:02 2019:	* Evaluating triggers...done
+Wed Feb 13 09:25:02 2019:	* Checking for available FET debuggers: 
+Wed Feb 13 09:25:02 2019:	* Found USB FET @ ttyACM0 <- Selected
+Wed Feb 13 09:25:02 2019:	* Initializing interface @ ttyACM0...done
+Wed Feb 13 09:25:02 2019:	* Checking firmware compatibility: 
+Wed Feb 13 09:25:02 2019:	* FET firmware is up to date.
+Wed Feb 13 09:25:02 2019:	* Reading FW version...done
+Wed Feb 13 09:25:02 2019:	* Setting VCC to 3000 mV...done
+Wed Feb 13 09:25:03 2019:	* Accessing device...done
+Wed Feb 13 09:25:03 2019:	* Reading device information...done
+Wed Feb 13 09:25:03 2019:	* Loading file into device...done
+Wed Feb 13 09:25:05 2019:	* Verifying memory (example-collect.hex)...done
+Wed Feb 13 09:25:06 2019:	* 
+Wed Feb 13 09:25:06 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:25:06 2019:	* Arguments   : -e ERASE_MAIN -w example-collect.hex -v -z [VCC] 
+Wed Feb 13 09:25:06 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:25:06 2019:	* Driver      : loaded
+Wed Feb 13 09:25:06 2019:	* Dll Version : 31300001
+Wed Feb 13 09:25:06 2019:	* FwVersion   : 31200000
+Wed Feb 13 09:25:06 2019:	* Interface   : TIUSB
+Wed Feb 13 09:25:06 2019:	* HwVersion   : U 3.0
+Wed Feb 13 09:25:06 2019:	* JTAG Mode   : AUTO
+Wed Feb 13 09:25:06 2019:	* Device      : MSP430F5438A
+Wed Feb 13 09:25:06 2019:	* EEM         : Level 7, ClockCntrl 2
+Wed Feb 13 09:25:06 2019:	* Erase Mode  : ERASE_MAIN
+Wed Feb 13 09:25:06 2019:	* Prog.File   : example-collect.hex
+Wed Feb 13 09:25:06 2019:	* Verified    : TRUE
+Wed Feb 13 09:25:06 2019:	* BSL Unlock  : FALSE
+Wed Feb 13 09:25:06 2019:	* InfoA Access: FALSE
+Wed Feb 13 09:25:06 2019:	* VCC ON      : 3000 mV
+Wed Feb 13 09:25:06 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:25:06 2019:	* Starting target code execution...done
+Wed Feb 13 09:25:06 2019:	* Disconnecting from device...done
+Wed Feb 13 09:25:06 2019:	* 
+Wed Feb 13 09:25:06 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:25:06 2019:	* Driver      : closed (No error)
+Wed Feb 13 09:25:06 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:25:06 2019:	*/
+Wed Feb 13 09:27:40 2019:	* -----/|-------------------------------------------------------------------- *
+Wed Feb 13 09:27:40 2019:	*     / |__                                                                   *
+Wed Feb 13 09:27:40 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Wed Feb 13 09:27:40 2019:	*      | /                                                                    *
+Wed Feb 13 09:27:40 2019:	* -----|/-------------------------------------------------------------------- *
+Wed Feb 13 09:27:40 2019:	*
+Wed Feb 13 09:27:40 2019:	* Evaluating triggers...done
+Wed Feb 13 09:27:40 2019:	* Checking for available FET debuggers: 
+Wed Feb 13 09:27:41 2019:	* Found USB FET @ ttyACM0 <- Selected
+Wed Feb 13 09:27:41 2019:	* Initializing interface @ ttyACM0...done
+Wed Feb 13 09:27:41 2019:	* Checking firmware compatibility: 
+Wed Feb 13 09:27:41 2019:	* FET firmware is up to date.
+Wed Feb 13 09:27:41 2019:	* Reading FW version...done
+Wed Feb 13 09:27:41 2019:	* Setting VCC to 3000 mV...done
+Wed Feb 13 09:27:42 2019:	* Accessing device...done
+Wed Feb 13 09:27:42 2019:	* Reading device information...done
+Wed Feb 13 09:27:42 2019:	* Loading file into device...done
+Wed Feb 13 09:27:43 2019:	* Verifying memory (example-collect.hex)...done
+Wed Feb 13 09:27:45 2019:	* 
+Wed Feb 13 09:27:45 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:27:45 2019:	* Arguments   : -e ERASE_MAIN -w example-collect.hex -v -z [VCC] 
+Wed Feb 13 09:27:45 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:27:45 2019:	* Driver      : loaded
+Wed Feb 13 09:27:45 2019:	* Dll Version : 31300001
+Wed Feb 13 09:27:45 2019:	* FwVersion   : 31200000
+Wed Feb 13 09:27:45 2019:	* Interface   : TIUSB
+Wed Feb 13 09:27:45 2019:	* HwVersion   : U 3.0
+Wed Feb 13 09:27:45 2019:	* JTAG Mode   : AUTO
+Wed Feb 13 09:27:45 2019:	* Device      : MSP430F5438A
+Wed Feb 13 09:27:45 2019:	* EEM         : Level 7, ClockCntrl 2
+Wed Feb 13 09:27:45 2019:	* Erase Mode  : ERASE_MAIN
+Wed Feb 13 09:27:45 2019:	* Prog.File   : example-collect.hex
+Wed Feb 13 09:27:45 2019:	* Verified    : TRUE
+Wed Feb 13 09:27:45 2019:	* BSL Unlock  : FALSE
+Wed Feb 13 09:27:45 2019:	* InfoA Access: FALSE
+Wed Feb 13 09:27:45 2019:	* VCC ON      : 3000 mV
+Wed Feb 13 09:27:45 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:27:45 2019:	* Starting target code execution...done
+Wed Feb 13 09:27:45 2019:	* Disconnecting from device...done
+Wed Feb 13 09:27:45 2019:	* 
+Wed Feb 13 09:27:45 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:27:45 2019:	* Driver      : closed (No error)
+Wed Feb 13 09:27:45 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:27:45 2019:	*/
+Wed Feb 13 09:28:06 2019:	* -----/|-------------------------------------------------------------------- *
+Wed Feb 13 09:28:06 2019:	*     / |__                                                                   *
+Wed Feb 13 09:28:06 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Wed Feb 13 09:28:06 2019:	*      | /                                                                    *
+Wed Feb 13 09:28:06 2019:	* -----|/-------------------------------------------------------------------- *
+Wed Feb 13 09:28:06 2019:	*
+Wed Feb 13 09:28:06 2019:	* Evaluating triggers...done
+Wed Feb 13 09:28:06 2019:	* Checking for available FET debuggers: 
+Wed Feb 13 09:28:06 2019:	* Found USB FET @ ttyACM0 <- Selected
+Wed Feb 13 09:28:06 2019:	* Initializing interface @ ttyACM0...done
+Wed Feb 13 09:28:07 2019:	* Checking firmware compatibility: 
+Wed Feb 13 09:28:07 2019:	* FET firmware is up to date.
+Wed Feb 13 09:28:07 2019:	* Reading FW version...done
+Wed Feb 13 09:28:07 2019:	* Setting VCC to 3000 mV...done
+Wed Feb 13 09:28:08 2019:	* Accessing device...done
+Wed Feb 13 09:28:08 2019:	* Reading device information...done
+Wed Feb 13 09:28:08 2019:	* Loading file into device...done
+Wed Feb 13 09:28:09 2019:	* Verifying memory (example-collect.hex)...done
+Wed Feb 13 09:28:11 2019:	* 
+Wed Feb 13 09:28:11 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:28:11 2019:	* Arguments   : -e ERASE_MAIN -w example-collect.hex -v -z [VCC] 
+Wed Feb 13 09:28:11 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:28:11 2019:	* Driver      : loaded
+Wed Feb 13 09:28:11 2019:	* Dll Version : 31300001
+Wed Feb 13 09:28:11 2019:	* FwVersion   : 31200000
+Wed Feb 13 09:28:11 2019:	* Interface   : TIUSB
+Wed Feb 13 09:28:11 2019:	* HwVersion   : U 3.0
+Wed Feb 13 09:28:11 2019:	* JTAG Mode   : AUTO
+Wed Feb 13 09:28:11 2019:	* Device      : MSP430F5438A
+Wed Feb 13 09:28:11 2019:	* EEM         : Level 7, ClockCntrl 2
+Wed Feb 13 09:28:11 2019:	* Erase Mode  : ERASE_MAIN
+Wed Feb 13 09:28:11 2019:	* Prog.File   : example-collect.hex
+Wed Feb 13 09:28:11 2019:	* Verified    : TRUE
+Wed Feb 13 09:28:11 2019:	* BSL Unlock  : FALSE
+Wed Feb 13 09:28:11 2019:	* InfoA Access: FALSE
+Wed Feb 13 09:28:11 2019:	* VCC ON      : 3000 mV
+Wed Feb 13 09:28:11 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:28:11 2019:	* Starting target code execution...done
+Wed Feb 13 09:28:11 2019:	* Disconnecting from device...done
+Wed Feb 13 09:28:11 2019:	* 
+Wed Feb 13 09:28:11 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:28:11 2019:	* Driver      : closed (No error)
+Wed Feb 13 09:28:11 2019:	* ----------------------------------------------------------------------------
+Wed Feb 13 09:28:11 2019:	*/
+Thu Apr  4 17:28:06 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Apr  4 17:28:06 2019:	*     / |__                                                                   *
+Thu Apr  4 17:28:06 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Apr  4 17:28:06 2019:	*      | /                                                                    *
+Thu Apr  4 17:28:06 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Apr  4 17:28:06 2019:	*
+Thu Apr  4 17:28:06 2019:	* Evaluating triggers...done
+Thu Apr  4 17:28:06 2019:	* Checking for available FET debuggers: 
+Thu Apr  4 17:28:06 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Apr  4 17:28:06 2019:	* Initializing interface @ ttyACM0...
+Thu Apr  4 17:28:10 2019:	# Exit: 19
+Thu Apr  4 17:28:10 2019:	# ERROR: Interface Communication error
+Thu Apr  4 17:28:10 2019:	* 
+Thu Apr  4 17:28:10 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:28:10 2019:	* Driver      : closed (No error)
+Thu Apr  4 17:28:10 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:28:10 2019:	*/
+Thu Apr  4 17:29:27 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Apr  4 17:29:27 2019:	*     / |__                                                                   *
+Thu Apr  4 17:29:27 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Apr  4 17:29:27 2019:	*      | /                                                                    *
+Thu Apr  4 17:29:27 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Apr  4 17:29:27 2019:	*
+Thu Apr  4 17:29:27 2019:	* Evaluating triggers...done
+Thu Apr  4 17:29:27 2019:	* Checking for available FET debuggers: 
+Thu Apr  4 17:29:27 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Apr  4 17:29:27 2019:	* Initializing interface @ ttyACM0...done
+Thu Apr  4 17:29:28 2019:	* Checking firmware compatibility: 
+Thu Apr  4 17:29:28 2019:	* FET firmware is up to date.
+Thu Apr  4 17:29:28 2019:	* Reading FW version...done
+Thu Apr  4 17:29:28 2019:	* Setting VCC to 3000 mV...done
+Thu Apr  4 17:29:34 2019:	* Accessing device...done
+Thu Apr  4 17:29:34 2019:	* Reading device information...done
+Thu Apr  4 17:29:34 2019:	* Loading file into device...done
+Thu Apr  4 17:29:35 2019:	* Verifying memory (example-broadcast.hex)...done
+Thu Apr  4 17:29:37 2019:	* 
+Thu Apr  4 17:29:37 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:29:37 2019:	* Arguments   : -e ERASE_MAIN -w example-broadcast.hex -v -z [VCC] 
+Thu Apr  4 17:29:37 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:29:37 2019:	* Driver      : loaded
+Thu Apr  4 17:29:37 2019:	* Dll Version : 31300001
+Thu Apr  4 17:29:37 2019:	* FwVersion   : 31200000
+Thu Apr  4 17:29:37 2019:	* Interface   : TIUSB
+Thu Apr  4 17:29:37 2019:	* HwVersion   : U 3.0
+Thu Apr  4 17:29:37 2019:	* JTAG Mode   : AUTO
+Thu Apr  4 17:29:37 2019:	* Device      : MSP430F5438A
+Thu Apr  4 17:29:37 2019:	* EEM         : Level 7, ClockCntrl 2
+Thu Apr  4 17:29:37 2019:	* Erase Mode  : ERASE_MAIN
+Thu Apr  4 17:29:37 2019:	* Prog.File   : example-broadcast.hex
+Thu Apr  4 17:29:37 2019:	* Verified    : TRUE
+Thu Apr  4 17:29:37 2019:	* BSL Unlock  : FALSE
+Thu Apr  4 17:29:37 2019:	* InfoA Access: FALSE
+Thu Apr  4 17:29:37 2019:	* VCC ON      : 3000 mV
+Thu Apr  4 17:29:37 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:29:37 2019:	* Starting target code execution...done
+Thu Apr  4 17:29:37 2019:	* Disconnecting from device...done
+Thu Apr  4 17:29:37 2019:	* 
+Thu Apr  4 17:29:37 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:29:37 2019:	* Driver      : closed (No error)
+Thu Apr  4 17:29:37 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:29:37 2019:	*/
+Thu Apr  4 17:29:56 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Apr  4 17:29:56 2019:	*     / |__                                                                   *
+Thu Apr  4 17:29:56 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Apr  4 17:29:56 2019:	*      | /                                                                    *
+Thu Apr  4 17:29:56 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Apr  4 17:29:56 2019:	*
+Thu Apr  4 17:29:56 2019:	* Evaluating triggers...done
+Thu Apr  4 17:29:56 2019:	* Checking for available FET debuggers: 
+Thu Apr  4 17:29:57 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Apr  4 17:29:57 2019:	* Initializing interface @ ttyACM0...done
+Thu Apr  4 17:29:57 2019:	* Checking firmware compatibility: 
+Thu Apr  4 17:29:57 2019:	* FET firmware is up to date.
+Thu Apr  4 17:29:57 2019:	* Reading FW version...done
+Thu Apr  4 17:29:57 2019:	* Setting VCC to 3000 mV...done
+Thu Apr  4 17:29:58 2019:	* Accessing device...done
+Thu Apr  4 17:29:58 2019:	* Reading device information...done
+Thu Apr  4 17:29:58 2019:	* Loading file into device...done
+Thu Apr  4 17:29:59 2019:	* Verifying memory (example-broadcast.hex)...done
+Thu Apr  4 17:30:00 2019:	* 
+Thu Apr  4 17:30:00 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:30:00 2019:	* Arguments   : -e ERASE_MAIN -w example-broadcast.hex -v -z [VCC] 
+Thu Apr  4 17:30:00 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:30:00 2019:	* Driver      : loaded
+Thu Apr  4 17:30:00 2019:	* Dll Version : 31300001
+Thu Apr  4 17:30:00 2019:	* FwVersion   : 31200000
+Thu Apr  4 17:30:00 2019:	* Interface   : TIUSB
+Thu Apr  4 17:30:00 2019:	* HwVersion   : U 3.0
+Thu Apr  4 17:30:00 2019:	* JTAG Mode   : AUTO
+Thu Apr  4 17:30:00 2019:	* Device      : MSP430F5438A
+Thu Apr  4 17:30:00 2019:	* EEM         : Level 7, ClockCntrl 2
+Thu Apr  4 17:30:00 2019:	* Erase Mode  : ERASE_MAIN
+Thu Apr  4 17:30:00 2019:	* Prog.File   : example-broadcast.hex
+Thu Apr  4 17:30:00 2019:	* Verified    : TRUE
+Thu Apr  4 17:30:00 2019:	* BSL Unlock  : FALSE
+Thu Apr  4 17:30:00 2019:	* InfoA Access: FALSE
+Thu Apr  4 17:30:00 2019:	* VCC ON      : 3000 mV
+Thu Apr  4 17:30:00 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:30:00 2019:	* Starting target code execution...done
+Thu Apr  4 17:30:01 2019:	* Disconnecting from device...done
+Thu Apr  4 17:30:01 2019:	* 
+Thu Apr  4 17:30:01 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:30:01 2019:	* Driver      : closed (No error)
+Thu Apr  4 17:30:01 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:30:01 2019:	*/
+Thu Apr  4 17:33:18 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Apr  4 17:33:18 2019:	*     / |__                                                                   *
+Thu Apr  4 17:33:18 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Apr  4 17:33:18 2019:	*      | /                                                                    *
+Thu Apr  4 17:33:18 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Apr  4 17:33:18 2019:	*
+Thu Apr  4 17:33:18 2019:	* Evaluating triggers...done
+Thu Apr  4 17:33:18 2019:	* Checking for available FET debuggers: 
+Thu Apr  4 17:33:18 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Apr  4 17:33:18 2019:	* Initializing interface @ ttyACM0...done
+Thu Apr  4 17:33:18 2019:	* Checking firmware compatibility: 
+Thu Apr  4 17:33:18 2019:	* FET firmware is up to date.
+Thu Apr  4 17:33:18 2019:	* Reading FW version...done
+Thu Apr  4 17:33:18 2019:	* Setting VCC to 3000 mV...done
+Thu Apr  4 17:33:19 2019:	* Accessing device...done
+Thu Apr  4 17:33:19 2019:	* Reading device information...done
+Thu Apr  4 17:33:19 2019:	* Loading file into device...done
+Thu Apr  4 17:33:20 2019:	* Verifying memory (example-broadcast.hex)...done
+Thu Apr  4 17:33:22 2019:	* 
+Thu Apr  4 17:33:22 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:33:22 2019:	* Arguments   : -e ERASE_MAIN -w example-broadcast.hex -v -z [VCC] 
+Thu Apr  4 17:33:22 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:33:22 2019:	* Driver      : loaded
+Thu Apr  4 17:33:22 2019:	* Dll Version : 31300001
+Thu Apr  4 17:33:22 2019:	* FwVersion   : 31200000
+Thu Apr  4 17:33:22 2019:	* Interface   : TIUSB
+Thu Apr  4 17:33:22 2019:	* HwVersion   : U 3.0
+Thu Apr  4 17:33:22 2019:	* JTAG Mode   : AUTO
+Thu Apr  4 17:33:22 2019:	* Device      : MSP430F5438A
+Thu Apr  4 17:33:22 2019:	* EEM         : Level 7, ClockCntrl 2
+Thu Apr  4 17:33:22 2019:	* Erase Mode  : ERASE_MAIN
+Thu Apr  4 17:33:22 2019:	* Prog.File   : example-broadcast.hex
+Thu Apr  4 17:33:22 2019:	* Verified    : TRUE
+Thu Apr  4 17:33:22 2019:	* BSL Unlock  : FALSE
+Thu Apr  4 17:33:22 2019:	* InfoA Access: FALSE
+Thu Apr  4 17:33:22 2019:	* VCC ON      : 3000 mV
+Thu Apr  4 17:33:22 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:33:22 2019:	* Starting target code execution...done
+Thu Apr  4 17:33:22 2019:	* Disconnecting from device...done
+Thu Apr  4 17:33:22 2019:	* 
+Thu Apr  4 17:33:22 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:33:22 2019:	* Driver      : closed (No error)
+Thu Apr  4 17:33:22 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:33:22 2019:	*/
+Thu Apr  4 17:33:35 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Apr  4 17:33:35 2019:	*     / |__                                                                   *
+Thu Apr  4 17:33:35 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Apr  4 17:33:35 2019:	*      | /                                                                    *
+Thu Apr  4 17:33:35 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Apr  4 17:33:35 2019:	*
+Thu Apr  4 17:33:35 2019:	* Evaluating triggers...done
+Thu Apr  4 17:33:35 2019:	* Checking for available FET debuggers: 
+Thu Apr  4 17:33:35 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Apr  4 17:33:35 2019:	* Initializing interface @ ttyACM0...done
+Thu Apr  4 17:33:35 2019:	* Checking firmware compatibility: 
+Thu Apr  4 17:33:35 2019:	* FET firmware is up to date.
+Thu Apr  4 17:33:35 2019:	* Reading FW version...done
+Thu Apr  4 17:33:35 2019:	* Setting VCC to 3000 mV...done
+Thu Apr  4 17:33:36 2019:	* Accessing device...done
+Thu Apr  4 17:33:37 2019:	* Reading device information...done
+Thu Apr  4 17:33:37 2019:	* Loading file into device...done
+Thu Apr  4 17:33:38 2019:	* Verifying memory (example-broadcast.hex)...done
+Thu Apr  4 17:33:39 2019:	* 
+Thu Apr  4 17:33:39 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:33:39 2019:	* Arguments   : -e ERASE_MAIN -w example-broadcast.hex -v -z [VCC] 
+Thu Apr  4 17:33:39 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:33:39 2019:	* Driver      : loaded
+Thu Apr  4 17:33:39 2019:	* Dll Version : 31300001
+Thu Apr  4 17:33:39 2019:	* FwVersion   : 31200000
+Thu Apr  4 17:33:39 2019:	* Interface   : TIUSB
+Thu Apr  4 17:33:39 2019:	* HwVersion   : U 3.0
+Thu Apr  4 17:33:39 2019:	* JTAG Mode   : AUTO
+Thu Apr  4 17:33:39 2019:	* Device      : MSP430F5438A
+Thu Apr  4 17:33:39 2019:	* EEM         : Level 7, ClockCntrl 2
+Thu Apr  4 17:33:39 2019:	* Erase Mode  : ERASE_MAIN
+Thu Apr  4 17:33:39 2019:	* Prog.File   : example-broadcast.hex
+Thu Apr  4 17:33:39 2019:	* Verified    : TRUE
+Thu Apr  4 17:33:39 2019:	* BSL Unlock  : FALSE
+Thu Apr  4 17:33:39 2019:	* InfoA Access: FALSE
+Thu Apr  4 17:33:39 2019:	* VCC ON      : 3000 mV
+Thu Apr  4 17:33:39 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:33:39 2019:	* Starting target code execution...done
+Thu Apr  4 17:33:39 2019:	* Disconnecting from device...done
+Thu Apr  4 17:33:39 2019:	* 
+Thu Apr  4 17:33:39 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:33:39 2019:	* Driver      : closed (No error)
+Thu Apr  4 17:33:39 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:33:39 2019:	*/
+Thu Apr  4 17:34:32 2019:	* -----/|-------------------------------------------------------------------- *
+Thu Apr  4 17:34:32 2019:	*     / |__                                                                   *
+Thu Apr  4 17:34:32 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Thu Apr  4 17:34:32 2019:	*      | /                                                                    *
+Thu Apr  4 17:34:32 2019:	* -----|/-------------------------------------------------------------------- *
+Thu Apr  4 17:34:32 2019:	*
+Thu Apr  4 17:34:32 2019:	* Evaluating triggers...done
+Thu Apr  4 17:34:32 2019:	* Checking for available FET debuggers: 
+Thu Apr  4 17:34:33 2019:	* Found USB FET @ ttyACM0 <- Selected
+Thu Apr  4 17:34:33 2019:	* Initializing interface @ ttyACM0...done
+Thu Apr  4 17:34:33 2019:	* Checking firmware compatibility: 
+Thu Apr  4 17:34:33 2019:	* FET firmware is up to date.
+Thu Apr  4 17:34:33 2019:	* Reading FW version...done
+Thu Apr  4 17:34:33 2019:	* Setting VCC to 3000 mV...done
+Thu Apr  4 17:34:34 2019:	* Accessing device...done
+Thu Apr  4 17:34:34 2019:	* Reading device information...done
+Thu Apr  4 17:34:34 2019:	* Loading file into device...done
+Thu Apr  4 17:34:35 2019:	* Verifying memory (example-broadcast.hex)...done
+Thu Apr  4 17:34:36 2019:	* 
+Thu Apr  4 17:34:36 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:34:36 2019:	* Arguments   : -e ERASE_MAIN -w example-broadcast.hex -v -z [VCC] 
+Thu Apr  4 17:34:36 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:34:36 2019:	* Driver      : loaded
+Thu Apr  4 17:34:36 2019:	* Dll Version : 31300001
+Thu Apr  4 17:34:36 2019:	* FwVersion   : 31200000
+Thu Apr  4 17:34:36 2019:	* Interface   : TIUSB
+Thu Apr  4 17:34:36 2019:	* HwVersion   : U 3.0
+Thu Apr  4 17:34:36 2019:	* JTAG Mode   : AUTO
+Thu Apr  4 17:34:36 2019:	* Device      : MSP430F5438A
+Thu Apr  4 17:34:36 2019:	* EEM         : Level 7, ClockCntrl 2
+Thu Apr  4 17:34:36 2019:	* Erase Mode  : ERASE_MAIN
+Thu Apr  4 17:34:36 2019:	* Prog.File   : example-broadcast.hex
+Thu Apr  4 17:34:36 2019:	* Verified    : TRUE
+Thu Apr  4 17:34:36 2019:	* BSL Unlock  : FALSE
+Thu Apr  4 17:34:36 2019:	* InfoA Access: FALSE
+Thu Apr  4 17:34:36 2019:	* VCC ON      : 3000 mV
+Thu Apr  4 17:34:36 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:34:36 2019:	* Starting target code execution...done
+Thu Apr  4 17:34:37 2019:	* Disconnecting from device...done
+Thu Apr  4 17:34:37 2019:	* 
+Thu Apr  4 17:34:37 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:34:37 2019:	* Driver      : closed (No error)
+Thu Apr  4 17:34:37 2019:	* ----------------------------------------------------------------------------
+Thu Apr  4 17:34:37 2019:	*/
