@@ -65,8 +65,6 @@ Here, we present a simple example for communicating two FW-nodes using the relia
 
 **Source: https://anrg.usc.edu/contiki/index.php/Installation
 
-If you are using a MSP430-based platforms (such as Tmote) you only need the following packages: binutils-msp430, gcc-msp430, msp430-libc, msp430mcu and mspdebug. If you intend to code for CC2538-based platforms (such as OpenMote), you should also install the following tool chains: gcc-arm-none-eabi and gdb-arm-none-eabi.
-
 You can run the following command to install all packages for multiple platforms:
 
 ``` sudo apt-get install build-essential binutils-msp430 gcc-msp430 msp430-libc msp430mcu mspdebug gcc-arm-none-eabi gdb-arm-none-eabi openjdk-8-jdk openjdk-8-jre ant libncurses5-dev```
