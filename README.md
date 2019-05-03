@@ -15,8 +15,9 @@ In order to flash the ContikiOS into the FW mote using the **TI MSP-FET Flash Em
 2. Install all packets required to program the FW mote using the TI MSP-FET Flash Emulation tools (debugger/Programmer).
 
    a. Download the MSP430Flasher from the TI Web site (http://www.ti.com/tool/MSP430-FLASHER).  
-   b. Run the installation file by double-clicking the exe file (Perhaps, it is needed to change some privileges before: (1) ```sudo chmod +x some-app.run```; (2) ```sudo ./some-app.run```)  
-   c. Copy the generated folder into the Contiki folder. 
+   b. Run the installation file by double-clicking the exe file (Perhaps, it is needed to change some privileges before: (1) ```sudo chmod +x some-app.run```; (2) ```sudo ./some-app.run```) 
+   c. Copy the generated folder into the Contiki folder.
+   d. Set the PATH to the libmsp430.so.
   
 3. Connect the debugger to the FW1’s JTAG. **Warning:** If the power supply of FW1 is USB, please verify that the knob is settled as USB not BAT. 
   
