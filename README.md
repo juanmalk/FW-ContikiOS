@@ -8,7 +8,7 @@ Here is presented the procedure to flash the ContikiOS into the FW mote and how 
 
 ## Flashing ContikiOS into FW motes
 
-In order to flash the ContikiOS into the FW mote using the **TI MSP-FET Flash Emulation tools (debugger/Programmer)**, follows the steps below: 
+In order to flash the ContikiOS into the FW mote using the **TI MSP-FET Flash Emulation tools (debugger/Programmer)**, follow the steps below: 
 
 1. Get the raw ContikiOS ported to FW-node (.zip/.tar) (the ContikiOS folder available in this repo has all the modifications mentioned below). 
 
