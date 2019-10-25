@@ -1,0 +1,31 @@
+#To flash with the MSP430 programmer
+sudo make TARGET=feuerwhere clean
+sudo make TARGET=feuerwhere nodeid=1 example-broadcast.upload
+sudo make TARGET=feuerwhere nodeid=3 example-m2dagnos_power_trace_1_g_fw1.upload
+sudo make TARGET=feuerwhere wurx_firm_no_rime.upload
+
+#To flast with the SCM adapter programmer
+sudo make TARGET=feuerwhere clean
+sudo make TARGET=feuerwhere nodeid=4 example-m2dagnos_power_trace_1_g_fw1.hex
+sudo python mb_program.py -p /dev/ttyUSB0 -f example-m2dagnos_power_trace_1_g_fw1.hex
+
+
+
+#To read serial port FW using python IHP script
+sudo python terminal.py -p /dev/ttyUSB0
+
+
+sudo make TARGET=feuerwhere nodeid=3 example-m2dagnos_power_trace_1_g_fw1.upload
+
+sudo python mb_program.py -p /dev/ttyUSB2 -f example-m2dagnos_power_trace_1_g_fw1.hex
+
+
+#To flash a Wisdom devices using the programmer available on the TI LaunchPAD MSP430
+MSP430Flasher -n MSP430F5528 -w /home/jmalk-cea-iot/Documents/WISDOM-goes-Columbia/Firmware
+wisdom-v1_2.out -v -z [VCC]
+1. Convert the .out file to .hex file using $xxd -plain wisdom-v1_2.out > wisdom-v1_2.hex
+2. Upload the .hex file into the WD: $sudo ./MSP430Flasher -n MSP430F5528 -w wisdom-v1_2.hex -v -z [VCC]
+
+
+Error#1:/MSP430Flasher: symbol lookup error: /usr/local/lib/libmsp430.so: undefined symbol: udev_new
+Sol#1: erase the file /usr/local/lib/libmsp430.so

@@ -1,0 +1,686 @@
+Fri Oct 11 13:48:30 2019:	* -----/|-------------------------------------------------------------------- *
+Fri Oct 11 13:48:30 2019:	*     / |__                                                                   *
+Fri Oct 11 13:48:30 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Fri Oct 11 13:48:30 2019:	*      | /                                                                    *
+Fri Oct 11 13:48:30 2019:	* -----|/-------------------------------------------------------------------- *
+Fri Oct 11 13:48:30 2019:	*
+Fri Oct 11 13:48:30 2019:	* Evaluating triggers...done
+Fri Oct 11 13:48:30 2019:	  No arguments. Aborting.
+Fri Oct 11 13:48:30 2019:	*******************************************************************************
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 Usage: MSP430Flasher [OPTIONS]                                                
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -n DEVICE_NAME              (optional for MSP430, required for MSP432)        
+Fri Oct 11 13:48:30 2019:	                             specifies the name of the target MSP - prompt in  
+Fri Oct 11 13:48:30 2019:	                             case of mismatch                                  
+Fri Oct 11 13:48:30 2019:	                             Use -n NO_TARGET to run MSP Flasher without       
+Fri Oct 11 13:48:30 2019:	                             attempting a target connection (FET detection or  
+Fri Oct 11 13:48:30 2019:	                             FET firmware update only)                         
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -i (TI)USB | DETECT |       specifies the COM port of a connected debug tool  
+Fri Oct 11 13:48:30 2019:	    COMn (Win) |             (default: TIUSB/USB = first detected FET tool is  
+Fri Oct 11 13:48:30 2019:	    ttyACMn (Linux) |        used) For info on how to connect to specific eZ-  
+Fri Oct 11 13:48:30 2019:	    usbmodem* (OSX)          tools, see the MSP Flasher manual.                
+Fri Oct 11 13:48:30 2019:	                             Use -i DETECT  to execute a FET detection sweep,  
+Fri Oct 11 13:48:30 2019:	                             displaying detailed info about all connected debug
+Fri Oct 11 13:48:30 2019:	                             tools. User is prompted to pick a FET.            
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -j fast | medium | slow     sets FET speed for JTAG/SBW - only applicable for 
+Fri Oct 11 13:48:30 2019:	                             MSP-FET! Option will be ignored for all other FET 
+Fri Oct 11 13:48:30 2019:	                             tools. Default = medium.                          
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -a                          non-intrusive target connection: use this switch  
+Fri Oct 11 13:48:30 2019:	                             if no reset should be applied to the target device
+Fri Oct 11 13:48:30 2019:	                             on start-up. Correct target device name needs to  
+Fri Oct 11 13:48:30 2019:	                             be specified using the -n switch!                 
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -r [filenname,mem_sect]     specifies a memory section to read from and a file
+Fri Oct 11 13:48:30 2019:	                             to write to. mem_sect: RAM, INFO, MAIN, BSL or    
+Fri Oct 11 13:48:30 2019:	                             specific memory areas: 0x****-0x*****             
+Fri Oct 11 13:48:30 2019:	                             The file extension of 'filename' determines the   
+Fri Oct 11 13:48:30 2019:	                             data format: .txt = TI-TXT, .hex/.a43 = Intel-Hex 
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -w filenname                specifies a file for device programming. Supported
+Fri Oct 11 13:48:30 2019:	                             data formats: TI-TXT (.txt), Intel-Hex (.hex/.a43)
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -b                          unlocks BSL memory for writing                    
+Fri Oct 11 13:48:30 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -u                          unlocks InfoA memory for writing                  
+Fri Oct 11 13:48:30 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -e ERASE_ALL |              Erase memory. Default: ERASE_ALL (INFO&MAIN)      
+Fri Oct 11 13:48:30 2019:	    ERASE_MAIN |             ERASE_MAIN: erase MAIN memory only                
+Fri Oct 11 13:48:30 2019:	    ERASE_SEGMENT |          ERASE_SEGMENT: erase segment to be programmed only
+Fri Oct 11 13:48:30 2019:	    ERASE_TOTAL |            ERASE_TOTAL: applicable for FR5xx/FR6xx only!     
+Fri Oct 11 13:48:30 2019:	    ERASE_USER_CODE |        ERASE_USER_CODE: applicable for FR4xx only!       
+Fri Oct 11 13:48:30 2019:	    NO_ERASE                 NO_ERASE: use only with -w switch                 
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -v filename (optional)      triggers verification of the target memory against
+Fri Oct 11 13:48:30 2019:	                             a target code file. If -w is used, no argument is 
+Fri Oct 11 13:48:30 2019:	                             required. For a stand-alone verify, provide the   
+Fri Oct 11 13:48:30 2019:	                             path to a target code file as an argument.        
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -z [exit_spec,...]          specifies state of device on exit                 
+Fri Oct 11 13:48:30 2019:	                             (view available 'exit_spec's using -x switch)     
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -g                          switches log OFF (default: ON)                    
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -q                          triggers QUIET MODE (no system messages displayed)
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -d [breakpoint addresses]   specifies addresses for hardware breakpoints and  
+Fri Oct 11 13:48:30 2019:	                             triggers RUN_TO_BREAKPOINT mode                   
+Fri Oct 11 13:48:30 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:48:30 2019:	                             longer be maintained. All breakpoint functionality
+Fri Oct 11 13:48:30 2019:	                             will be removed in a future version of MSP Flasher
+Fri Oct 11 13:48:30 2019:	                                                                               
+Fri Oct 11 13:48:30 2019:	 -t timeout_in_ms            specifies the breakpoint timeout (in milliseconds)
+Fri Oct 11 13:48:30 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:48:30 2019:	                             longer be maintained. All breakpoint functionality
+FFri Oct 11 13:49:30 2019:	* -----/|-------------------------------------------------------------------- *
+Fri Oct 11 13:49:30 2019:	*     / |__                                                                   *
+Fri Oct 11 13:49:30 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Fri Oct 11 13:49:30 2019:	*      | /                                                                    *
+Fri Oct 11 13:49:30 2019:	* -----|/-------------------------------------------------------------------- *
+Fri Oct 11 13:49:30 2019:	*
+Fri Oct 11 13:49:30 2019:	* Evaluating triggers...
+Fri Oct 11 13:49:30 2019:	* file extension unknown -- w
+
+Fri Oct 11 13:49:30 2019:	
+Fri Oct 11 13:49:30 2019:	*******************************************************************************
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 Usage: MSP430Flasher [OPTIONS]                                                
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -n DEVICE_NAME              (optional for MSP430, required for MSP432)        
+Fri Oct 11 13:49:30 2019:	                             specifies the name of the target MSP - prompt in  
+Fri Oct 11 13:49:30 2019:	                             case of mismatch                                  
+Fri Oct 11 13:49:30 2019:	                             Use -n NO_TARGET to run MSP Flasher without       
+Fri Oct 11 13:49:30 2019:	                             attempting a target connection (FET detection or  
+Fri Oct 11 13:49:30 2019:	                             FET firmware update only)                         
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -i (TI)USB | DETECT |       specifies the COM port of a connected debug tool  
+Fri Oct 11 13:49:30 2019:	    COMn (Win) |             (default: TIUSB/USB = first detected FET tool is  
+Fri Oct 11 13:49:30 2019:	    ttyACMn (Linux) |        used) For info on how to connect to specific eZ-  
+Fri Oct 11 13:49:30 2019:	    usbmodem* (OSX)          tools, see the MSP Flasher manual.                
+Fri Oct 11 13:49:30 2019:	                             Use -i DETECT  to execute a FET detection sweep,  
+Fri Oct 11 13:49:30 2019:	                             displaying detailed info about all connected debug
+Fri Oct 11 13:49:30 2019:	                             tools. User is prompted to pick a FET.            
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -j fast | medium | slow     sets FET speed for JTAG/SBW - only applicable for 
+Fri Oct 11 13:49:30 2019:	                             MSP-FET! Option will be ignored for all other FET 
+Fri Oct 11 13:49:30 2019:	                             tools. Default = medium.                          
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -a                          non-intrusive target connection: use this switch  
+Fri Oct 11 13:49:30 2019:	                             if no reset should be applied to the target device
+Fri Oct 11 13:49:30 2019:	                             on start-up. Correct target device name needs to  
+Fri Oct 11 13:49:30 2019:	                             be specified using the -n switch!                 
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -r [filenname,mem_sect]     specifies a memory section to read from and a file
+Fri Oct 11 13:49:30 2019:	                             to write to. mem_sect: RAM, INFO, MAIN, BSL or    
+Fri Oct 11 13:49:30 2019:	                             specific memory areas: 0x****-0x*****             
+Fri Oct 11 13:49:30 2019:	                             The file extension of 'filename' determines the   
+Fri Oct 11 13:49:30 2019:	                             data format: .txt = TI-TXT, .hex/.a43 = Intel-Hex 
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -w filenname                specifies a file for device programming. Supported
+Fri Oct 11 13:49:30 2019:	                             data formats: TI-TXT (.txt), Intel-Hex (.hex/.a43)
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -b                          unlocks BSL memory for writing                    
+Fri Oct 11 13:49:30 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -u                          unlocks InfoA memory for writing                  
+Fri Oct 11 13:49:30 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -e ERASE_ALL |              Erase memory. Default: ERASE_ALL (INFO&MAIN)      
+Fri Oct 11 13:49:30 2019:	    ERASE_MAIN |             ERASE_MAIN: erase MAIN memory only                
+Fri Oct 11 13:49:30 2019:	    ERASE_SEGMENT |          ERASE_SEGMENT: erase segment to be programmed only
+Fri Oct 11 13:49:30 2019:	    ERASE_TOTAL |            ERASE_TOTAL: applicable for FR5xx/FR6xx only!     
+Fri Oct 11 13:49:30 2019:	    ERASE_USER_CODE |        ERASE_USER_CODE: applicable for FR4xx only!       
+Fri Oct 11 13:49:30 2019:	    NO_ERASE                 NO_ERASE: use only with -w switch                 
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -v filename (optional)      triggers verification of the target memory against
+Fri Oct 11 13:49:30 2019:	                             a target code file. If -w is used, no argument is 
+Fri Oct 11 13:49:30 2019:	                             required. For a stand-alone verify, provide the   
+Fri Oct 11 13:49:30 2019:	                             path to a target code file as an argument.        
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -z [exit_spec,...]          specifies state of device on exit                 
+Fri Oct 11 13:49:30 2019:	                             (view available 'exit_spec's using -x switch)     
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -g                          switches log OFF (default: ON)                    
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -q                          triggers QUIET MODE (no system messages displayed)
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -d [breakpoint addresses]   specifies addresses for hardware breakpoints and  
+Fri Oct 11 13:49:30 2019:	                             triggers RUN_TO_BREAKPOINT mode                   
+Fri Oct 11 13:49:30 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:49:30 2019:	                             longer be maintained. All breakpoint functionality
+Fri Oct 11 13:49:30 2019:	                             will be removed in a future version of MSP Flasher
+Fri Oct 11 13:49:30 2019:	                                                                               
+Fri Oct 11 13:49:30 2019:	 -t timeout_in_ms            specifies the breakpoint timeout (in milliseconds)
+Fri Oct 11 13:49:30 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:49:30 2019:	                             longer be maintained. AlFri Oct 11 13:50:55 2019:	* -----/|-------------------------------------------------------------------- *
+Fri Oct 11 13:50:55 2019:	*     / |__                                                                   *
+Fri Oct 11 13:50:55 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Fri Oct 11 13:50:55 2019:	*      | /                                                                    *
+Fri Oct 11 13:50:55 2019:	* -----|/-------------------------------------------------------------------- *
+Fri Oct 11 13:50:55 2019:	*
+Fri Oct 11 13:50:55 2019:	* Evaluating triggers...
+Fri Oct 11 13:50:55 2019:	* file extension unknown -- w
+
+Fri Oct 11 13:50:55 2019:	
+Fri Oct 11 13:50:55 2019:	*******************************************************************************
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 Usage: MSP430Flasher [OPTIONS]                                                
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -n DEVICE_NAME              (optional for MSP430, required for MSP432)        
+Fri Oct 11 13:50:55 2019:	                             specifies the name of the target MSP - prompt in  
+Fri Oct 11 13:50:55 2019:	                             case of mismatch                                  
+Fri Oct 11 13:50:55 2019:	                             Use -n NO_TARGET to run MSP Flasher without       
+Fri Oct 11 13:50:55 2019:	                             attempting a target connection (FET detection or  
+Fri Oct 11 13:50:55 2019:	                             FET firmware update only)                         
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -i (TI)USB | DETECT |       specifies the COM port of a connected debug tool  
+Fri Oct 11 13:50:55 2019:	    COMn (Win) |             (default: TIUSB/USB = first detected FET tool is  
+Fri Oct 11 13:50:55 2019:	    ttyACMn (Linux) |        used) For info on how to connect to specific eZ-  
+Fri Oct 11 13:50:55 2019:	    usbmodem* (OSX)          tools, see the MSP Flasher manual.                
+Fri Oct 11 13:50:55 2019:	                             Use -i DETECT  to execute a FET detection sweep,  
+Fri Oct 11 13:50:55 2019:	                             displaying detailed info about all connected debug
+Fri Oct 11 13:50:55 2019:	                             tools. User is prompted to pick a FET.            
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -j fast | medium | slow     sets FET speed for JTAG/SBW - only applicable for 
+Fri Oct 11 13:50:55 2019:	                             MSP-FET! Option will be ignored for all other FET 
+Fri Oct 11 13:50:55 2019:	                             tools. Default = medium.                          
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -a                          non-intrusive target connection: use this switch  
+Fri Oct 11 13:50:55 2019:	                             if no reset should be applied to the target device
+Fri Oct 11 13:50:55 2019:	                             on start-up. Correct target device name needs to  
+Fri Oct 11 13:50:55 2019:	                             be specified using the -n switch!                 
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -r [filenname,mem_sect]     specifies a memory section to read from and a file
+Fri Oct 11 13:50:55 2019:	                             to write to. mem_sect: RAM, INFO, MAIN, BSL or    
+Fri Oct 11 13:50:55 2019:	                             specific memory areas: 0x****-0x*****             
+Fri Oct 11 13:50:55 2019:	                             The file extension of 'filename' determines the   
+Fri Oct 11 13:50:55 2019:	                             data format: .txt = TI-TXT, .hex/.a43 = Intel-Hex 
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -w filenname                specifies a file for device programming. Supported
+Fri Oct 11 13:50:55 2019:	                             data formats: TI-TXT (.txt), Intel-Hex (.hex/.a43)
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -b                          unlocks BSL memory for writing                    
+Fri Oct 11 13:50:55 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -u                          unlocks InfoA memory for writing                  
+Fri Oct 11 13:50:55 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -e ERASE_ALL |              Erase memory. Default: ERASE_ALL (INFO&MAIN)      
+Fri Oct 11 13:50:55 2019:	    ERASE_MAIN |             ERASE_MAIN: erase MAIN memory only                
+Fri Oct 11 13:50:55 2019:	    ERASE_SEGMENT |          ERASE_SEGMENT: erase segment to be programmed only
+Fri Oct 11 13:50:55 2019:	    ERASE_TOTAL |            ERASE_TOTAL: applicable for FR5xx/FR6xx only!     
+Fri Oct 11 13:50:55 2019:	    ERASE_USER_CODE |        ERASE_USER_CODE: applicable for FR4xx only!       
+Fri Oct 11 13:50:55 2019:	    NO_ERASE                 NO_ERASE: use only with -w switch                 
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -v filename (optional)      triggers verification of the target memory against
+Fri Oct 11 13:50:55 2019:	                             a target code file. If -w is used, no argument is 
+Fri Oct 11 13:50:55 2019:	                             required. For a stand-alone verify, provide the   
+Fri Oct 11 13:50:55 2019:	                             path to a target code file as an argument.        
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -z [exit_spec,...]          specifies state of device on exit                 
+Fri Oct 11 13:50:55 2019:	                             (view available 'exit_spec's using -x switch)     
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -g                          switches log OFF (default: ON)                    
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -q                          triggers QUIET MODE (no system messages displayed)
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -d [breakpoint addresses]   specifies addresses for hardware breakpoints and  
+Fri Oct 11 13:50:55 2019:	                             triggers RUN_TO_BREAKPOINT mode                   
+Fri Oct 11 13:50:55 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:50:55 2019:	                             longer be maintained. All breakpoint functionality
+Fri Oct 11 13:50:55 2019:	                             will be removed in a future version of MSP Flasher
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -t timeout_in_ms            specifies the breakpoint timeout (in milliseconds)
+Fri Oct 11 13:50:55 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:50:55 2019:	                             longer be maintained. All breakpoint functionality
+Fri Oct 11 13:50:55 2019:	                             will be removed in a future version of MSP Flasher
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -p JTAG PASSWORD            specifies the JTAG password (hex format: 0x...).  
+Fri Oct 11 13:50:55 2019:	                             (if any, default: no password)                    
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -s                          suppresses the FET firmware update prompt         
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -o L | C                    specifies operation mode for L092 or RF430 devices
+Fri Oct 11 13:50:55 2019:	                             (L = normal mode, C = ROM development mode)       
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -l PASSWORD LENGTH          OBSOLETE! If used, this option will be ignored!   
+Fri Oct 11 13:50:55 2019:	                             JTAG password length is determined automatically  
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 -m JTAG | SBW2 | SBW4 |     OBSOLETE! If used, this option will be ignored!   
+Fri Oct 11 13:50:55 2019:	    AUTO                     Communication protocol is determined automatically
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	                                                                               
+Fri Oct 11 13:50:55 2019:	 For a GUI-based alternative, check out UniFlash: http://ti.com/tool/uniflash  
+Fri Oct 11 13:50:55 2019:	*******************************************************************************
+Fri Oct 11 13:50:55 2019:	Press ENTER to continue.
+Fri Oct 11 13:51:07 2019:	* -----/|-------------------------------------------------------------------- *
+Fri Oct 11 13:51:07 2019:	*     / |__                                                                   *
+Fri Oct 11 13:51:07 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Fri Oct 11 13:51:07 2019:	*      | /                                                                    *
+Fri Oct 11 13:51:07 2019:	* -----|/-------------------------------------------------------------------- *
+Fri Oct 11 13:51:07 2019:	*
+Fri Oct 11 13:51:07 2019:	* Evaluating triggers...
+Fri Oct 11 13:51:07 2019:	* file extension unknown -- w
+
+Fri Oct 11 13:51:07 2019:	
+Fri Oct 11 13:51:07 2019:	*******************************************************************************
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 Usage: MSP430Flasher [OPTIONS]                                                
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -n DEVICE_NAME              (optional for MSP430, required for MSP432)        
+Fri Oct 11 13:51:07 2019:	                             specifies the name of the target MSP - prompt in  
+Fri Oct 11 13:51:07 2019:	                             case of mismatch                                  
+Fri Oct 11 13:51:07 2019:	                             Use -n NO_TARGET to run MSP Flasher without       
+Fri Oct 11 13:51:07 2019:	                             attempting a target connection (FET detection or  
+Fri Oct 11 13:51:07 2019:	                             FET firmware update only)                         
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -i (TI)USB | DETECT |       specifies the COM port of a connected debug tool  
+Fri Oct 11 13:51:07 2019:	    COMn (Win) |             (default: TIUSB/USB = first detected FET tool is  
+Fri Oct 11 13:51:07 2019:	    ttyACMn (Linux) |        used) For info on how to connect to specific eZ-  
+Fri Oct 11 13:51:07 2019:	    usbmodem* (OSX)          tools, see the MSP Flasher manual.                
+Fri Oct 11 13:51:07 2019:	                             Use -i DETECT  to execute a FET detection sweep,  
+Fri Oct 11 13:51:07 2019:	                             displaying detailed info about all connected debug
+Fri Oct 11 13:51:07 2019:	                             tools. User is prompted to pick a FET.            
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -j fast | medium | slow     sets FET speed for JTAG/SBW - only applicable for 
+Fri Oct 11 13:51:07 2019:	                             MSP-FET! Option will be ignored for all other FET 
+Fri Oct 11 13:51:07 2019:	                             tools. Default = medium.                          
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -a                          non-intrusive target connection: use this switch  
+Fri Oct 11 13:51:07 2019:	                             if no reset should be applied to the target device
+Fri Oct 11 13:51:07 2019:	                             on start-up. Correct target device name needs to  
+Fri Oct 11 13:51:07 2019:	                             be specified using the -n switch!                 
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -r [filenname,mem_sect]     specifies a memory section to read from and a file
+Fri Oct 11 13:51:07 2019:	                             to write to. mem_sect: RAM, INFO, MAIN, BSL or    
+Fri Oct 11 13:51:07 2019:	                             specific memory areas: 0x****-0x*****             
+Fri Oct 11 13:51:07 2019:	                             The file extension of 'filename' determines the   
+Fri Oct 11 13:51:07 2019:	                             data format: .txt = TI-TXT, .hex/.a43 = Intel-Hex 
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -w filenname                specifies a file for device programming. Supported
+Fri Oct 11 13:51:07 2019:	                             data formats: TI-TXT (.txt), Intel-Hex (.hex/.a43)
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -b                          unlocks BSL memory for writing                    
+Fri Oct 11 13:51:07 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -u                          unlocks InfoA memory for writing                  
+Fri Oct 11 13:51:07 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -e ERASE_ALL |              Erase memory. Default: ERASE_ALL (INFO&MAIN)      
+Fri Oct 11 13:51:07 2019:	    ERASE_MAIN |             ERASE_MAIN: erase MAIN memory only                
+Fri Oct 11 13:51:07 2019:	    ERASE_SEGMENT |          ERASE_SEGMENT: erase segment to be programmed only
+Fri Oct 11 13:51:07 2019:	    ERASE_TOTAL |            ERASE_TOTAL: applicable for FR5xx/FR6xx only!     
+Fri Oct 11 13:51:07 2019:	    ERASE_USER_CODE |        ERASE_USER_CODE: applicable for FR4xx only!       
+Fri Oct 11 13:51:07 2019:	    NO_ERASE                 NO_ERASE: use only with -w switch                 
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -v filename (optional)      triggers verification of the target memory against
+Fri Oct 11 13:51:07 2019:	                             a target code file. If -w is used, no argument is 
+Fri Oct 11 13:51:07 2019:	                             required. For a stand-alone verify, provide the   
+Fri Oct 11 13:51:07 2019:	                             path to a target code file as an argument.        
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -z [exit_spec,...]          specifies state of device on exit                 
+Fri Oct 11 13:51:07 2019:	                             (view available 'exit_spec's using -x switch)     
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -g                          switches log OFF (default: ON)                    
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -q                          triggers QUIET MODE (no system messages displayed)
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -d [breakpoint addresses]   specifies addresses for hardware breakpoints and  
+Fri Oct 11 13:51:07 2019:	                             triggers RUN_TO_BREAKPOINT mode                   
+Fri Oct 11 13:51:07 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:51:07 2019:	                             longer be maintained. All breakpoint functionality
+Fri Oct 11 13:51:07 2019:	                             will be removed in a future version of MSP Flasher
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -t timeout_in_ms            specifies the breakpoint timeout (in milliseconds)
+Fri Oct 11 13:51:07 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:51:07 2019:	                             longer be maintained. All breakpoint functionality
+Fri Oct 11 13:51:07 2019:	                             will be removed in a future version of MSP Flasher
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -p JTAG PASSWORD            specifies the JTAG password (hex format: 0x...).  
+Fri Oct 11 13:51:07 2019:	                             (if any, default: no password)                    
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -s                          suppresses the FET firmware update prompt         
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -o L | C                    specifies operation mode for L092 or RF430 devices
+Fri Oct 11 13:51:07 2019:	                             (L = normal mode, C = ROM development mode)       
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -l PASSWORD LENGTH          OBSOLETE! If used, this option will be ignored!   
+Fri Oct 11 13:51:07 2019:	                             JTAG password length is determined automatically  
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 -m JTAG | SBW2 | SBW4 |     OBSOLETE! If used, this option will be ignored!   
+Fri Oct 11 13:51:07 2019:	    AUTO                     Communication protocol is determined automatically
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	                                                                               
+Fri Oct 11 13:51:07 2019:	 For a GUI-based alternative, check out UniFlash: http://ti.com/tool/uniflash  
+Fri Oct 11 13:51:07 2019:	*******************************************************************************
+Fri Oct 11 13:51:07 2019:	Press ENTER to continue.
+Fri Oct 11 13:52:51 2019:	* -----/|-------------------------------------------------------------------- *
+Fri Oct 11 13:52:51 2019:	*     / |__                                                                   *
+Fri Oct 11 13:52:51 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Fri Oct 11 13:52:51 2019:	*      | /                                                                    *
+Fri Oct 11 13:52:51 2019:	* -----|/-------------------------------------------------------------------- *
+Fri Oct 11 13:52:51 2019:	*
+Fri Oct 11 13:52:51 2019:	* Evaluating triggers...
+Fri Oct 11 13:52:51 2019:	* file extension unknown -- w
+
+Fri Oct 11 13:52:51 2019:	
+Fri Oct 11 13:52:51 2019:	*******************************************************************************
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 Usage: MSP430Flasher [OPTIONS]                                                
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -n DEVICE_NAME              (optional for MSP430, required for MSP432)        
+Fri Oct 11 13:52:51 2019:	                             specifies the name of the target MSP - prompt in  
+Fri Oct 11 13:52:51 2019:	                             case of mismatch                                  
+Fri Oct 11 13:52:51 2019:	                             Use -n NO_TARGET to run MSP Flasher without       
+Fri Oct 11 13:52:51 2019:	                             attempting a target connection (FET detection or  
+Fri Oct 11 13:52:51 2019:	                             FET firmware update only)                         
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -i (TI)USB | DETECT |       specifies the COM port of a connected debug tool  
+Fri Oct 11 13:52:51 2019:	    COMn (Win) |             (default: TIUSB/USB = first detected FET tool is  
+Fri Oct 11 13:52:51 2019:	    ttyACMn (Linux) |        used) For info on how to connect to specific eZ-  
+Fri Oct 11 13:52:51 2019:	    usbmodem* (OSX)          tools, see the MSP Flasher manual.                
+Fri Oct 11 13:52:51 2019:	                             Use -i DETECT  to execute a FET detection sweep,  
+Fri Oct 11 13:52:51 2019:	                             displaying detailed info about all connected debug
+Fri Oct 11 13:52:51 2019:	                             tools. User is prompted to pick a FET.            
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -j fast | medium | slow     sets FET speed for JTAG/SBW - only applicable for 
+Fri Oct 11 13:52:51 2019:	                             MSP-FET! Option will be ignored for all other FET 
+Fri Oct 11 13:52:51 2019:	                             tools. Default = medium.                          
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -a                          non-intrusive target connection: use this switch  
+Fri Oct 11 13:52:51 2019:	                             if no reset should be applied to the target device
+Fri Oct 11 13:52:51 2019:	                             on start-up. Correct target device name needs to  
+Fri Oct 11 13:52:51 2019:	                             be specified using the -n switch!                 
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -r [filenname,mem_sect]     specifies a memory section to read from and a file
+Fri Oct 11 13:52:51 2019:	                             to write to. mem_sect: RAM, INFO, MAIN, BSL or    
+Fri Oct 11 13:52:51 2019:	                             specific memory areas: 0x****-0x*****             
+Fri Oct 11 13:52:51 2019:	                             The file extension of 'filename' determines the   
+Fri Oct 11 13:52:51 2019:	                             data format: .txt = TI-TXT, .hex/.a43 = Intel-Hex 
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -w filenname                specifies a file for device programming. Supported
+Fri Oct 11 13:52:51 2019:	                             data formats: TI-TXT (.txt), Intel-Hex (.hex/.a43)
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -b                          unlocks BSL memory for writing                    
+Fri Oct 11 13:52:51 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -u                          unlocks InfoA memory for writing                  
+Fri Oct 11 13:52:51 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -e ERASE_ALL |              Erase memory. Default: ERASE_ALL (INFO&MAIN)      
+Fri Oct 11 13:52:51 2019:	    ERASE_MAIN |             ERASE_MAIN: erase MAIN memory only                
+Fri Oct 11 13:52:51 2019:	    ERASE_SEGMENT |          ERASE_SEGMENT: erase segment to be programmed only
+Fri Oct 11 13:52:51 2019:	    ERASE_TOTAL |            ERASE_TOTAL: applicable for FR5xx/FR6xx only!     
+Fri Oct 11 13:52:51 2019:	    ERASE_USER_CODE |        ERASE_USER_CODE: applicable for FR4xx only!       
+Fri Oct 11 13:52:51 2019:	    NO_ERASE                 NO_ERASE: use only with -w switch                 
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -v filename (optional)      triggers verification of the target memory against
+Fri Oct 11 13:52:51 2019:	                             a target code file. If -w is used, no argument is 
+Fri Oct 11 13:52:51 2019:	                             required. For a stand-alone verify, provide the   
+Fri Oct 11 13:52:51 2019:	                             path to a target code file as an argument.        
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -z [exit_spec,...]          specifies state of device on exit                 
+Fri Oct 11 13:52:51 2019:	                             (view available 'exit_spec's using -x switch)     
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -g                          switches log OFF (default: ON)                    
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -q                          triggers QUIET MODE (no system messages displayed)
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -d [breakpoint addresses]   specifies addresses for hardware breakpoints and  
+Fri Oct 11 13:52:51 2019:	                             triggers RUN_TO_BREAKPOINT mode                   
+Fri Oct 11 13:52:51 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:52:51 2019:	                             longer be maintained. All breakpoint functionality
+Fri Oct 11 13:52:51 2019:	                             will be removed in a future version of MSP Flasher
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -t timeout_in_ms            specifies the breakpoint timeout (in milliseconds)
+Fri Oct 11 13:52:51 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:52:51 2019:	                             longer be maintained. All breakpoint functionality
+Fri Oct 11 13:52:51 2019:	                             will be removed in a future version of MSP Flasher
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -p JTAG PASSWORD            specifies the JTAG password (hex format: 0x...).  
+Fri Oct 11 13:52:51 2019:	                             (if any, default: no password)                    
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -s                          suppresses the FET firmware update prompt         
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -o L | C                    specifies operation mode for L092 or RF430 devices
+Fri Oct 11 13:52:51 2019:	                             (L = normal mode, C = ROM development mode)       
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -l PASSWORD LENGTH          OBSOLETE! If used, this option will be ignored!   
+Fri Oct 11 13:52:51 2019:	                             JTAG password length is determined automatically  
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 -m JTAG | SBW2 | SBW4 |     OBSOLETE! If used, this option will be ignored!   
+Fri Oct 11 13:52:51 2019:	    AUTO                     Communication protocol is determined automatically
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	                                                                               
+Fri Oct 11 13:52:51 2019:	 For a GUI-based alternative, check out UniFlash: http://ti.com/tool/uniflash  
+Fri Oct 11 13:52:51 2019:	*******************************************************************************
+Fri Oct 11 13:52:51 2019:	Press ENTER to continue.
+Fri Oct 11 13:54:44 2019:	* -----/|-------------------------------------------------------------------- *
+Fri Oct 11 13:54:44 2019:	*     / |__                                                                   *
+Fri Oct 11 13:54:44 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Fri Oct 11 13:54:44 2019:	*      | /                                                                    *
+Fri Oct 11 13:54:44 2019:	* -----|/-------------------------------------------------------------------- *
+Fri Oct 11 13:54:44 2019:	*
+Fri Oct 11 13:54:44 2019:	* Evaluating triggers...
+Fri Oct 11 13:54:44 2019:	* file extension unknown -- w
+
+Fri Oct 11 13:54:44 2019:	
+Fri Oct 11 13:54:44 2019:	*******************************************************************************
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 Usage: MSP430Flasher [OPTIONS]                                                
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -n DEVICE_NAME              (optional for MSP430, required for MSP432)        
+Fri Oct 11 13:54:44 2019:	                             specifies the name of the target MSP - prompt in  
+Fri Oct 11 13:54:44 2019:	                             case of mismatch                                  
+Fri Oct 11 13:54:44 2019:	                             Use -n NO_TARGET to run MSP Flasher without       
+Fri Oct 11 13:54:44 2019:	                             attempting a target connection (FET detection or  
+Fri Oct 11 13:54:44 2019:	                             FET firmware update only)                         
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -i (TI)USB | DETECT |       specifies the COM port of a connected debug tool  
+Fri Oct 11 13:54:44 2019:	    COMn (Win) |             (default: TIUSB/USB = first detected FET tool is  
+Fri Oct 11 13:54:44 2019:	    ttyACMn (Linux) |        used) For info on how to connect to specific eZ-  
+Fri Oct 11 13:54:44 2019:	    usbmodem* (OSX)          tools, see the MSP Flasher manual.                
+Fri Oct 11 13:54:44 2019:	                             Use -i DETECT  to execute a FET detection sweep,  
+Fri Oct 11 13:54:44 2019:	                             displaying detailed info about all connected debug
+Fri Oct 11 13:54:44 2019:	                             tools. User is prompted to pick a FET.            
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -j fast | medium | slow     sets FET speed for JTAG/SBW - only applicable for 
+Fri Oct 11 13:54:44 2019:	                             MSP-FET! Option will be ignored for all other FET 
+Fri Oct 11 13:54:44 2019:	                             tools. Default = medium.                          
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -a                          non-intrusive target connection: use this switch  
+Fri Oct 11 13:54:44 2019:	                             if no reset should be applied to the target device
+Fri Oct 11 13:54:44 2019:	                             on start-up. Correct target device name needs to  
+Fri Oct 11 13:54:44 2019:	                             be specified using the -n switch!                 
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -r [filenname,mem_sect]     specifies a memory section to read from and a file
+Fri Oct 11 13:54:44 2019:	                             to write to. mem_sect: RAM, INFO, MAIN, BSL or    
+Fri Oct 11 13:54:44 2019:	                             specific memory areas: 0x****-0x*****             
+Fri Oct 11 13:54:44 2019:	                             The file extension of 'filename' determines the   
+Fri Oct 11 13:54:44 2019:	                             data format: .txt = TI-TXT, .hex/.a43 = Intel-Hex 
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -w filenname                specifies a file for device programming. Supported
+Fri Oct 11 13:54:44 2019:	                             data formats: TI-TXT (.txt), Intel-Hex (.hex/.a43)
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -b                          unlocks BSL memory for writing                    
+Fri Oct 11 13:54:44 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -u                          unlocks InfoA memory for writing                  
+Fri Oct 11 13:54:44 2019:	                             (use only with -w switch)                         
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -e ERASE_ALL |              Erase memory. Default: ERASE_ALL (INFO&MAIN)      
+Fri Oct 11 13:54:44 2019:	    ERASE_MAIN |             ERASE_MAIN: erase MAIN memory only                
+Fri Oct 11 13:54:44 2019:	    ERASE_SEGMENT |          ERASE_SEGMENT: erase segment to be programmed only
+Fri Oct 11 13:54:44 2019:	    ERASE_TOTAL |            ERASE_TOTAL: applicable for FR5xx/FR6xx only!     
+Fri Oct 11 13:54:44 2019:	    ERASE_USER_CODE |        ERASE_USER_CODE: applicable for FR4xx only!       
+Fri Oct 11 13:54:44 2019:	    NO_ERASE                 NO_ERASE: use only with -w switch                 
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -v filename (optional)      triggers verification of the target memory against
+Fri Oct 11 13:54:44 2019:	                             a target code file. If -w is used, no argument is 
+Fri Oct 11 13:54:44 2019:	                             required. For a stand-alone verify, provide the   
+Fri Oct 11 13:54:44 2019:	                             path to a target code file as an argument.        
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -z [exit_spec,...]          specifies state of device on exit                 
+Fri Oct 11 13:54:44 2019:	                             (view available 'exit_spec's using -x switch)     
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -g                          switches log OFF (default: ON)                    
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -q                          triggers QUIET MODE (no system messages displayed)
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -d [breakpoint addresses]   specifies addresses for hardware breakpoints and  
+Fri Oct 11 13:54:44 2019:	                             triggers RUN_TO_BREAKPOINT mode                   
+Fri Oct 11 13:54:44 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:54:44 2019:	                             longer be maintained. All breakpoint functionality
+Fri Oct 11 13:54:44 2019:	                             will be removed in a future version of MSP Flasher
+Fri Oct 11 13:54:44 2019:	                                                                               
+Fri Oct 11 13:54:44 2019:	 -t timeout_in_ms            specifies the breakpoint timeout (in milliseconds)
+Fri Oct 11 13:54:44 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 13:54:44 2019:	                             longer be maintained. AlFri Oct 11 14:03:16 2019:	* -----/|-------------------------------------------------------------------- *
+Fri Oct 11 14:03:16 2019:	*     / |__                                                                   *
+Fri Oct 11 14:03:16 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Fri Oct 11 14:03:16 2019:	*      | /                                                                    *
+Fri Oct 11 14:03:16 2019:	* -----|/-------------------------------------------------------------------- *
+Fri Oct 11 14:03:16 2019:	*
+Fri Oct 11 14:03:16 2019:	* Evaluating triggers...
+Fri Oct 11 14:03:16 2019:	* file extension unknown -- w
+
+Fri Oct 11 14:03:16 2019:	
+Fri Oct 11 14:03:16 2019:	*******************************************************************************
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 Usage: MSP430Flasher [OPTIONS]                                                
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -n DEVICE_NAME              (optional for MSP430, required for MSP432)        
+Fri Oct 11 14:03:16 2019:	                             specifies the name of the target MSP - prompt in  
+Fri Oct 11 14:03:16 2019:	                             case of mismatch                                  
+Fri Oct 11 14:03:16 2019:	                             Use -n NO_TARGET to run MSP Flasher without       
+Fri Oct 11 14:03:16 2019:	                             attempting a target connection (FET detection or  
+Fri Oct 11 14:03:16 2019:	                             FET firmware update only)                         
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -i (TI)USB | DETECT |       specifies the COM port of a connected debug tool  
+Fri Oct 11 14:03:16 2019:	    COMn (Win) |             (default: TIUSB/USB = first detected FET tool is  
+Fri Oct 11 14:03:16 2019:	    ttyACMn (Linux) |        used) For info on how to connect to specific eZ-  
+Fri Oct 11 14:03:16 2019:	    usbmodem* (OSX)          tools, see the MSP Flasher manual.                
+Fri Oct 11 14:03:16 2019:	                             Use -i DETECT  to execute a FET detection sweep,  
+Fri Oct 11 14:03:16 2019:	                             displaying detailed info about all connected debug
+Fri Oct 11 14:03:16 2019:	                             tools. User is prompted to pick a FET.            
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -j fast | medium | slow     sets FET speed for JTAG/SBW - only applicable for 
+Fri Oct 11 14:03:16 2019:	                             MSP-FET! Option will be ignored for all other FET 
+Fri Oct 11 14:03:16 2019:	                             tools. Default = medium.                          
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -a                          non-intrusive target connection: use this switch  
+Fri Oct 11 14:03:16 2019:	                             if no reset should be applied to the target device
+Fri Oct 11 14:03:16 2019:	                             on start-up. Correct target device name needs to  
+Fri Oct 11 14:03:16 2019:	                             be specified using the -n switch!                 
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -r [filenname,mem_sect]     specifies a memory section to read from and a file
+Fri Oct 11 14:03:16 2019:	                             to write to. mem_sect: RAM, INFO, MAIN, BSL or    
+Fri Oct 11 14:03:16 2019:	                             specific memory areas: 0x****-0x*****             
+Fri Oct 11 14:03:16 2019:	                             The file extension of 'filename' determines the   
+Fri Oct 11 14:03:16 2019:	                             data format: .txt = TI-TXT, .hex/.a43 = Intel-Hex 
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -w filenname                specifies a file for device programming. Supported
+Fri Oct 11 14:03:16 2019:	                             data formats: TI-TXT (.txt), Intel-Hex (.hex/.a43)
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -b                          unlocks BSL memory for writing                    
+Fri Oct 11 14:03:16 2019:	                             (use only with -w switch)                         
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -u                          unlocks InfoA memory for writing                  
+Fri Oct 11 14:03:16 2019:	                             (use only with -w switch)                         
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -e ERASE_ALL |              Erase memory. Default: ERASE_ALL (INFO&MAIN)      
+Fri Oct 11 14:03:16 2019:	    ERASE_MAIN |             ERASE_MAIN: erase MAIN memory only                
+Fri Oct 11 14:03:16 2019:	    ERASE_SEGMENT |          ERASE_SEGMENT: erase segment to be programmed only
+Fri Oct 11 14:03:16 2019:	    ERASE_TOTAL |            ERASE_TOTAL: applicable for FR5xx/FR6xx only!     
+Fri Oct 11 14:03:16 2019:	    ERASE_USER_CODE |        ERASE_USER_CODE: applicable for FR4xx only!       
+Fri Oct 11 14:03:16 2019:	    NO_ERASE                 NO_ERASE: use only with -w switch                 
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -v filename (optional)      triggers verification of the target memory against
+Fri Oct 11 14:03:16 2019:	                             a target code file. If -w is used, no argument is 
+Fri Oct 11 14:03:16 2019:	                             required. For a stand-alone verify, provide the   
+Fri Oct 11 14:03:16 2019:	                             path to a target code file as an argument.        
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -z [exit_spec,...]          specifies state of device on exit                 
+Fri Oct 11 14:03:16 2019:	                             (view available 'exit_spec's using -x switch)     
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -g                          switches log OFF (default: ON)                    
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -q                          triggers QUIET MODE (no system messages displayed)
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -d [breakpoint addresses]   specifies addresses for hardware breakpoints and  
+Fri Oct 11 14:03:16 2019:	                             triggers RUN_TO_BREAKPOINT mode                   
+Fri Oct 11 14:03:16 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 14:03:16 2019:	                             longer be maintained. All breakpoint functionality
+Fri Oct 11 14:03:16 2019:	                             will be removed in a future version of MSP Flasher
+Fri Oct 11 14:03:16 2019:	                                                                               
+Fri Oct 11 14:03:16 2019:	 -t timeout_in_ms            specifies the breakpoint timeout (in milliseconds)
+Fri Oct 11 14:03:16 2019:	                             WARNING! This option is deprecated and will no    
+Fri Oct 11 14:03:16 2019:	                             longer be maintained. AlFri Oct 11 14:05:28 2019:	* -----/|-------------------------------------------------------------------- *
+Fri Oct 11 14:05:28 2019:	*     / |__                                                                   *
+Fri Oct 11 14:05:28 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Fri Oct 11 14:05:28 2019:	*      | /                                                                    *
+Fri Oct 11 14:05:28 2019:	* -----|/-------------------------------------------------------------------- *
+Fri Oct 11 14:05:28 2019:	*
+Fri Oct 11 14:05:28 2019:	* Evaluating triggers...done
+Fri Oct 11 14:05:28 2019:	* Checking for available FET debuggers: 
+Fri Oct 11 14:05:28 2019:	* Couldn't find any connected USB FETs!
+Fri Oct 11 14:05:28 2019:	* Starting target code execution...done
+Fri Oct 11 14:05:28 2019:	* Disconnecting from device...done
+Fri Oct 11 14:05:28 2019:	* 
+Fri Oct 11 14:05:28 2019:	* ----------------------------------------------------------------------------
+Fri Oct 11 14:05:28 2019:	* Driver      : closed (MSP DebugStack not initialized)
+Fri Oct 11 14:05:28 2019:	* ----------------------------------------------------------------------------
+Fri Oct 11 14:05:28 2019:	*/
+Fri Oct 11 14:10:32 2019:	* -----/|-------------------------------------------------------------------- *
+Fri Oct 11 14:10:32 2019:	*     / |__                                                                   *
+Fri Oct 11 14:10:32 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Fri Oct 11 14:10:32 2019:	*      | /                                                                    *
+Fri Oct 11 14:10:32 2019:	* -----|/-------------------------------------------------------------------- *
+Fri Oct 11 14:10:32 2019:	*
+Fri Oct 11 14:10:32 2019:	* Evaluating triggers...done
+Fri Oct 11 14:10:32 2019:	* Checking for available FET debuggers: 
+Fri Oct 11 14:10:32 2019:	* Couldn't find any connected USB FETs!
+Fri Oct 11 14:10:32 2019:	* Starting target code execution...done
+Fri Oct 11 14:10:32 2019:	* Disconnecting from device...done
+Fri Oct 11 14:10:32 2019:	* 
+Fri Oct 11 14:10:32 2019:	* ----------------------------------------------------------------------------
+Fri Oct 11 14:10:32 2019:	* Driver      : closed (MSP DebugStack not initialized)
+Fri Oct 11 14:10:32 2019:	* ----------------------------------------------------------------------------
+Fri Oct 11 14:10:32 2019:	*/
+Fri Oct 11 14:57:55 2019:	* -----/|-------------------------------------------------------------------- *
+Fri Oct 11 14:57:55 2019:	*     / |__                                                                   *
+Fri Oct 11 14:57:55 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Fri Oct 11 14:57:55 2019:	*      | /                                                                    *
+Fri Oct 11 14:57:55 2019:	* -----|/-------------------------------------------------------------------- *
+Fri Oct 11 14:57:55 2019:	*
+Fri Oct 11 14:57:55 2019:	* Evaluating triggers...done
+Fri Oct 11 14:57:55 2019:	* Executing FET detection sweep: 
+Fri Oct 11 14:57:55 2019:	* Couldn't find any connected USB FETs!
+Fri Oct 11 14:57:55 2019:	* Powering down...done
+Fri Oct 11 14:57:55 2019:	* Disconnecting from device...done
+Fri Oct 11 14:57:55 2019:	* 
+Fri Oct 11 14:57:55 2019:	* ----------------------------------------------------------------------------
+Fri Oct 11 14:57:55 2019:	* Driver      : closed (MSP DebugStack not initialized)
+Fri Oct 11 14:57:55 2019:	* ----------------------------------------------------------------------------
+Fri Oct 11 14:57:55 2019:	*/
+Fri Oct 11 14:58:10 2019:	* -----/|-------------------------------------------------------------------- *
+Fri Oct 11 14:58:10 2019:	*     / |__                                                                   *
+Fri Oct 11 14:58:10 2019:	*    /_   /   MSP Flasher v1.3.18                                             *
+Fri Oct 11 14:58:10 2019:	*      | /                                                                    *
+Fri Oct 11 14:58:10 2019:	* -----|/-------------------------------------------------------------------- *
+Fri Oct 11 14:58:10 2019:	*
+Fri Oct 11 14:58:10 2019:	* Evaluating triggers...done
+Fri Oct 11 14:58:10 2019:	* Executing FET detection sweep: 
+Fri Oct 11 14:58:10 2019:	* Couldn't find any connected USB FETs!
+Fri Oct 11 14:58:10 2019:	* Starting target code execution...done
+Fri Oct 11 14:58:10 2019:	* Disconnecting from device...done
+Fri Oct 11 14:58:10 2019:	* 
+Fri Oct 11 14:58:10 2019:	* ----------------------------------------------------------------------------
+Fri Oct 11 14:58:10 2019:	* Driver      : closed (MSP DebugStack not initialized)
+Fri Oct 11 14:58:10 2019:	* ----------------------------------------------------------------------------
+Fri Oct 11 14:58:10 2019:	*/

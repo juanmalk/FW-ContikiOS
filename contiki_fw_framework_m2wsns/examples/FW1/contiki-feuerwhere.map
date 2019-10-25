@@ -1,0 +1,2193 @@
+Archive member included because of file (symbol)
+
+contiki-feuerwhere.a(contiki-feuerwh)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (init_platform)
+contiki-feuerwhere.a(msp430.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (w_memset)
+contiki-feuerwhere.a(watchdog.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (watchdog_start)
+contiki-feuerwhere.a(uart1x.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (uart1_active)
+contiki-feuerwhere.a(node-id.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (node_id_restore)
+contiki-feuerwhere.a(button-sensor.o)
+                              contiki-feuerwhere.a(contiki-feuerwh) (button_sensor)
+contiki-feuerwhere.a(button2-sensor.)
+                              contiki-feuerwhere.a(contiki-feuerwh) (button_sensor2)
+contiki-feuerwhere.a(trigger.o)
+                              example-m2dagnos_power_trace_1_g_fw1.co (trigger_init)
+contiki-feuerwhere.a(wur-sensor.o)
+                              contiki-feuerwhere.a(contiki-feuerwh) (wur_sensor)
+contiki-feuerwhere.a(sensors.o)
+                              contiki-feuerwhere.a(contiki-feuerwh) (sensors_process)
+contiki-feuerwhere.a(cc2520.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (cc2520_set_pan_addr)
+contiki-feuerwhere.a(cc2520-arch.o)
+                              contiki-feuerwhere.a(cc2520.o) (cc2520_arch_init)
+contiki-feuerwhere.a(cc2520-arch-sfd)
+                              contiki-feuerwhere.a(cc2520-arch.o) (cc2520_arch_sfd_init)
+contiki-feuerwhere.a(uart1-putchar.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (putchar)
+contiki-feuerwhere.a(clock.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (clock_init)
+contiki-feuerwhere.a(leds.o)  obj_feuerwhere/contiki-feuerwhere-main.o (leds_init)
+contiki-feuerwhere.a(leds-arch.o)
+                              contiki-feuerwhere.a(leds.o) (leds_arch_init)
+contiki-feuerwhere.a(rtimer-arch.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (rtimer_arch_now)
+contiki-feuerwhere.a(autostart.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (autostart_start)
+contiki-feuerwhere.a(energest.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (energest_init)
+contiki-feuerwhere.a(ctimer.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (ctimer_init)
+contiki-feuerwhere.a(etimer.o)
+                              contiki-feuerwhere.a(clock.o) (etimer_request_poll)
+contiki-feuerwhere.a(process.o)
+                              example-m2dagnos_power_trace_1_g_fw1.co (process_current)
+contiki-feuerwhere.a(rtimer.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (rtimer_init)
+contiki-feuerwhere.a(timer.o)
+                              contiki-feuerwhere.a(button-sensor.o) (timer_set)
+contiki-feuerwhere.a(serial-line.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (serial_line_input_byte)
+contiki-feuerwhere.a(list.o)  example-m2dagnos_power_trace_1_g_fw1.co (list_init)
+contiki-feuerwhere.a(memb.o)  example-m2dagnos_power_trace_1_g_fw1.co (memb_init)
+contiki-feuerwhere.a(random.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (random_init)
+contiki-feuerwhere.a(ringbuf.o)
+                              contiki-feuerwhere.a(serial-line.o) (ringbuf_init)
+contiki-feuerwhere.a(rime.o)  obj_feuerwhere/contiki-feuerwhere-main.o (rime_driver)
+contiki-feuerwhere.a(broadcast-annou)
+                              contiki-feuerwhere.a(rime.o) (broadcast_announcement_init)
+contiki-feuerwhere.a(announcement.o)
+                              contiki-feuerwhere.a(rime.o) (announcement_init)
+contiki-feuerwhere.a(runicast.o)
+                              example-m2dagnos_power_trace_1_g_fw1.co (runicast_open)
+contiki-feuerwhere.a(m2dagnos.o)
+                              example-m2dagnos_power_trace_1_g_fw1.co (M2DAGNOS_update_neighbor_lower_tier_info_proc)
+contiki-feuerwhere.a(stunicast.o)
+                              contiki-feuerwhere.a(runicast.o) (stunicast_open)
+contiki-feuerwhere.a(timesynch.o)
+                              example-m2dagnos_power_trace_1_g_fw1.co (timesynch_set_authority_level)
+contiki-feuerwhere.a(chameleon.o)
+                              contiki-feuerwhere.a(rime.o) (chameleon_init)
+contiki-feuerwhere.a(channel.o)
+                              contiki-feuerwhere.a(chameleon.o) (channel_init)
+contiki-feuerwhere.a(collect.o)
+                              example-m2dagnos_power_trace_1_g_fw1.co (collect_open)
+contiki-feuerwhere.a(broadcast.o)
+                              example-m2dagnos_power_trace_1_g_fw1.co (broadcast_open)
+contiki-feuerwhere.a(unicast.o)
+                              contiki-feuerwhere.a(stunicast.o) (unicast_open)
+contiki-feuerwhere.a(abc.o)   contiki-feuerwhere.a(broadcast.o) (abc_open)
+contiki-feuerwhere.a(collect-link-es)
+                              contiki-feuerwhere.a(collect.o) (collect_link_estimate_num_estimates)
+contiki-feuerwhere.a(collect-neighbo)
+                              contiki-feuerwhere.a(collect.o) (collect_neighbor_init)
+contiki-feuerwhere.a(queuebuf.o)
+                              contiki-feuerwhere.a(rime.o) (queuebuf_init)
+contiki-feuerwhere.a(packetbuf.o)
+                              contiki-feuerwhere.a(rime.o) (packetbuf_compact)
+contiki-feuerwhere.a(linkaddr.o)
+                              example-m2dagnos_power_trace_1_g_fw1.co (linkaddr_copy)
+contiki-feuerwhere.a(csma.o)  obj_feuerwhere/contiki-feuerwhere-main.o (csma_driver)
+contiki-feuerwhere.a(mac.o)   contiki-feuerwhere.a(csma.o) (mac_call_sent_callback)
+contiki-feuerwhere.a(nullsec.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (nullsec_driver)
+contiki-feuerwhere.a(ds2411.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (ds2411_init)
+contiki-feuerwhere.a(wrimac-broadcas)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (wrimac_broadcast_driver)
+contiki-feuerwhere.a(flash.o)
+                              contiki-feuerwhere.a(node-id.o) (flash_setup)
+contiki-feuerwhere.a(button-isr.o)
+                              contiki-feuerwhere.a(button-sensor.o) (debouncetimer)
+contiki-feuerwhere.a(spi.o)   contiki-feuerwhere.a(cc2520-arch.o) (spi_init)
+contiki-feuerwhere.a(packetqueue.o)
+                              contiki-feuerwhere.a(collect.o) (packetqueue_enqueue_packetbuf)
+contiki-feuerwhere.a(chameleon-bitop)
+                              contiki-feuerwhere.a(chameleon.o) (chameleon_bitopt)
+contiki-feuerwhere.a(neighbor-discov)
+                              contiki-feuerwhere.a(collect.o) (neighbor_discovery_open)
+contiki-feuerwhere.a(mac-sequence.o)
+                              contiki-feuerwhere.a(wrimac-broadcas) (mac_sequence_is_duplicate)
+contiki-feuerwhere.a(framer-802154.o)
+                              contiki-feuerwhere.a(wrimac-broadcas) (framer_802154)
+contiki-feuerwhere.a(frame802154.o)
+                              contiki-feuerwhere.a(framer-802154.o) (frame802154_hdrlen)
+contiki-feuerwhere.a(framer.o)
+                              contiki-feuerwhere.a(framer-802154.o) (framer_canonical_create_and_secure)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod16.o)
+                              contiki-feuerwhere.a(m2dagnos.o) (__udivhi3)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod32.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (__udivsi3)
+/usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(strncmp.o)
+                              contiki-feuerwhere.a(sensors.o) (strncmp)
+/usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(memcmp.o)
+                              contiki-feuerwhere.a(linkaddr.o) (memcmp)
+/usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o)
+                              example-m2dagnos_power_trace_1_g_fw1.co (printf)
+/usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+                              /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o) (vuprintf)
+/usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(puts.o)
+                              obj_feuerwhere/contiki-feuerwhere-main.o (puts)
+/usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o)
+                              contiki-feuerwhere.a(random.o) (rand)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_mulsi3.o)
+                              /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o) (__mulsi3)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod64.o)
+                              /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o) (__udivdi3)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o)
+                              /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/crt0ivtbl64.o (_reset_vector__)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__watchdog_support.o)
+                              /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o) (__watchdog_support)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__init_stack.o)
+                              /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o) (__init_stack)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__low_level_init.o)
+                              /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o) (__low_level_init)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_copy_data.o)
+                              /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o) (__do_copy_data)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_clear_bss.o)
+                              /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o) (__do_clear_bss)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__stop_progExec__.o)
+                              /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o) (__stop_progExec__)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_endless_loop__.o)
+                              /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o) (_endless_loop__)
+/usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_unexpected_.o)
+                              /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/crt0ivtbl64.o (_unexpected_)
+
+Allocating common symbols
+Common symbol       size              file
+
+energest_total_time
+                    0x30              contiki-feuerwhere.a(energest.o)
+ev_init_m2dagnos    0x1               example-m2dagnos_power_trace_1_g_fw1.co
+c_report_msg        0xa               example-m2dagnos_power_trace_1_g_fw1.co
+ev_monitoring       0x1               example-m2dagnos_power_trace_1_g_fw1.co
+energest_total_count
+                    0x2               contiki-feuerwhere.a(energest.o)
+cc2520_sfd_counter  0x1               contiki-feuerwhere.a(cc2520.o)
+cc2520_sfd_start_time
+                    0x2               contiki-feuerwhere.a(cc2520.o)
+c_nti               0x6               example-m2dagnos_power_trace_1_g_fw1.co
+energest_current_mode
+                    0xc               contiki-feuerwhere.a(energest.o)
+packetbuf_addrs     0x8               contiki-feuerwhere.a(packetbuf.o)
+cc2520_sfd_end_time
+                    0x2               contiki-feuerwhere.a(cc2520.o)
+cc2520_time_of_departure
+                    0x2               contiki-feuerwhere.a(cc2520.o)
+process_maxevents   0x1               contiki-feuerwhere.a(process.o)
+debouncetimer       0x8               contiki-feuerwhere.a(button-isr.o)
+cc2520_packets_seen
+                    0x2               contiki-feuerwhere.a(cc2520.o)
+linkaddr_node_addr  0x2               contiki-feuerwhere.a(linkaddr.o)
+cc2520_packets_read
+                    0x2               contiki-feuerwhere.a(cc2520.o)
+ev_initializing     0x1               example-m2dagnos_power_trace_1_g_fw1.co
+cc2520_last_rssi    0x1               contiki-feuerwhere.a(cc2520.o)
+c_flags             0xa               example-m2dagnos_power_trace_1_g_fw1.co
+cc2520_time_of_arrival
+                    0x2               contiki-feuerwhere.a(cc2520.o)
+packetbuf_attrs     0x34              contiki-feuerwhere.a(packetbuf.o)
+ev_sleeping         0x1               example-m2dagnos_power_trace_1_g_fw1.co
+ev_working          0x1               example-m2dagnos_power_trace_1_g_fw1.co
+cc2520_authority_level_of_sender
+                    0x2               contiki-feuerwhere.a(cc2520.o)
+ev_sink             0x1               example-m2dagnos_power_trace_1_g_fw1.co
+sensed_value_buf    0x6               contiki-feuerwhere.a(m2dagnos.o)
+stats               0x38              contiki-feuerwhere.a(collect.o)
+energest_current_time
+                    0x18              contiki-feuerwhere.a(energest.o)
+sensors_flags       0x4               contiki-feuerwhere.a(contiki-feuerwh)
+c_working_msg       0xa               example-m2dagnos_power_trace_1_g_fw1.co
+serial_line_event_message
+                    0x1               contiki-feuerwhere.a(serial-line.o)
+c_node              0x60              example-m2dagnos_power_trace_1_g_fw1.co
+debouncetimerWrx    0x8               contiki-feuerwhere.a(button-isr.o)
+ev_sampling         0x1               example-m2dagnos_power_trace_1_g_fw1.co
+c_broadcast_msg     0x6               example-m2dagnos_power_trace_1_g_fw1.co
+sensors_event       0x1               contiki-feuerwhere.a(sensors.o)
+cc2520_last_correlation
+                    0x1               contiki-feuerwhere.a(cc2520.o)
+ds2411_id           0x8               contiki-feuerwhere.a(ds2411.o)
+ev_assisting        0x1               example-m2dagnos_power_trace_1_g_fw1.co
+ev_init_rime        0x1               example-m2dagnos_power_trace_1_g_fw1.co
+debouncetimer2      0x8               contiki-feuerwhere.a(button-isr.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sfr              0x0000000000000000 0x0000000000000010
+peripheral_8bit  0x0000000000000010 0x00000000000000f0
+peripheral_16bit 0x0000000000000100 0x0000000000000100
+bsl              0x0000000000001000 0x0000000000000800
+infomem          0x0000000000001800 0x0000000000000200
+infod            0x0000000000001800 0x0000000000000080
+infoc            0x0000000000001880 0x0000000000000080
+infob            0x0000000000001900 0x0000000000000080
+infoa            0x0000000000001980 0x0000000000000080
+ram              0x0000000000001c00 0x0000000000004000 xw
+rom              0x0000000000005c00 0x000000000000a380 xr
+vectors          0x000000000000ff80 0x0000000000000080
+far_rom          0x0000000000010000 0x0000000000035c00
+ram2             0x0000000000000000 0x0000000000000000 xw
+ram_mirror       0x0000000000000000 0x0000000000000000 xw
+usbram           0x0000000000000000 0x0000000000000000 xw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/crt0ivtbl64.o
+LOAD example-m2dagnos_power_trace_1_g_fw1.co
+LOAD obj_feuerwhere/contiki-feuerwhere-main.o
+LOAD contiki-feuerwhere.a
+LOAD /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a
+LOAD /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a
+LOAD /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a
+LOAD /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a
+                0x0000000000000080                PROVIDE (__info_segment_size, 0x80)
+                0x0000000000001800                PROVIDE (__infod, 0x1800)
+                0x0000000000001880                PROVIDE (__infoc, 0x1880)
+                0x0000000000001900                PROVIDE (__infob, 0x1900)
+                0x0000000000001980                PROVIDE (__infoa, 0x1980)
+                0x0000000000000700                __ADC12CTL0_L = 0x700
+                0x0000000000000701                __ADC12CTL0_H = 0x701
+                0x0000000000000700                __ADC12CTL0 = 0x700
+                0x0000000000000702                __ADC12CTL1_L = 0x702
+                0x0000000000000703                __ADC12CTL1_H = 0x703
+                0x0000000000000702                __ADC12CTL1 = 0x702
+                0x0000000000000704                __ADC12CTL2_L = 0x704
+                0x0000000000000705                __ADC12CTL2_H = 0x705
+                0x0000000000000704                __ADC12CTL2 = 0x704
+                0x000000000000070a                __ADC12IFG_L = 0x70a
+                0x000000000000070b                __ADC12IFG_H = 0x70b
+                0x000000000000070a                __ADC12IFG = 0x70a
+                0x000000000000070c                __ADC12IE_L = 0x70c
+                0x000000000000070d                __ADC12IE_H = 0x70d
+                0x000000000000070c                __ADC12IE = 0x70c
+                0x000000000000070e                __ADC12IV_L = 0x70e
+                0x000000000000070f                __ADC12IV_H = 0x70f
+                0x000000000000070e                __ADC12IV = 0x70e
+                0x0000000000000720                __ADC12MEM0_L = 0x720
+                0x0000000000000721                __ADC12MEM0_H = 0x721
+                0x0000000000000720                __ADC12MEM0 = 0x720
+                0x0000000000000722                __ADC12MEM1_L = 0x722
+                0x0000000000000723                __ADC12MEM1_H = 0x723
+                0x0000000000000722                __ADC12MEM1 = 0x722
+                0x0000000000000724                __ADC12MEM2_L = 0x724
+                0x0000000000000725                __ADC12MEM2_H = 0x725
+                0x0000000000000724                __ADC12MEM2 = 0x724
+                0x0000000000000726                __ADC12MEM3_L = 0x726
+                0x0000000000000727                __ADC12MEM3_H = 0x727
+                0x0000000000000726                __ADC12MEM3 = 0x726
+                0x0000000000000728                __ADC12MEM4_L = 0x728
+                0x0000000000000729                __ADC12MEM4_H = 0x729
+                0x0000000000000728                __ADC12MEM4 = 0x728
+                0x000000000000072a                __ADC12MEM5_L = 0x72a
+                0x000000000000072b                __ADC12MEM5_H = 0x72b
+                0x000000000000072a                __ADC12MEM5 = 0x72a
+                0x000000000000072c                __ADC12MEM6_L = 0x72c
+                0x000000000000072d                __ADC12MEM6_H = 0x72d
+                0x000000000000072c                __ADC12MEM6 = 0x72c
+                0x000000000000072e                __ADC12MEM7_L = 0x72e
+                0x000000000000072f                __ADC12MEM7_H = 0x72f
+                0x000000000000072e                __ADC12MEM7 = 0x72e
+                0x0000000000000730                __ADC12MEM8_L = 0x730
+                0x0000000000000731                __ADC12MEM8_H = 0x731
+                0x0000000000000730                __ADC12MEM8 = 0x730
+                0x0000000000000732                __ADC12MEM9_L = 0x732
+                0x0000000000000733                __ADC12MEM9_H = 0x733
+                0x0000000000000732                __ADC12MEM9 = 0x732
+                0x0000000000000734                __ADC12MEM10_L = 0x734
+                0x0000000000000735                __ADC12MEM10_H = 0x735
+                0x0000000000000734                __ADC12MEM10 = 0x734
+                0x0000000000000736                __ADC12MEM11_L = 0x736
+                0x0000000000000737                __ADC12MEM11_H = 0x737
+                0x0000000000000736                __ADC12MEM11 = 0x736
+                0x0000000000000738                __ADC12MEM12_L = 0x738
+                0x0000000000000739                __ADC12MEM12_H = 0x739
+                0x0000000000000738                __ADC12MEM12 = 0x738
+                0x000000000000073a                __ADC12MEM13_L = 0x73a
+                0x000000000000073b                __ADC12MEM13_H = 0x73b
+                0x000000000000073a                __ADC12MEM13 = 0x73a
+                0x000000000000073c                __ADC12MEM14_L = 0x73c
+                0x000000000000073d                __ADC12MEM14_H = 0x73d
+                0x000000000000073c                __ADC12MEM14 = 0x73c
+                0x000000000000073e                __ADC12MEM15_L = 0x73e
+                0x000000000000073f                __ADC12MEM15_H = 0x73f
+                0x000000000000073e                __ADC12MEM15 = 0x73e
+                0x0000000000000710                __ADC12MCTL0 = 0x710
+                0x0000000000000711                __ADC12MCTL1 = 0x711
+                0x0000000000000712                __ADC12MCTL2 = 0x712
+                0x0000000000000713                __ADC12MCTL3 = 0x713
+                0x0000000000000714                __ADC12MCTL4 = 0x714
+                0x0000000000000715                __ADC12MCTL5 = 0x715
+                0x0000000000000716                __ADC12MCTL6 = 0x716
+                0x0000000000000717                __ADC12MCTL7 = 0x717
+                0x0000000000000718                __ADC12MCTL8 = 0x718
+                0x0000000000000719                __ADC12MCTL9 = 0x719
+                0x000000000000071a                __ADC12MCTL10 = 0x71a
+                0x000000000000071b                __ADC12MCTL11 = 0x71b
+                0x000000000000071c                __ADC12MCTL12 = 0x71c
+                0x000000000000071d                __ADC12MCTL13 = 0x71d
+                0x000000000000071e                __ADC12MCTL14 = 0x71e
+                0x000000000000071f                __ADC12MCTL15 = 0x71f
+                0x0000000000000150                __CRCDI_L = 0x150
+                0x0000000000000151                __CRCDI_H = 0x151
+                0x0000000000000150                __CRCDI = 0x150
+                0x0000000000000154                __CRCINIRES_L = 0x154
+                0x0000000000000155                __CRCINIRES_H = 0x155
+                0x0000000000000154                __CRCINIRES = 0x154
+                0x0000000000000500                __DMACTL0_L = 0x500
+                0x0000000000000501                __DMACTL0_H = 0x501
+                0x0000000000000500                __DMACTL0 = 0x500
+                0x0000000000000502                __DMACTL1_L = 0x502
+                0x0000000000000503                __DMACTL1_H = 0x503
+                0x0000000000000502                __DMACTL1 = 0x502
+                0x0000000000000504                __DMACTL2_L = 0x504
+                0x0000000000000505                __DMACTL2_H = 0x505
+                0x0000000000000504                __DMACTL2 = 0x504
+                0x0000000000000506                __DMACTL3_L = 0x506
+                0x0000000000000507                __DMACTL3_H = 0x507
+                0x0000000000000506                __DMACTL3 = 0x506
+                0x0000000000000508                __DMACTL4_L = 0x508
+                0x0000000000000509                __DMACTL4_H = 0x509
+                0x0000000000000508                __DMACTL4 = 0x508
+                0x000000000000050e                __DMAIV_L = 0x50e
+                0x000000000000050f                __DMAIV_H = 0x50f
+                0x000000000000050e                __DMAIV = 0x50e
+                0x0000000000000510                __DMA0CTL_L = 0x510
+                0x0000000000000511                __DMA0CTL_H = 0x511
+                0x0000000000000510                __DMA0CTL = 0x510
+                0x0000000000000512                __DMA0SA = 0x512
+                0x0000000000000516                __DMA0DA = 0x516
+                0x000000000000051a                __DMA0SZ = 0x51a
+                0x0000000000000520                __DMA1CTL_L = 0x520
+                0x0000000000000521                __DMA1CTL_H = 0x521
+                0x0000000000000520                __DMA1CTL = 0x520
+                0x0000000000000522                __DMA1SA = 0x522
+                0x0000000000000526                __DMA1DA = 0x526
+                0x000000000000052a                __DMA1SZ = 0x52a
+                0x0000000000000530                __DMA2CTL_L = 0x530
+                0x0000000000000531                __DMA2CTL_H = 0x531
+                0x0000000000000530                __DMA2CTL = 0x530
+                0x0000000000000532                __DMA2SA = 0x532
+                0x0000000000000536                __DMA2DA = 0x536
+                0x000000000000053a                __DMA2SZ = 0x53a
+                0x0000000000000140                __FCTL1_L = 0x140
+                0x0000000000000141                __FCTL1_H = 0x141
+                0x0000000000000140                __FCTL1 = 0x140
+                0x0000000000000144                __FCTL3_L = 0x144
+                0x0000000000000145                __FCTL3_H = 0x145
+                0x0000000000000144                __FCTL3 = 0x144
+                0x0000000000000146                __FCTL4_L = 0x146
+                0x0000000000000147                __FCTL4_H = 0x147
+                0x0000000000000146                __FCTL4 = 0x146
+                0x00000000000004c0                __MPY_L = 0x4c0
+                0x00000000000004c1                __MPY_H = 0x4c1
+                0x00000000000004c0                __MPY = 0x4c0
+                0x00000000000004c2                __MPYS_L = 0x4c2
+                0x00000000000004c3                __MPYS_H = 0x4c3
+                0x00000000000004c2                __MPYS = 0x4c2
+                0x00000000000004c4                __MAC_L = 0x4c4
+                0x00000000000004c5                __MAC_H = 0x4c5
+                0x00000000000004c4                __MAC = 0x4c4
+                0x00000000000004c6                __MACS_L = 0x4c6
+                0x00000000000004c7                __MACS_H = 0x4c7
+                0x00000000000004c6                __MACS = 0x4c6
+                0x00000000000004c8                __OP2_L = 0x4c8
+                0x00000000000004c9                __OP2_H = 0x4c9
+                0x00000000000004c8                __OP2 = 0x4c8
+                0x00000000000004ca                __RESLO_L = 0x4ca
+                0x00000000000004cb                __RESLO_H = 0x4cb
+                0x00000000000004ca                __RESLO = 0x4ca
+                0x00000000000004cc                __RESHI_L = 0x4cc
+                0x00000000000004cd                __RESHI_H = 0x4cd
+                0x00000000000004cc                __RESHI = 0x4cc
+                0x00000000000004ce                __SUMEXT_L = 0x4ce
+                0x00000000000004cf                __SUMEXT_H = 0x4cf
+                0x00000000000004ce                __SUMEXT = 0x4ce
+                0x00000000000004d0                __MPY32L_L = 0x4d0
+                0x00000000000004d1                __MPY32L_H = 0x4d1
+                0x00000000000004d0                __MPY32L = 0x4d0
+                0x00000000000004d2                __MPY32H_L = 0x4d2
+                0x00000000000004d3                __MPY32H_H = 0x4d3
+                0x00000000000004d2                __MPY32H = 0x4d2
+                0x00000000000004d4                __MPYS32L_L = 0x4d4
+                0x00000000000004d5                __MPYS32L_H = 0x4d5
+                0x00000000000004d4                __MPYS32L = 0x4d4
+                0x00000000000004d6                __MPYS32H_L = 0x4d6
+                0x00000000000004d7                __MPYS32H_H = 0x4d7
+                0x00000000000004d6                __MPYS32H = 0x4d6
+                0x00000000000004d8                __MAC32L_L = 0x4d8
+                0x00000000000004d9                __MAC32L_H = 0x4d9
+                0x00000000000004d8                __MAC32L = 0x4d8
+                0x00000000000004da                __MAC32H_L = 0x4da
+                0x00000000000004db                __MAC32H_H = 0x4db
+                0x00000000000004da                __MAC32H = 0x4da
+                0x00000000000004dc                __MACS32L_L = 0x4dc
+                0x00000000000004dd                __MACS32L_H = 0x4dd
+                0x00000000000004dc                __MACS32L = 0x4dc
+                0x00000000000004de                __MACS32H_L = 0x4de
+                0x00000000000004df                __MACS32H_H = 0x4df
+                0x00000000000004de                __MACS32H = 0x4de
+                0x00000000000004e0                __OP2L_L = 0x4e0
+                0x00000000000004e1                __OP2L_H = 0x4e1
+                0x00000000000004e0                __OP2L = 0x4e0
+                0x00000000000004e2                __OP2H_L = 0x4e2
+                0x00000000000004e3                __OP2H_H = 0x4e3
+                0x00000000000004e2                __OP2H = 0x4e2
+                0x00000000000004e4                __RES0_L = 0x4e4
+                0x00000000000004e5                __RES0_H = 0x4e5
+                0x00000000000004e4                __RES0 = 0x4e4
+                0x00000000000004e6                __RES1_L = 0x4e6
+                0x00000000000004e7                __RES1_H = 0x4e7
+                0x00000000000004e6                __RES1 = 0x4e6
+                0x00000000000004e8                __RES2_L = 0x4e8
+                0x00000000000004e9                __RES2_H = 0x4e9
+                0x00000000000004e8                __RES2 = 0x4e8
+                0x00000000000004ea                __RES3_L = 0x4ea
+                0x00000000000004eb                __RES3_H = 0x4eb
+                0x00000000000004ea                __RES3 = 0x4ea
+                0x00000000000004ec                __MPY32CTL0_L = 0x4ec
+                0x00000000000004ed                __MPY32CTL0_H = 0x4ed
+                0x00000000000004ec                __MPY32CTL0 = 0x4ec
+                0x0000000000000200                __PAIN_L = 0x200
+                0x0000000000000201                __PAIN_H = 0x201
+                0x0000000000000200                __PAIN = 0x200
+                0x0000000000000202                __PAOUT_L = 0x202
+                0x0000000000000203                __PAOUT_H = 0x203
+                0x0000000000000202                __PAOUT = 0x202
+                0x0000000000000204                __PADIR_L = 0x204
+                0x0000000000000205                __PADIR_H = 0x205
+                0x0000000000000204                __PADIR = 0x204
+                0x0000000000000206                __PAREN_L = 0x206
+                0x0000000000000207                __PAREN_H = 0x207
+                0x0000000000000206                __PAREN = 0x206
+                0x0000000000000208                __PADS_L = 0x208
+                0x0000000000000209                __PADS_H = 0x209
+                0x0000000000000208                __PADS = 0x208
+                0x000000000000020a                __PASEL_L = 0x20a
+                0x000000000000020b                __PASEL_H = 0x20b
+                0x000000000000020a                __PASEL = 0x20a
+                0x0000000000000218                __PAIES_L = 0x218
+                0x0000000000000219                __PAIES_H = 0x219
+                0x0000000000000218                __PAIES = 0x218
+                0x000000000000021a                __PAIE_L = 0x21a
+                0x000000000000021b                __PAIE_H = 0x21b
+                0x000000000000021a                __PAIE = 0x21a
+                0x000000000000021c                __PAIFG_L = 0x21c
+                0x000000000000021d                __PAIFG_H = 0x21d
+                0x000000000000021c                __PAIFG = 0x21c
+                0x000000000000020e                __P1IV = 0x20e
+                0x000000000000021e                __P2IV = 0x21e
+                0x0000000000000220                __PBIN_L = 0x220
+                0x0000000000000221                __PBIN_H = 0x221
+                0x0000000000000220                __PBIN = 0x220
+                0x0000000000000222                __PBOUT_L = 0x222
+                0x0000000000000223                __PBOUT_H = 0x223
+                0x0000000000000222                __PBOUT = 0x222
+                0x0000000000000224                __PBDIR_L = 0x224
+                0x0000000000000225                __PBDIR_H = 0x225
+                0x0000000000000224                __PBDIR = 0x224
+                0x0000000000000226                __PBREN_L = 0x226
+                0x0000000000000227                __PBREN_H = 0x227
+                0x0000000000000226                __PBREN = 0x226
+                0x0000000000000228                __PBDS_L = 0x228
+                0x0000000000000229                __PBDS_H = 0x229
+                0x0000000000000228                __PBDS = 0x228
+                0x000000000000022a                __PBSEL_L = 0x22a
+                0x000000000000022b                __PBSEL_H = 0x22b
+                0x000000000000022a                __PBSEL = 0x22a
+                0x0000000000000240                __PCIN_L = 0x240
+                0x0000000000000241                __PCIN_H = 0x241
+                0x0000000000000240                __PCIN = 0x240
+                0x0000000000000242                __PCOUT_L = 0x242
+                0x0000000000000243                __PCOUT_H = 0x243
+                0x0000000000000242                __PCOUT = 0x242
+                0x0000000000000244                __PCDIR_L = 0x244
+                0x0000000000000245                __PCDIR_H = 0x245
+                0x0000000000000244                __PCDIR = 0x244
+                0x0000000000000246                __PCREN_L = 0x246
+                0x0000000000000247                __PCREN_H = 0x247
+                0x0000000000000246                __PCREN = 0x246
+                0x0000000000000248                __PCDS_L = 0x248
+                0x0000000000000249                __PCDS_H = 0x249
+                0x0000000000000248                __PCDS = 0x248
+                0x000000000000024a                __PCSEL_L = 0x24a
+                0x000000000000024b                __PCSEL_H = 0x24b
+                0x000000000000024a                __PCSEL = 0x24a
+                0x0000000000000260                __PDIN_L = 0x260
+                0x0000000000000261                __PDIN_H = 0x261
+                0x0000000000000260                __PDIN = 0x260
+                0x0000000000000262                __PDOUT_L = 0x262
+                0x0000000000000263                __PDOUT_H = 0x263
+                0x0000000000000262                __PDOUT = 0x262
+                0x0000000000000264                __PDDIR_L = 0x264
+                0x0000000000000265                __PDDIR_H = 0x265
+                0x0000000000000264                __PDDIR = 0x264
+                0x0000000000000266                __PDREN_L = 0x266
+                0x0000000000000267                __PDREN_H = 0x267
+                0x0000000000000266                __PDREN = 0x266
+                0x0000000000000268                __PDDS_L = 0x268
+                0x0000000000000269                __PDDS_H = 0x269
+                0x0000000000000268                __PDDS = 0x268
+                0x000000000000026a                __PDSEL_L = 0x26a
+                0x000000000000026b                __PDSEL_H = 0x26b
+                0x000000000000026a                __PDSEL = 0x26a
+                0x0000000000000280                __PEIN_L = 0x280
+                0x0000000000000281                __PEIN_H = 0x281
+                0x0000000000000280                __PEIN = 0x280
+                0x0000000000000282                __PEOUT_L = 0x282
+                0x0000000000000283                __PEOUT_H = 0x283
+                0x0000000000000282                __PEOUT = 0x282
+                0x0000000000000284                __PEDIR_L = 0x284
+                0x0000000000000285                __PEDIR_H = 0x285
+                0x0000000000000284                __PEDIR = 0x284
+                0x0000000000000286                __PEREN_L = 0x286
+                0x0000000000000287                __PEREN_H = 0x287
+                0x0000000000000286                __PEREN = 0x286
+                0x0000000000000288                __PEDS_L = 0x288
+                0x0000000000000289                __PEDS_H = 0x289
+                0x0000000000000288                __PEDS = 0x288
+                0x000000000000028a                __PESEL_L = 0x28a
+                0x000000000000028b                __PESEL_H = 0x28b
+                0x000000000000028a                __PESEL = 0x28a
+                0x00000000000002a0                __PFIN_L = 0x2a0
+                0x00000000000002a1                __PFIN_H = 0x2a1
+                0x00000000000002a0                __PFIN = 0x2a0
+                0x00000000000002a2                __PFOUT_L = 0x2a2
+                0x00000000000002a3                __PFOUT_H = 0x2a3
+                0x00000000000002a2                __PFOUT = 0x2a2
+                0x00000000000002a4                __PFDIR_L = 0x2a4
+                0x00000000000002a5                __PFDIR_H = 0x2a5
+                0x00000000000002a4                __PFDIR = 0x2a4
+                0x00000000000002a6                __PFREN_L = 0x2a6
+                0x00000000000002a7                __PFREN_H = 0x2a7
+                0x00000000000002a6                __PFREN = 0x2a6
+                0x00000000000002a8                __PFDS_L = 0x2a8
+                0x00000000000002a9                __PFDS_H = 0x2a9
+                0x00000000000002a8                __PFDS = 0x2a8
+                0x00000000000002aa                __PFSEL_L = 0x2aa
+                0x00000000000002ab                __PFSEL_H = 0x2ab
+                0x00000000000002aa                __PFSEL = 0x2aa
+                0x0000000000000320                __PJIN_L = 0x320
+                0x0000000000000321                __PJIN_H = 0x321
+                0x0000000000000320                __PJIN = 0x320
+                0x0000000000000322                __PJOUT_L = 0x322
+                0x0000000000000323                __PJOUT_H = 0x323
+                0x0000000000000322                __PJOUT = 0x322
+                0x0000000000000324                __PJDIR_L = 0x324
+                0x0000000000000325                __PJDIR_H = 0x325
+                0x0000000000000324                __PJDIR = 0x324
+                0x0000000000000326                __PJREN_L = 0x326
+                0x0000000000000327                __PJREN_H = 0x327
+                0x0000000000000326                __PJREN = 0x326
+                0x0000000000000328                __PJDS_L = 0x328
+                0x0000000000000329                __PJDS_H = 0x329
+                0x0000000000000328                __PJDS = 0x328
+                0x0000000000000120                __PMMCTL0_L = 0x120
+                0x0000000000000121                __PMMCTL0_H = 0x121
+                0x0000000000000120                __PMMCTL0 = 0x120
+                0x0000000000000122                __PMMCTL1_L = 0x122
+                0x0000000000000123                __PMMCTL1_H = 0x123
+                0x0000000000000122                __PMMCTL1 = 0x122
+                0x0000000000000124                __SVSMHCTL_L = 0x124
+                0x0000000000000125                __SVSMHCTL_H = 0x125
+                0x0000000000000124                __SVSMHCTL = 0x124
+                0x0000000000000126                __SVSMLCTL_L = 0x126
+                0x0000000000000127                __SVSMLCTL_H = 0x127
+                0x0000000000000126                __SVSMLCTL = 0x126
+                0x0000000000000128                __SVSMIO_L = 0x128
+                0x0000000000000129                __SVSMIO_H = 0x129
+                0x0000000000000128                __SVSMIO = 0x128
+                0x000000000000012c                __PMMIFG_L = 0x12c
+                0x000000000000012d                __PMMIFG_H = 0x12d
+                0x000000000000012c                __PMMIFG = 0x12c
+                0x000000000000012e                __PMMRIE_L = 0x12e
+                0x000000000000012f                __PMMRIE_H = 0x12f
+                0x000000000000012e                __PMMRIE = 0x12e
+                0x0000000000000158                __RCCTL0_L = 0x158
+                0x0000000000000159                __RCCTL0_H = 0x159
+                0x0000000000000158                __RCCTL0 = 0x158
+                0x00000000000004a0                __RTCCTL01_L = 0x4a0
+                0x00000000000004a1                __RTCCTL01_H = 0x4a1
+                0x00000000000004a0                __RTCCTL01 = 0x4a0
+                0x00000000000004a2                __RTCCTL23_L = 0x4a2
+                0x00000000000004a3                __RTCCTL23_H = 0x4a3
+                0x00000000000004a2                __RTCCTL23 = 0x4a2
+                0x00000000000004a8                __RTCPS0CTL_L = 0x4a8
+                0x00000000000004a9                __RTCPS0CTL_H = 0x4a9
+                0x00000000000004a8                __RTCPS0CTL = 0x4a8
+                0x00000000000004aa                __RTCPS1CTL_L = 0x4aa
+                0x00000000000004ab                __RTCPS1CTL_H = 0x4ab
+                0x00000000000004aa                __RTCPS1CTL = 0x4aa
+                0x00000000000004ac                __RTCPS_L = 0x4ac
+                0x00000000000004ad                __RTCPS_H = 0x4ad
+                0x00000000000004ac                __RTCPS = 0x4ac
+                0x00000000000004ae                __RTCIV = 0x4ae
+                0x00000000000004b0                __RTCTIM0_L = 0x4b0
+                0x00000000000004b1                __RTCTIM0_H = 0x4b1
+                0x00000000000004b0                __RTCTIM0 = 0x4b0
+                0x00000000000004b2                __RTCTIM1_L = 0x4b2
+                0x00000000000004b3                __RTCTIM1_H = 0x4b3
+                0x00000000000004b2                __RTCTIM1 = 0x4b2
+                0x00000000000004b4                __RTCDATE_L = 0x4b4
+                0x00000000000004b5                __RTCDATE_H = 0x4b5
+                0x00000000000004b4                __RTCDATE = 0x4b4
+                0x00000000000004b6                __RTCYEAR_L = 0x4b6
+                0x00000000000004b7                __RTCYEAR_H = 0x4b7
+                0x00000000000004b6                __RTCYEAR = 0x4b6
+                0x00000000000004b8                __RTCAMINHR_L = 0x4b8
+                0x00000000000004b9                __RTCAMINHR_H = 0x4b9
+                0x00000000000004b8                __RTCAMINHR = 0x4b8
+                0x00000000000004ba                __RTCADOWDAY_L = 0x4ba
+                0x00000000000004bb                __RTCADOWDAY_H = 0x4bb
+                0x00000000000004ba                __RTCADOWDAY = 0x4ba
+                0x0000000000000100                __SFRIE1_L = 0x100
+                0x0000000000000101                __SFRIE1_H = 0x101
+                0x0000000000000100                __SFRIE1 = 0x100
+                0x0000000000000102                __SFRIFG1_L = 0x102
+                0x0000000000000103                __SFRIFG1_H = 0x103
+                0x0000000000000102                __SFRIFG1 = 0x102
+                0x0000000000000104                __SFRRPCR_L = 0x104
+                0x0000000000000105                __SFRRPCR_H = 0x105
+                0x0000000000000104                __SFRRPCR = 0x104
+                0x0000000000000180                __SYSCTL_L = 0x180
+                0x0000000000000181                __SYSCTL_H = 0x181
+                0x0000000000000180                __SYSCTL = 0x180
+                0x0000000000000182                __SYSBSLC_L = 0x182
+                0x0000000000000183                __SYSBSLC_H = 0x183
+                0x0000000000000182                __SYSBSLC = 0x182
+                0x0000000000000186                __SYSJMBC_L = 0x186
+                0x0000000000000187                __SYSJMBC_H = 0x187
+                0x0000000000000186                __SYSJMBC = 0x186
+                0x0000000000000188                __SYSJMBI0_L = 0x188
+                0x0000000000000189                __SYSJMBI0_H = 0x189
+                0x0000000000000188                __SYSJMBI0 = 0x188
+                0x000000000000018a                __SYSJMBI1_L = 0x18a
+                0x000000000000018b                __SYSJMBI1_H = 0x18b
+                0x000000000000018a                __SYSJMBI1 = 0x18a
+                0x000000000000018c                __SYSJMBO0_L = 0x18c
+                0x000000000000018d                __SYSJMBO0_H = 0x18d
+                0x000000000000018c                __SYSJMBO0 = 0x18c
+                0x000000000000018e                __SYSJMBO1_L = 0x18e
+                0x000000000000018f                __SYSJMBO1_H = 0x18f
+                0x000000000000018e                __SYSJMBO1 = 0x18e
+                0x000000000000019a                __SYSUNIV_L = 0x19a
+                0x000000000000019b                __SYSUNIV_H = 0x19b
+                0x000000000000019a                __SYSUNIV = 0x19a
+                0x000000000000019c                __SYSSNIV_L = 0x19c
+                0x000000000000019d                __SYSSNIV_H = 0x19d
+                0x000000000000019c                __SYSSNIV = 0x19c
+                0x000000000000019e                __SYSRSTIV_L = 0x19e
+                0x000000000000019f                __SYSRSTIV_H = 0x19f
+                0x000000000000019e                __SYSRSTIV = 0x19e
+                0x0000000000000340                __TA0CTL = 0x340
+                0x0000000000000342                __TA0CCTL0 = 0x342
+                0x0000000000000344                __TA0CCTL1 = 0x344
+                0x0000000000000346                __TA0CCTL2 = 0x346
+                0x0000000000000348                __TA0CCTL3 = 0x348
+                0x000000000000034a                __TA0CCTL4 = 0x34a
+                0x0000000000000350                __TA0R = 0x350
+                0x0000000000000352                __TA0CCR0 = 0x352
+                0x0000000000000354                __TA0CCR1 = 0x354
+                0x0000000000000356                __TA0CCR2 = 0x356
+                0x0000000000000358                __TA0CCR3 = 0x358
+                0x000000000000035a                __TA0CCR4 = 0x35a
+                0x000000000000036e                __TA0IV = 0x36e
+                0x0000000000000360                __TA0EX0 = 0x360
+                0x0000000000000380                __TA1CTL = 0x380
+                0x0000000000000382                __TA1CCTL0 = 0x382
+                0x0000000000000384                __TA1CCTL1 = 0x384
+                0x0000000000000386                __TA1CCTL2 = 0x386
+                0x0000000000000390                __TA1R = 0x390
+                0x0000000000000392                __TA1CCR0 = 0x392
+                0x0000000000000394                __TA1CCR1 = 0x394
+                0x0000000000000396                __TA1CCR2 = 0x396
+                0x00000000000003ae                __TA1IV = 0x3ae
+                0x00000000000003a0                __TA1EX0 = 0x3a0
+                0x00000000000003c0                __TB0CTL = 0x3c0
+                0x00000000000003c2                __TB0CCTL0 = 0x3c2
+                0x00000000000003c4                __TB0CCTL1 = 0x3c4
+                0x00000000000003c6                __TB0CCTL2 = 0x3c6
+                0x00000000000003c8                __TB0CCTL3 = 0x3c8
+                0x00000000000003ca                __TB0CCTL4 = 0x3ca
+                0x00000000000003cc                __TB0CCTL5 = 0x3cc
+                0x00000000000003ce                __TB0CCTL6 = 0x3ce
+                0x00000000000003d0                __TB0R = 0x3d0
+                0x00000000000003d2                __TB0CCR0 = 0x3d2
+                0x00000000000003d4                __TB0CCR1 = 0x3d4
+                0x00000000000003d6                __TB0CCR2 = 0x3d6
+                0x00000000000003d8                __TB0CCR3 = 0x3d8
+                0x00000000000003da                __TB0CCR4 = 0x3da
+                0x00000000000003dc                __TB0CCR5 = 0x3dc
+                0x00000000000003de                __TB0CCR6 = 0x3de
+                0x00000000000003e0                __TB0EX0 = 0x3e0
+                0x00000000000003ee                __TB0IV = 0x3ee
+                0x0000000000000160                __UCSCTL0_L = 0x160
+                0x0000000000000161                __UCSCTL0_H = 0x161
+                0x0000000000000160                __UCSCTL0 = 0x160
+                0x0000000000000162                __UCSCTL1_L = 0x162
+                0x0000000000000163                __UCSCTL1_H = 0x163
+                0x0000000000000162                __UCSCTL1 = 0x162
+                0x0000000000000164                __UCSCTL2_L = 0x164
+                0x0000000000000165                __UCSCTL2_H = 0x165
+                0x0000000000000164                __UCSCTL2 = 0x164
+                0x0000000000000166                __UCSCTL3_L = 0x166
+                0x0000000000000167                __UCSCTL3_H = 0x167
+                0x0000000000000166                __UCSCTL3 = 0x166
+                0x0000000000000168                __UCSCTL4_L = 0x168
+                0x0000000000000169                __UCSCTL4_H = 0x169
+                0x0000000000000168                __UCSCTL4 = 0x168
+                0x000000000000016a                __UCSCTL5_L = 0x16a
+                0x000000000000016b                __UCSCTL5_H = 0x16b
+                0x000000000000016a                __UCSCTL5 = 0x16a
+                0x000000000000016c                __UCSCTL6_L = 0x16c
+                0x000000000000016d                __UCSCTL6_H = 0x16d
+                0x000000000000016c                __UCSCTL6 = 0x16c
+                0x000000000000016e                __UCSCTL7_L = 0x16e
+                0x000000000000016f                __UCSCTL7_H = 0x16f
+                0x000000000000016e                __UCSCTL7 = 0x16e
+                0x0000000000000170                __UCSCTL8_L = 0x170
+                0x0000000000000171                __UCSCTL8_H = 0x171
+                0x0000000000000170                __UCSCTL8 = 0x170
+                0x00000000000005c0                __UCA0CTLW0_L = 0x5c0
+                0x00000000000005c1                __UCA0CTLW0_H = 0x5c1
+                0x00000000000005c0                __UCA0CTLW0 = 0x5c0
+                0x00000000000005c6                __UCA0BRW_L = 0x5c6
+                0x00000000000005c7                __UCA0BRW_H = 0x5c7
+                0x00000000000005c6                __UCA0BRW = 0x5c6
+                0x00000000000005c8                __UCA0MCTL = 0x5c8
+                0x00000000000005ca                __UCA0STAT = 0x5ca
+                0x00000000000005cc                __UCA0RXBUF = 0x5cc
+                0x00000000000005ce                __UCA0TXBUF = 0x5ce
+                0x00000000000005d0                __UCA0ABCTL = 0x5d0
+                0x00000000000005d2                __UCA0IRCTL_L = 0x5d2
+                0x00000000000005d3                __UCA0IRCTL_H = 0x5d3
+                0x00000000000005d2                __UCA0IRCTL = 0x5d2
+                0x00000000000005dc                __UCA0ICTL_L = 0x5dc
+                0x00000000000005dd                __UCA0ICTL_H = 0x5dd
+                0x00000000000005dc                __UCA0ICTL = 0x5dc
+                0x00000000000005de                __UCA0IV = 0x5de
+                0x00000000000005e0                __UCB0CTLW0_L = 0x5e0
+                0x00000000000005e1                __UCB0CTLW0_H = 0x5e1
+                0x00000000000005e0                __UCB0CTLW0 = 0x5e0
+                0x00000000000005e6                __UCB0BRW_L = 0x5e6
+                0x00000000000005e7                __UCB0BRW_H = 0x5e7
+                0x00000000000005e6                __UCB0BRW = 0x5e6
+                0x00000000000005ea                __UCB0STAT = 0x5ea
+                0x00000000000005ec                __UCB0RXBUF = 0x5ec
+                0x00000000000005ee                __UCB0TXBUF = 0x5ee
+                0x00000000000005f0                __UCB0I2COA_L = 0x5f0
+                0x00000000000005f1                __UCB0I2COA_H = 0x5f1
+                0x00000000000005f0                __UCB0I2COA = 0x5f0
+                0x00000000000005f2                __UCB0I2CSA_L = 0x5f2
+                0x00000000000005f3                __UCB0I2CSA_H = 0x5f3
+                0x00000000000005f2                __UCB0I2CSA = 0x5f2
+                0x00000000000005fc                __UCB0ICTL_L = 0x5fc
+                0x00000000000005fd                __UCB0ICTL_H = 0x5fd
+                0x00000000000005fc                __UCB0ICTL = 0x5fc
+                0x00000000000005fe                __UCB0IV = 0x5fe
+                0x0000000000000600                __UCA1CTLW0_L = 0x600
+                0x0000000000000601                __UCA1CTLW0_H = 0x601
+                0x0000000000000600                __UCA1CTLW0 = 0x600
+                0x0000000000000606                __UCA1BRW_L = 0x606
+                0x0000000000000607                __UCA1BRW_H = 0x607
+                0x0000000000000606                __UCA1BRW = 0x606
+                0x0000000000000608                __UCA1MCTL = 0x608
+                0x000000000000060a                __UCA1STAT = 0x60a
+                0x000000000000060c                __UCA1RXBUF = 0x60c
+                0x000000000000060e                __UCA1TXBUF = 0x60e
+                0x0000000000000610                __UCA1ABCTL = 0x610
+                0x0000000000000612                __UCA1IRCTL_L = 0x612
+                0x0000000000000613                __UCA1IRCTL_H = 0x613
+                0x0000000000000612                __UCA1IRCTL = 0x612
+                0x000000000000061c                __UCA1ICTL_L = 0x61c
+                0x000000000000061d                __UCA1ICTL_H = 0x61d
+                0x000000000000061c                __UCA1ICTL = 0x61c
+                0x000000000000061e                __UCA1IV = 0x61e
+                0x0000000000000620                __UCB1CTLW0_L = 0x620
+                0x0000000000000621                __UCB1CTLW0_H = 0x621
+                0x0000000000000620                __UCB1CTLW0 = 0x620
+                0x0000000000000626                __UCB1BRW_L = 0x626
+                0x0000000000000627                __UCB1BRW_H = 0x627
+                0x0000000000000626                __UCB1BRW = 0x626
+                0x000000000000062a                __UCB1STAT = 0x62a
+                0x000000000000062c                __UCB1RXBUF = 0x62c
+                0x000000000000062e                __UCB1TXBUF = 0x62e
+                0x0000000000000630                __UCB1I2COA_L = 0x630
+                0x0000000000000631                __UCB1I2COA_H = 0x631
+                0x0000000000000630                __UCB1I2COA = 0x630
+                0x0000000000000632                __UCB1I2CSA_L = 0x632
+                0x0000000000000633                __UCB1I2CSA_H = 0x633
+                0x0000000000000632                __UCB1I2CSA = 0x632
+                0x000000000000063c                __UCB1ICTL_L = 0x63c
+                0x000000000000063d                __UCB1ICTL_H = 0x63d
+                0x000000000000063c                __UCB1ICTL = 0x63c
+                0x000000000000063e                __UCB1IV = 0x63e
+                0x0000000000000640                __UCA2CTLW0_L = 0x640
+                0x0000000000000641                __UCA2CTLW0_H = 0x641
+                0x0000000000000640                __UCA2CTLW0 = 0x640
+                0x0000000000000646                __UCA2BRW_L = 0x646
+                0x0000000000000647                __UCA2BRW_H = 0x647
+                0x0000000000000646                __UCA2BRW = 0x646
+                0x0000000000000648                __UCA2MCTL = 0x648
+                0x000000000000064a                __UCA2STAT = 0x64a
+                0x000000000000064c                __UCA2RXBUF = 0x64c
+                0x000000000000064e                __UCA2TXBUF = 0x64e
+                0x0000000000000650                __UCA2ABCTL = 0x650
+                0x0000000000000652                __UCA2IRCTL_L = 0x652
+                0x0000000000000653                __UCA2IRCTL_H = 0x653
+                0x0000000000000652                __UCA2IRCTL = 0x652
+                0x000000000000065c                __UCA2ICTL_L = 0x65c
+                0x000000000000065d                __UCA2ICTL_H = 0x65d
+                0x000000000000065c                __UCA2ICTL = 0x65c
+                0x000000000000065e                __UCA2IV = 0x65e
+                0x0000000000000660                __UCB2CTLW0_L = 0x660
+                0x0000000000000661                __UCB2CTLW0_H = 0x661
+                0x0000000000000660                __UCB2CTLW0 = 0x660
+                0x0000000000000666                __UCB2BRW_L = 0x666
+                0x0000000000000667                __UCB2BRW_H = 0x667
+                0x0000000000000666                __UCB2BRW = 0x666
+                0x000000000000066a                __UCB2STAT = 0x66a
+                0x000000000000066c                __UCB2RXBUF = 0x66c
+                0x000000000000066e                __UCB2TXBUF = 0x66e
+                0x0000000000000670                __UCB2I2COA_L = 0x670
+                0x0000000000000671                __UCB2I2COA_H = 0x671
+                0x0000000000000670                __UCB2I2COA = 0x670
+                0x0000000000000672                __UCB2I2CSA_L = 0x672
+                0x0000000000000673                __UCB2I2CSA_H = 0x673
+                0x0000000000000672                __UCB2I2CSA = 0x672
+                0x000000000000067c                __UCB2ICTL_L = 0x67c
+                0x000000000000067d                __UCB2ICTL_H = 0x67d
+                0x000000000000067c                __UCB2ICTL = 0x67c
+                0x000000000000067e                __UCB2IV = 0x67e
+                0x0000000000000680                __UCA3CTLW0_L = 0x680
+                0x0000000000000681                __UCA3CTLW0_H = 0x681
+                0x0000000000000680                __UCA3CTLW0 = 0x680
+                0x0000000000000686                __UCA3BRW_L = 0x686
+                0x0000000000000687                __UCA3BRW_H = 0x687
+                0x0000000000000686                __UCA3BRW = 0x686
+                0x0000000000000688                __UCA3MCTL = 0x688
+                0x000000000000068a                __UCA3STAT = 0x68a
+                0x000000000000068c                __UCA3RXBUF = 0x68c
+                0x000000000000068e                __UCA3TXBUF = 0x68e
+                0x0000000000000690                __UCA3ABCTL = 0x690
+                0x0000000000000692                __UCA3IRCTL_L = 0x692
+                0x0000000000000693                __UCA3IRCTL_H = 0x693
+                0x0000000000000692                __UCA3IRCTL = 0x692
+                0x000000000000069c                __UCA3ICTL_L = 0x69c
+                0x000000000000069d                __UCA3ICTL_H = 0x69d
+                0x000000000000069c                __UCA3ICTL = 0x69c
+                0x000000000000069e                __UCA3IV = 0x69e
+                0x00000000000006a0                __UCB3CTLW0_L = 0x6a0
+                0x00000000000006a1                __UCB3CTLW0_H = 0x6a1
+                0x00000000000006a0                __UCB3CTLW0 = 0x6a0
+                0x00000000000006a6                __UCB3BRW_L = 0x6a6
+                0x00000000000006a7                __UCB3BRW_H = 0x6a7
+                0x00000000000006a6                __UCB3BRW = 0x6a6
+                0x00000000000006aa                __UCB3STAT = 0x6aa
+                0x00000000000006ac                __UCB3RXBUF = 0x6ac
+                0x00000000000006ae                __UCB3TXBUF = 0x6ae
+                0x00000000000006b0                __UCB3I2COA_L = 0x6b0
+                0x00000000000006b1                __UCB3I2COA_H = 0x6b1
+                0x00000000000006b0                __UCB3I2COA = 0x6b0
+                0x00000000000006b2                __UCB3I2CSA_L = 0x6b2
+                0x00000000000006b3                __UCB3I2CSA_H = 0x6b3
+                0x00000000000006b2                __UCB3I2CSA = 0x6b2
+                0x00000000000006bc                __UCB3ICTL_L = 0x6bc
+                0x00000000000006bd                __UCB3ICTL_H = 0x6bd
+                0x00000000000006bc                __UCB3ICTL = 0x6bc
+                0x00000000000006be                __UCB3IV = 0x6be
+                0x000000000000015c                __WDTCTL_L = 0x15c
+                0x000000000000015d                __WDTCTL_H = 0x15d
+                0x000000000000015c                __WDTCTL = 0x15c
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.text
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+
+.rela.text
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+
+.rel.rodata
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+
+.rela.rodata
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+
+.rel.data
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+
+.rela.data
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+
+.rel.bss
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+
+.rela.bss
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000005c00     0x7c90
+                0x0000000000005c00                . = ALIGN (0x2)
+ *(.init .init.*)
+ *(.init0)
+ .init0         0x0000000000005c00        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o)
+                0x0000000000005c00                _reset_vector__
+ *(.init1)
+ .init1         0x0000000000005c00        0xc /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__watchdog_support.o)
+                0x0000000000005c00                __watchdog_support
+ *(.init2)
+ .init2         0x0000000000005c0c        0x4 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__init_stack.o)
+                0x0000000000005c0c                __init_stack
+ *(.init3)
+ .init3         0x0000000000005c10        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__low_level_init.o)
+                0x0000000000005c10                __low_level_init
+ *(.init4)
+ .init4         0x0000000000005c10       0x18 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_copy_data.o)
+                0x0000000000005c10                __do_copy_data
+ .init4         0x0000000000005c28       0x16 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_clear_bss.o)
+                0x0000000000005c28                __do_clear_bss
+ *(.init5)
+ *(.init6)
+ *(.init7)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000005c3e      0x31c obj_feuerwhere/contiki-feuerwhere-main.o
+                0x0000000000005c3e                main
+ *(.fini9)
+ .fini9         0x0000000000005f5a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__stop_progExec__.o)
+                0x0000000000005f5a                __stop_progExec__
+ *(.fini8)
+ *(.fini7)
+ *(.fini6)
+ *(.fini5)
+ *(.fini4)
+ *(.fini3)
+ *(.fini2)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000005f5a        0x6 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_endless_loop__.o)
+                0x0000000000005f5a                _endless_loop__
+ *(.fini .fini.*)
+                0x0000000000005f60                . = ALIGN (0x2)
+                0x0000000000005f60                __ctors_start = .
+ *(.ctors)
+                0x0000000000005f60                __ctors_end = .
+                0x0000000000005f60                __dtors_start = .
+ *(.dtors)
+                0x0000000000005f60                __dtors_end = .
+                0x0000000000005f60                . = ALIGN (0x2)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000005f60        0x4 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/crt0ivtbl64.o
+                0x0000000000005f60                __isr_37
+                0x0000000000005f60                __isr_51
+                0x0000000000005f60                __isr_57
+                0x0000000000005f60                __isr_33
+                0x0000000000005f60                __isr_32
+                0x0000000000005f60                __isr_54
+                0x0000000000005f60                __isr_39
+                0x0000000000005f60                __isr_53
+                0x0000000000005f60                __isr_41
+                0x0000000000005f60                __isr_60
+                0x0000000000005f60                __isr_36
+                0x0000000000005f60                __isr_34
+                0x0000000000005f60                __isr_44
+                0x0000000000005f60                __isr_61
+                0x0000000000005f60                __isr_55
+                0x0000000000005f60                __isr_43
+                0x0000000000005f60                __isr_50
+                0x0000000000005f60                __isr_56
+                0x0000000000005f60                __isr_38
+                0x0000000000005f60                __isr_35
+                0x0000000000005f60                __isr_45
+                0x0000000000005f60                __isr_62
+                0x0000000000005f60                __isr_52
+                0x0000000000005f60                __isr_40
+ .text.crt0     0x0000000000005f64        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/crt0ivtbl64.o
+ .text          0x0000000000005f64      0x870 example-m2dagnos_power_trace_1_g_fw1.co
+ .text          0x00000000000067d4        0x6 obj_feuerwhere/contiki-feuerwhere-main.o
+                0x00000000000067d4                uip_log
+ .text          0x00000000000067da        0xc contiki-feuerwhere.a(contiki-feuerwh)
+                0x00000000000067da                init_platform
+ .text          0x00000000000067e6      0x14e contiki-feuerwhere.a(msp430.o)
+                0x00000000000067e6                w_memcpy
+                0x00000000000067f8                w_memset
+                0x000000000000680a                msp430_init_dco
+                0x000000000000680c                msp430_dco_speed
+                0x0000000000006816                msp430_set_dco_speed
+                0x0000000000006882                msp430_quick_synch_dco
+                0x0000000000006890                msp430_cpu_init
+                0x0000000000006926                splhigh_
+                0x000000000000692e                splx_
+                0x0000000000006932                msp430_sync_dco
+ .text          0x0000000000006934       0x5c contiki-feuerwhere.a(watchdog.o)
+                0x0000000000006934                watchdog_interrupt
+                0x0000000000006934                __isr_58
+                0x000000000000693a                watchdog_start
+                0x000000000000694e                watchdog_periodic
+                0x0000000000006960                watchdog_stop
+                0x0000000000006976                watchdog_init
+                0x000000000000698a                watchdog_reboot
+ .text          0x0000000000006990       0xe8 contiki-feuerwhere.a(uart1x.o)
+                0x0000000000006990                uart1_active
+                0x000000000000699e                uart1_set_input
+                0x00000000000069a4                uart1_writeb
+                0x00000000000069bc                uart1_init
+                0x0000000000006a0a                __isr_46
+                0x0000000000006a0a                uart1_rx_interrupt
+ .text          0x0000000000006a78       0x6a contiki-feuerwhere.a(node-id.o)
+                0x0000000000006a78                node_id_restore
+                0x0000000000006ab4                node_id_burn
+ .text          0x0000000000006ae2       0x8a contiki-feuerwhere.a(button-sensor.o)
+ .text          0x0000000000006b6c       0x8a contiki-feuerwhere.a(button2-sensor.)
+ .text          0x0000000000006bf6       0x38 contiki-feuerwhere.a(trigger.o)
+                0x0000000000006bf6                trigger_set
+                0x0000000000006c04                trigger_clear
+                0x0000000000006c14                trigger_init
+ .text          0x0000000000006c2e       0xb2 contiki-feuerwhere.a(wur-sensor.o)
+                0x0000000000006cb2                wur_init
+                0x0000000000006cc4                wur_set_tx
+                0x0000000000006cca                wur_clear_tx
+                0x0000000000006cd2                wur_enable_ISR
+                0x0000000000006cd8                wur_disable_ISR
+ .text          0x0000000000006ce0      0x158 contiki-feuerwhere.a(sensors.o)
+                0x0000000000006d9e                sensors_first
+                0x0000000000006da4                sensors_next
+                0x0000000000006dd0                sensors_changed
+                0x0000000000006dfa                sensors_find
+ .text          0x0000000000006e38      0xe7c contiki-feuerwhere.a(cc2520.o)
+                0x00000000000073c6                cc2520_on
+                0x00000000000073e8                cc2520_off
+                0x00000000000075ea                cc2520_get_channel
+                0x00000000000075f0                cc2520_set_channel
+                0x00000000000076a0                cc2520_set_pan_addr
+                0x0000000000007874                cc2520_init
+                0x00000000000079ee                cc2520_interrupt
+                0x0000000000007a0a                cc2520_set_txpower
+                0x0000000000007a1e                cc2520_get_txpower
+                0x0000000000007c1c                cc2520_rssi
+                0x0000000000007c78                cc2520_cca_valid
+                0x0000000000007ca0                cc2520_set_cca_threshold
+ .text          0x0000000000007cb4       0x9e contiki-feuerwhere.a(cc2520-arch.o)
+                0x0000000000007cb4                __isr_47
+                0x0000000000007cb4                cc2520_port1_interrupt
+                0x0000000000007d02                cc2520_arch_init
+ .text          0x0000000000007d52       0x82 contiki-feuerwhere.a(cc2520-arch-sfd)
+                0x0000000000007d52                __isr_59
+                0x0000000000007d52                cc2520_timerb1_interrupt
+                0x0000000000007dae                cc2520_arch_sfd_init
+ .text          0x0000000000007dd4       0x10 contiki-feuerwhere.a(uart1-putchar.o)
+                0x0000000000007dd4                putchar
+ .text          0x0000000000007de4      0x1d6 contiki-feuerwhere.a(clock.o)
+                0x0000000000007de4                __isr_48
+                0x0000000000007de4                timera1
+                0x0000000000007edc                clock_time
+                0x0000000000007ef6                clock_set
+                0x0000000000007f0c                clock_fine_max
+                0x0000000000007f12                clock_fine
+                0x0000000000007f1e                clock_init
+                0x0000000000007f46                clock_delay
+                0x0000000000007f52                clock_wait
+                0x0000000000007f7a                clock_set_seconds
+                0x0000000000007f92                clock_seconds
+                0x0000000000007fac                clock_counter
+ .text          0x0000000000007fba      0x146 contiki-feuerwhere.a(leds.o)
+                0x00000000000080a8                leds_init
+                0x00000000000080b2                leds_get
+                0x00000000000080b8                leds_set
+                0x00000000000080be                leds_on
+                0x00000000000080c8                leds_off
+                0x00000000000080d6                leds_toggle
+                0x00000000000080e0                leds_blink
+ .text          0x0000000000008100       0x78 contiki-feuerwhere.a(leds-arch.o)
+                0x0000000000008100                leds_arch_init
+                0x000000000000810e                leds_arch_get
+                0x000000000000813e                leds_arch_set
+ .text          0x0000000000008178       0x7e contiki-feuerwhere.a(rtimer-arch.o)
+                0x0000000000008178                rtimer_arch_init
+                0x0000000000008186                rtimer_arch_now
+                0x0000000000008194                __isr_49
+                0x0000000000008194                timera0
+                0x00000000000081f0                rtimer_arch_schedule
+ .text          0x00000000000081f6       0x2a contiki-feuerwhere.a(autostart.o)
+                0x00000000000081f6                autostart_start
+                0x000000000000820c                autostart_exit
+ .text          0x0000000000008220       0xae contiki-feuerwhere.a(energest.o)
+                0x0000000000008220                energest_init
+                0x0000000000008248                energest_type_time
+                0x0000000000008284                energest_leveldevice_leveltime
+                0x000000000000828a                energest_type_set
+                0x0000000000008296                energest_flush
+ .text          0x00000000000082ce      0x1c4 contiki-feuerwhere.a(ctimer.o)
+                0x000000000000836a                ctimer_init
+                0x0000000000008382                ctimer_set_with_process
+                0x00000000000083d0                ctimer_set
+                0x00000000000083e0                ctimer_reset
+                0x000000000000840c                ctimer_restart
+                0x0000000000008438                ctimer_stop
+                0x0000000000008460                ctimer_expired
+ .text          0x0000000000008492      0x270 contiki-feuerwhere.a(etimer.o)
+                0x0000000000008502                etimer_request_poll
+                0x000000000000860c                etimer_set
+                0x000000000000861e                etimer_reset_with_new_interval
+                0x000000000000863c                etimer_reset
+                0x000000000000864e                etimer_restart
+                0x0000000000008660                etimer_adjust
+                0x000000000000867a                etimer_expired
+                0x0000000000008688                etimer_expiration_time
+                0x000000000000869c                etimer_start_time
+                0x00000000000086a4                etimer_pending
+                0x00000000000086b0                etimer_next_expiration_time
+                0x00000000000086c6                etimer_stop
+ .text          0x0000000000008702      0x2a0 contiki-feuerwhere.a(process.o)
+                0x0000000000008802                process_alloc_event
+                0x0000000000008810                process_exit
+                0x000000000000881a                process_init
+                0x0000000000008836                process_run
+                0x00000000000088da                process_nevents
+                0x00000000000088e8                process_post
+                0x0000000000008938                process_post_synch
+                0x000000000000894a                process_start
+                0x000000000000897c                process_poll
+                0x0000000000008994                process_is_running
+ .text          0x00000000000089a2       0x50 contiki-feuerwhere.a(rtimer.o)
+                0x00000000000089a2                rtimer_init
+                0x00000000000089a8                rtimer_set
+                0x00000000000089cc                rtimer_run_next
+ .text          0x00000000000089f2       0x8c contiki-feuerwhere.a(timer.o)
+                0x00000000000089f2                timer_set
+                0x0000000000008a0e                timer_reset
+                0x0000000000008a1c                timer_restart
+                0x0000000000008a30                timer_expired
+                0x0000000000008a5a                timer_remaining
+ .text          0x0000000000008a7e      0x102 contiki-feuerwhere.a(serial-line.o)
+                0x0000000000008b1a                serial_line_input_byte
+                0x0000000000008b64                serial_line_init
+ .text          0x0000000000008b80       0xf6 contiki-feuerwhere.a(list.o)
+                0x0000000000008b80                list_init
+                0x0000000000008b86                list_head
+                0x0000000000008b8a                list_copy
+                0x0000000000008b90                list_tail
+                0x0000000000008ba2                list_chop
+                0x0000000000008bc6                list_pop
+                0x0000000000008bd4                list_remove
+                0x0000000000008c08                list_push
+                0x0000000000008c1e                list_add
+                0x0000000000008c44                list_length
+                0x0000000000008c54                list_insert
+                0x0000000000008c6a                list_item_next
+ .text          0x0000000000008c76      0x102 contiki-feuerwhere.a(memb.o)
+                0x0000000000008c76                memb_init
+                0x0000000000008cac                memb_alloc
+                0x0000000000008cea                memb_free
+                0x0000000000008d24                memb_inmemb
+                0x0000000000008d52                memb_numfree
+ .text          0x0000000000008d78        0xc contiki-feuerwhere.a(random.o)
+                0x0000000000008d78                random_init
+                0x0000000000008d7e                random_rand
+ .text          0x0000000000008d84       0x94 contiki-feuerwhere.a(ringbuf.o)
+                0x0000000000008d84                ringbuf_init
+                0x0000000000008d98                ringbuf_put
+                0x0000000000008dd0                ringbuf_get
+                0x0000000000008dfe                ringbuf_size
+                0x0000000000008e06                ringbuf_elements
+ .text          0x0000000000008e18       0xd8 contiki-feuerwhere.a(rime.o)
+                0x0000000000008eb4                rime_sniffer_add
+                0x0000000000008ec0                rime_sniffer_remove
+                0x0000000000008ecc                rime_output
+ .text          0x0000000000008ef0      0x1c0 contiki-feuerwhere.a(broadcast-annou)
+                0x0000000000009040                broadcast_announcement_init
+                0x0000000000009084                broadcast_announcement_stop
+                0x00000000000090a6                broadcast_announcement_beacon_interval
+ .text          0x00000000000090b0      0x114 contiki-feuerwhere.a(announcement.o)
+                0x00000000000090b0                announcement_init
+                0x00000000000090ba                announcement_register
+                0x00000000000090f4                announcement_remove
+                0x0000000000009100                announcement_remove_value
+                0x0000000000009122                announcement_set_value
+                0x000000000000914a                announcement_bump
+                0x000000000000916c                announcement_listen
+                0x0000000000009178                announcement_register_listen_callback
+                0x000000000000917e                announcement_register_observer_callback
+                0x0000000000009184                announcement_list
+                0x000000000000918e                announcement_heard
+ .text          0x00000000000091c4      0x16a contiki-feuerwhere.a(runicast.o)
+                0x00000000000092ac                runicast_open
+                0x00000000000092da                runicast_close
+                0x00000000000092e0                runicast_is_transmitting
+                0x00000000000092e6                runicast_send
+ .text          0x000000000000932e      0xf50 contiki-feuerwhere.a(m2dagnos.o)
+                0x000000000000932e                M2DAGNOS_update_neighbor_lower_tier_info_proc
+                0x0000000000009352                M2DAGNOS_builiding_queue_proc
+                0x00000000000094e6                M2DAGNOS_node_queue_scheduling
+                0x000000000000956c                M2DAGNOS_exploring_proc
+                0x000000000000968e                M2DAGNOS_calc_avg_s_curr_proc
+                0x00000000000096b4                M2DAGNOS_store_sensed_value_queue_proc
+                0x00000000000096be                M2DAGNOS_set_sleep_timeout
+                0x0000000000009722                M2DAGNOS_set_work_timeout
+                0x0000000000009762                M2DAGNOS_set_event_timeout
+                0x0000000000009774                M2DAGNOS_restart_event_timeout
+                0x000000000000977e                M2DAGNOS_restart_sigma_timeout
+                0x0000000000009788                M2DAGNOS_set_collect_timeout
+                0x000000000000979a                M2DAGNOS_set_data_report_period
+                0x00000000000097ac                M2DAGNOS_check_wait_time
+                0x00000000000097c0                M2DAGNOS_set_wait_time
+                0x00000000000097ca                M2DAGNOS_update_scheduling_period
+                0x000000000000982e                M2DAGNOS_set_ped_per
+                0x0000000000009840                M2DAGNOS_check_ped_per
+                0x0000000000009862                M2DAGNOS_ped_proc
+                0x0000000000009950                M2DAGNOS_set_sampling_per
+                0x0000000000009962                M2DAGNOS_init_proc
+                0x0000000000009b5a                M2DAGNOS_check_samping_per
+                0x0000000000009b7c                M2DAGNOS_rucast_recv
+                0x0000000000009c5a                M2DAGNOS_rucast_timedout
+                0x0000000000009c5c                M2DAGNOS_bcast_recv
+                0x0000000000009ca2                M2DAGNOS_bcast_send
+                0x0000000000009cfc                M2DAGNOS_fire_dataset
+                0x0000000000009d5e                M2DAGNOS_store_msg
+                0x0000000000009dac                M2DAGNOS_rucast_send
+                0x0000000000009e66                M2DAGNOS_collecting_data_proc
+                0x000000000000a042                M2DAGNOS_wakeup_proc
+                0x000000000000a182                M2DAGNOS_sleeping_proc
+                0x000000000000a266                M2DAGNOS_clear_out_msg_queue
+ .text          0x000000000000a27e      0x108 contiki-feuerwhere.a(stunicast.o)
+                0x000000000000a29c                stunicast_open
+                0x000000000000a2b2                stunicast_receiver
+                0x000000000000a2b8                stunicast_set_timer
+                0x000000000000a2f6                stunicast_send_stubborn
+                0x000000000000a34e                stunicast_send
+                0x000000000000a354                stunicast_cancel
+                0x000000000000a374                stunicast_close
+ .text          0x000000000000a386      0x1a4 contiki-feuerwhere.a(timesynch.o)
+                0x000000000000a4a4                timesynch_authority_level
+                0x000000000000a4aa                timesynch_set_authority_level
+                0x000000000000a502                timesynch_time
+                0x000000000000a50c                timesynch_time_to_rtimer
+                0x000000000000a512                timesynch_rtimer_to_time
+                0x000000000000a518                timesynch_offset
+                0x000000000000a51e                timesynch_init
+ .text          0x000000000000a52a       0x38 contiki-feuerwhere.a(chameleon.o)
+                0x000000000000a52a                chameleon_init
+                0x000000000000a530                chameleon_parse
+                0x000000000000a540                chameleon_create
+                0x000000000000a55c                chameleon_hdrsize
+ .text          0x000000000000a562       0x66 contiki-feuerwhere.a(channel.o)
+                0x000000000000a562                channel_init
+                0x000000000000a56c                channel_open
+                0x000000000000a57c                channel_close
+                0x000000000000a588                channel_lookup
+                0x000000000000a5a8                channel_set_attributes
+ .text          0x000000000000a5c8      0xb62 contiki-feuerwhere.a(collect.o)
+                0x000000000000aebc                collect_open
+                0x000000000000af9e                collect_set_keepalive
+                0x000000000000afac                collect_close
+                0x000000000000afd8                collect_set_sink
+                0x000000000000b028                collect_send
+                0x000000000000b0e6                collect_depth
+                0x000000000000b0ec                collect_parent
+                0x000000000000b0f2                collect_purge
+                0x000000000000b122                collect_print_stats
+                0x000000000000b124                collect_get_m2dagnos_status
+ .text          0x000000000000b12a       0x78 contiki-feuerwhere.a(broadcast.o)
+                0x000000000000b160                broadcast_open
+                0x000000000000b182                broadcast_close
+                0x000000000000b188                broadcast_send
+ .text          0x000000000000b1a2       0x78 contiki-feuerwhere.a(unicast.o)
+                0x000000000000b1dc                unicast_open
+                0x000000000000b1fe                unicast_close
+                0x000000000000b204                unicast_send
+ .text          0x000000000000b21a       0x48 contiki-feuerwhere.a(abc.o)
+                0x000000000000b21a                abc_open
+                0x000000000000b238                abc_close
+                0x000000000000b23e                abc_send
+                0x000000000000b244                abc_input
+                0x000000000000b252                abc_sent
+ .text          0x000000000000b262       0xec contiki-feuerwhere.a(collect-link-es)
+                0x000000000000b262                collect_link_estimate_new
+                0x000000000000b274                collect_link_estimate_update_tx
+                0x000000000000b316                collect_link_estimate_update_tx_fail
+                0x000000000000b326                collect_link_estimate_update_rx
+                0x000000000000b328                collect_link_estimate
+                0x000000000000b340                collect_link_estimate_num_estimates
+ .text          0x000000000000b34e      0x36e contiki-feuerwhere.a(collect-neighbo)
+                0x000000000000b3d8                collect_neighbor_init
+                0x000000000000b3ec                collect_neighbor_list_new
+                0x000000000000b41e                collect_neighbor_list_find
+                0x000000000000b454                collect_neighbor_list_add
+                0x000000000000b4f2                collect_neighbor_list
+                0x000000000000b500                collect_neighbor_list_remove
+                0x000000000000b52a                collect_neighbor_list_num
+                0x000000000000b53c                collect_neighbor_list_get
+                0x000000000000b566                collect_neighbor_list_purge
+                0x000000000000b592                collect_neighbor_update_rtmetric
+                0x000000000000b5a0                collect_neighbor_tx_fail
+                0x000000000000b5be                collect_neighbor_tx
+                0x000000000000b5dc                collect_neighbor_rx
+                0x000000000000b5f4                collect_neighbor_rtmetric_link_estimate
+                0x000000000000b610                collect_neighbor_list_best
+                0x000000000000b652                collect_neighbor_rtmetric
+                0x000000000000b660                collect_neighbor_set_congested
+                0x000000000000b674                collect_neighbor_is_congested
+                0x000000000000b68c                collect_neighbor_link_estimate
+ .text          0x000000000000b6bc      0x13c contiki-feuerwhere.a(queuebuf.o)
+                0x000000000000b6bc                queuebuf_init
+                0x000000000000b6ce                queuebuf_numfree
+                0x000000000000b6d8                queuebuf_new_from_packetbuf
+                0x000000000000b726                queuebuf_update_attr_from_packetbuf
+                0x000000000000b738                queuebuf_update_from_packetbuf
+                0x000000000000b75a                queuebuf_free
+                0x000000000000b784                queuebuf_to_packetbuf
+                0x000000000000b7b6                queuebuf_dataptr
+                0x000000000000b7d2                queuebuf_datalen
+                0x000000000000b7da                queuebuf_addr
+                0x000000000000b7e8                queuebuf_attr
+                0x000000000000b7f6                queuebuf_debug_print
+ .text          0x000000000000b7f8      0x1fc contiki-feuerwhere.a(packetbuf.o)
+                0x000000000000b7f8                packetbuf_clear_hdr
+                0x000000000000b800                packetbuf_compact
+                0x000000000000b82e                packetbuf_copyto_hdr
+                0x000000000000b850                packetbuf_copyto
+                0x000000000000b8aa                packetbuf_hdr_remove
+                0x000000000000b8b0                packetbuf_hdrreduce
+                0x000000000000b8ca                packetbuf_set_datalen
+                0x000000000000b8d0                packetbuf_dataptr
+                0x000000000000b8de                packetbuf_hdrptr
+                0x000000000000b8e8                packetbuf_datalen
+                0x000000000000b8ee                packetbuf_hdrlen
+                0x000000000000b8fe                packetbuf_totlen
+                0x000000000000b90a                packetbuf_hdralloc
+                0x000000000000b934                packetbuf_attr_clear
+                0x000000000000b960                packetbuf_clear
+                0x000000000000b97a                packetbuf_copyfrom
+                0x000000000000b9a4                packetbuf_attr_copyto
+                0x000000000000b9c4                packetbuf_attr_copyfrom
+                0x000000000000b9e6                packetbuf_holds_broadcast
+ .text          0x000000000000b9f4       0x26 contiki-feuerwhere.a(linkaddr.o)
+                0x000000000000b9f4                linkaddr_copy
+                0x000000000000b9fc                linkaddr_cmp
+                0x000000000000ba0e                linkaddr_set_node_addr
+ .text          0x000000000000ba1a      0x38e contiki-feuerwhere.a(csma.o)
+ .text          0x000000000000bda8       0x14 contiki-feuerwhere.a(mac.o)
+                0x000000000000bda8                mac_call_sent_callback
+ .text          0x000000000000bdbc       0x1c contiki-feuerwhere.a(nullsec.o)
+ .text          0x000000000000bdd8      0x150 contiki-feuerwhere.a(ds2411.o)
+                0x000000000000be24                ds2411_init
+ .text          0x000000000000bf28      0x1e4 contiki-feuerwhere.a(wrimac-broadcas)
+                0x000000000000c100                wrimac_interrupt
+ .text          0x000000000000c10c       0xc2 contiki-feuerwhere.a(flash.o)
+                0x000000000000c10c                flash_setup
+                0x000000000000c124                flash_done
+                0x000000000000c132                flash_clear
+                0x000000000000c180                flash_write
+ .text          0x000000000000c1ce       0xec contiki-feuerwhere.a(button-isr.o)
+                0x000000000000c1ce                irq_p2
+                0x000000000000c1ce                __isr_42
+ .text          0x000000000000c2ba       0x38 contiki-feuerwhere.a(spi.o)
+                0x000000000000c2ba                spi_init
+ .text          0x000000000000c2f2      0x120 contiki-feuerwhere.a(packetqueue.o)
+                0x000000000000c324                packetqueue_init
+                0x000000000000c33c                packetqueue_enqueue_packetbuf
+                0x000000000000c3a6                packetqueue_first
+                0x000000000000c3b0                packetqueue_dequeue
+                0x000000000000c3ec                packetqueue_len
+                0x000000000000c3f6                packetqueue_queuebuf
+                0x000000000000c404                packetqueue_ptr
+ .text          0x000000000000c412      0x306 contiki-feuerwhere.a(chameleon-bitop)
+                0x000000000000c428                get_bits_in_byte
+                0x000000000000c462                get_bits
+                0x000000000000c5a6                set_bits_in_byte
+                0x000000000000c5d2                set_bits
+ .text          0x000000000000c718      0x16e contiki-feuerwhere.a(neighbor-discov)
+                0x000000000000c80c                neighbor_discovery_open
+                0x000000000000c84a                neighbor_discovery_close
+                0x000000000000c86a                neighbor_discovery_set_val
+                0x000000000000c870                neighbor_discovery_start
+ .text          0x000000000000c886       0x8e contiki-feuerwhere.a(mac-sequence.o)
+                0x000000000000c886                mac_sequence_is_duplicate
+                0x000000000000c8bc                mac_sequence_register_seqno
+ .text          0x000000000000c914      0x1ae contiki-feuerwhere.a(framer-802154.o)
+ .text          0x000000000000cac2      0x36e contiki-feuerwhere.a(frame802154.o)
+                0x000000000000cb56                frame802154_hdrlen
+                0x000000000000cb84                frame802154_create
+                0x000000000000cc96                frame802154_parse
+ .text          0x000000000000ce30       0x20 contiki-feuerwhere.a(framer.o)
+                0x000000000000ce30                framer_canonical_create_and_secure
+ .text          0x000000000000ce50        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod16.o)
+ .text.libgcc   0x000000000000ce50       0x22 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod16.o)
+                0x000000000000ce50                __udivhi3
+                0x000000000000ce50                __ext_udivmod16
+                0x000000000000ce6a                __umodhi3
+ .text          0x000000000000ce72        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod32.o)
+ .text.libgcc   0x000000000000ce72       0x38 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod32.o)
+                0x000000000000ce72                __udivsi3
+                0x000000000000ce72                __ext_udivmod32
+                0x000000000000cea0                __umodsi3
+ .text          0x000000000000ceaa       0x28 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(strncmp.o)
+                0x000000000000ceaa                strncmp
+ .text          0x000000000000ced2       0x20 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(memcmp.o)
+                0x000000000000ced2                memcmp
+ .text          0x000000000000cef2       0x1e /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o)
+                0x000000000000cef2                printf
+                0x000000000000cf02                vprintf
+ .text          0x000000000000cf10      0x818 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+                0x000000000000d08c                vuprintf
+ .text          0x000000000000d728       0x2c /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(puts.o)
+                0x000000000000d728                puts
+ .text          0x000000000000d754       0x54 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o)
+                0x000000000000d754                rand_r
+                0x000000000000d778                rand
+                0x000000000000d79e                srand
+ .text          0x000000000000d7a8        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_mulsi3.o)
+ .text.libgcc   0x000000000000d7a8       0x2a /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_mulsi3.o)
+                0x000000000000d7a8                __mulsi3
+ .text          0x000000000000d7d2        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod64.o)
+ .text.libgcc   0x000000000000d7d2       0xbc /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod64.o)
+                0x000000000000d7d2                __xabi_udivmod64
+                0x000000000000d824                __udivdi3
+                0x000000000000d83e                __umoddi3
+                0x000000000000d860                __udivmoddi4
+ .text          0x000000000000d88e        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o)
+ .text          0x000000000000d88e        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__watchdog_support.o)
+ .text          0x000000000000d88e        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__init_stack.o)
+ .text          0x000000000000d88e        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__low_level_init.o)
+ .text          0x000000000000d88e        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_copy_data.o)
+ .text          0x000000000000d88e        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_clear_bss.o)
+ .text          0x000000000000d88e        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__stop_progExec__.o)
+ .text          0x000000000000d88e        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_endless_loop__.o)
+ .text          0x000000000000d88e        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_unexpected_.o)
+ .text.crt0     0x000000000000d88e        0x2 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_unexpected_.o)
+                0x000000000000d88e                _unexpected_
+                0x000000000000d890                . = ALIGN (0x2)
+
+.rodata         0x000000000000d890      0x50a
+                0x000000000000d890                . = ALIGN (0x2)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000000000000d890      0x1d8 example-m2dagnos_power_trace_1_g_fw1.co
+                0x000000000000d914                autostart_processes
+ .rodata        0x000000000000da68       0xe7 obj_feuerwhere/contiki-feuerwhere-main.o
+ *fill*         0x000000000000db4f        0x1 00
+ .rodata        0x000000000000db50       0x10 contiki-feuerwhere.a(button-sensor.o)
+                0x000000000000db58                button_sensor
+ .rodata        0x000000000000db60       0x10 contiki-feuerwhere.a(button2-sensor.)
+                0x000000000000db68                button_sensor2
+ .rodata        0x000000000000db70       0x66 contiki-feuerwhere.a(trigger.o)
+ .rodata        0x000000000000dbd6       0x16 contiki-feuerwhere.a(wur-sensor.o)
+                0x000000000000dbe4                wur_sensor
+ .rodata        0x000000000000dbec        0x8 contiki-feuerwhere.a(sensors.o)
+ .rodata        0x000000000000dbf4       0x2a contiki-feuerwhere.a(cc2520.o)
+                0x000000000000dbf4                cc2520_driver
+ .rodata        0x000000000000dc1e        0xf contiki-feuerwhere.a(ctimer.o)
+ .rodata        0x000000000000dc2d        0xc contiki-feuerwhere.a(etimer.o)
+ .rodata        0x000000000000dc39        0xe contiki-feuerwhere.a(serial-line.o)
+ *fill*         0x000000000000dc47        0x1 00
+ .rodata        0x000000000000dc48        0xc contiki-feuerwhere.a(rime.o)
+                0x000000000000dc4e                rime_driver
+ .rodata        0x000000000000dc54        0x4 contiki-feuerwhere.a(broadcast-annou)
+ .rodata        0x000000000000dc58        0xe contiki-feuerwhere.a(runicast.o)
+ .rodata        0x000000000000dc66       0x44 contiki-feuerwhere.a(m2dagnos.o)
+ .rodata        0x000000000000dcaa        0x4 contiki-feuerwhere.a(stunicast.o)
+ .rodata        0x000000000000dcae       0x16 contiki-feuerwhere.a(timesynch.o)
+ .rodata        0x000000000000dcc4       0x1c contiki-feuerwhere.a(collect.o)
+ .rodata        0x000000000000dce0        0x8 contiki-feuerwhere.a(broadcast.o)
+ .rodata        0x000000000000dce8        0xa contiki-feuerwhere.a(unicast.o)
+ .rodata        0x000000000000dcf2        0x2 contiki-feuerwhere.a(abc.o)
+ .rodata        0x000000000000dcf4        0x2 contiki-feuerwhere.a(linkaddr.o)
+                0x000000000000dcf4                linkaddr_null
+ .rodata        0x000000000000dcf6       0x14 contiki-feuerwhere.a(csma.o)
+                0x000000000000dcfc                csma_driver
+ .rodata        0x000000000000dd0a       0x14 contiki-feuerwhere.a(nullsec.o)
+                0x000000000000dd12                nullsec_driver
+ .rodata        0x000000000000dd1e       0x42 contiki-feuerwhere.a(wrimac-broadcas)
+                0x000000000000dd30                wrimac_broadcast_driver
+ .rodata        0x000000000000dd60       0x13 contiki-feuerwhere.a(button-isr.o)
+ *fill*         0x000000000000dd73        0x1 00
+ .rodata        0x000000000000dd74       0x10 contiki-feuerwhere.a(chameleon-bitop)
+                0x000000000000dd74                chameleon_bitopt
+ .rodata        0x000000000000dd84        0x4 contiki-feuerwhere.a(neighbor-discov)
+ .rodata        0x000000000000dd88        0x8 contiki-feuerwhere.a(framer-802154.o)
+                0x000000000000dd88                framer_802154
+ .rodata        0x000000000000dd90        0x2 contiki-feuerwhere.a(frame802154.o)
+ .rodata        0x000000000000dd92        0x7 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+                0x000000000000dd9a                . = ALIGN (0x2)
+ *fill*         0x000000000000dd99        0x1 00
+                0x000000000000dd9a                _etext = .
+
+.data           0x0000000000001c00      0x17a load address 0x000000000000dd9a
+                0x0000000000001c00                . = ALIGN (0x2)
+                0x0000000000001c00                PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000001c00        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/crt0ivtbl64.o
+ .data          0x0000000000001c00       0x62 example-m2dagnos_power_trace_1_g_fw1.co
+                0x0000000000001c00                send_out_msg
+                0x0000000000001c0a                monitoring
+                0x0000000000001c14                sampling
+                0x0000000000001c1e                sinking
+                0x0000000000001c28                sleeping
+                0x0000000000001c32                assisting
+                0x0000000000001c3c                working
+                0x0000000000001c46                initializing
+                0x0000000000001c50                wait_init
+ .data          0x0000000000001c62        0x0 obj_feuerwhere/contiki-feuerwhere-main.o
+ .data          0x0000000000001c62        0x8 contiki-feuerwhere.a(contiki-feuerwh)
+                0x0000000000001c62                sensors
+ .data          0x0000000000001c6a        0x2 contiki-feuerwhere.a(msp430.o)
+ .data          0x0000000000001c6c        0x0 contiki-feuerwhere.a(watchdog.o)
+ .data          0x0000000000001c6c        0x0 contiki-feuerwhere.a(uart1x.o)
+ .data          0x0000000000001c6c        0x2 contiki-feuerwhere.a(node-id.o)
+                0x0000000000001c6c                id
+ .data          0x0000000000001c6e        0x0 contiki-feuerwhere.a(button-sensor.o)
+ .data          0x0000000000001c6e        0x0 contiki-feuerwhere.a(button2-sensor.)
+ .data          0x0000000000001c6e        0x0 contiki-feuerwhere.a(trigger.o)
+ .data          0x0000000000001c6e        0x0 contiki-feuerwhere.a(wur-sensor.o)
+ .data          0x0000000000001c6e        0xa contiki-feuerwhere.a(sensors.o)
+                0x0000000000001c6e                sensors_process
+ .data          0x0000000000001c78        0xa contiki-feuerwhere.a(cc2520.o)
+                0x0000000000001c78                cc2520_process
+ .data          0x0000000000001c82        0x0 contiki-feuerwhere.a(cc2520-arch.o)
+ .data          0x0000000000001c82        0x0 contiki-feuerwhere.a(cc2520-arch-sfd)
+ .data          0x0000000000001c82        0x0 contiki-feuerwhere.a(uart1-putchar.o)
+ .data          0x0000000000001c82        0x0 contiki-feuerwhere.a(clock.o)
+ .data          0x0000000000001c82        0x0 contiki-feuerwhere.a(leds.o)
+ .data          0x0000000000001c82        0x0 contiki-feuerwhere.a(leds-arch.o)
+ .data          0x0000000000001c82        0x0 contiki-feuerwhere.a(rtimer-arch.o)
+ .data          0x0000000000001c82        0x0 contiki-feuerwhere.a(autostart.o)
+ .data          0x0000000000001c82        0x0 contiki-feuerwhere.a(energest.o)
+ .data          0x0000000000001c82        0xa contiki-feuerwhere.a(ctimer.o)
+                0x0000000000001c82                ctimer_process
+ .data          0x0000000000001c8c        0xa contiki-feuerwhere.a(etimer.o)
+                0x0000000000001c8c                etimer_process
+ .data          0x0000000000001c96        0x0 contiki-feuerwhere.a(process.o)
+ .data          0x0000000000001c96        0x0 contiki-feuerwhere.a(rtimer.o)
+ .data          0x0000000000001c96        0x0 contiki-feuerwhere.a(timer.o)
+ .data          0x0000000000001c96        0xa contiki-feuerwhere.a(serial-line.o)
+                0x0000000000001c96                serial_line_process
+ .data          0x0000000000001ca0        0x0 contiki-feuerwhere.a(list.o)
+ .data          0x0000000000001ca0        0x0 contiki-feuerwhere.a(memb.o)
+ .data          0x0000000000001ca0        0x0 contiki-feuerwhere.a(random.o)
+ .data          0x0000000000001ca0        0x0 contiki-feuerwhere.a(ringbuf.o)
+ .data          0x0000000000001ca0        0x0 contiki-feuerwhere.a(rime.o)
+ .data          0x0000000000001ca0        0x0 contiki-feuerwhere.a(broadcast-annou)
+ .data          0x0000000000001ca0        0x0 contiki-feuerwhere.a(announcement.o)
+ .data          0x0000000000001ca0        0x0 contiki-feuerwhere.a(runicast.o)
+ .data          0x0000000000001ca0       0x8a contiki-feuerwhere.a(m2dagnos.o)
+                0x0000000000001ca0                fire
+ .data          0x0000000000001d2a        0x0 contiki-feuerwhere.a(stunicast.o)
+ .data          0x0000000000001d2a        0xa contiki-feuerwhere.a(timesynch.o)
+                0x0000000000001d2a                timesynch_process
+ .data          0x0000000000001d34        0x0 contiki-feuerwhere.a(chameleon.o)
+ .data          0x0000000000001d34        0x0 contiki-feuerwhere.a(channel.o)
+ .data          0x0000000000001d34        0x8 contiki-feuerwhere.a(collect.o)
+ .data          0x0000000000001d3c        0x0 contiki-feuerwhere.a(broadcast.o)
+ .data          0x0000000000001d3c        0x0 contiki-feuerwhere.a(unicast.o)
+ .data          0x0000000000001d3c        0x0 contiki-feuerwhere.a(abc.o)
+ .data          0x0000000000001d3c        0x0 contiki-feuerwhere.a(collect-link-es)
+ .data          0x0000000000001d3c        0x8 contiki-feuerwhere.a(collect-neighbo)
+ .data          0x0000000000001d44       0x10 contiki-feuerwhere.a(queuebuf.o)
+ .data          0x0000000000001d54        0x0 contiki-feuerwhere.a(packetbuf.o)
+ .data          0x0000000000001d54        0x0 contiki-feuerwhere.a(linkaddr.o)
+ .data          0x0000000000001d54       0x18 contiki-feuerwhere.a(csma.o)
+ .data          0x0000000000001d6c        0x0 contiki-feuerwhere.a(mac.o)
+ .data          0x0000000000001d6c        0x0 contiki-feuerwhere.a(nullsec.o)
+ .data          0x0000000000001d6c        0x0 contiki-feuerwhere.a(ds2411.o)
+ .data          0x0000000000001d6c        0xa contiki-feuerwhere.a(wrimac-broadcas)
+                0x0000000000001d6c                wur_broadcast_process
+ .data          0x0000000000001d76        0x0 contiki-feuerwhere.a(flash.o)
+ .data          0x0000000000001d76        0x0 contiki-feuerwhere.a(button-isr.o)
+ .data          0x0000000000001d76        0x0 contiki-feuerwhere.a(spi.o)
+ .data          0x0000000000001d76        0x0 contiki-feuerwhere.a(packetqueue.o)
+ .data          0x0000000000001d76        0x0 contiki-feuerwhere.a(chameleon-bitop)
+ .data          0x0000000000001d76        0x0 contiki-feuerwhere.a(neighbor-discov)
+ .data          0x0000000000001d76        0x0 contiki-feuerwhere.a(mac-sequence.o)
+ .data          0x0000000000001d76        0x0 contiki-feuerwhere.a(framer-802154.o)
+ .data          0x0000000000001d76        0x0 contiki-feuerwhere.a(frame802154.o)
+ .data          0x0000000000001d76        0x0 contiki-feuerwhere.a(framer.o)
+ .data          0x0000000000001d76        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod16.o)
+ .data          0x0000000000001d76        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod32.o)
+ .data          0x0000000000001d76        0x0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(strncmp.o)
+ .data          0x0000000000001d76        0x0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(memcmp.o)
+ .data          0x0000000000001d76        0x0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o)
+ .data          0x0000000000001d76        0x0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+ .data          0x0000000000001d76        0x0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(puts.o)
+ .data          0x0000000000001d76        0x4 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o)
+ .data          0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_mulsi3.o)
+ .data          0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod64.o)
+ .data          0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o)
+ .data          0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__watchdog_support.o)
+ .data          0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__init_stack.o)
+ .data          0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__low_level_init.o)
+ .data          0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_copy_data.o)
+ .data          0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_clear_bss.o)
+ .data          0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__stop_progExec__.o)
+ .data          0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_endless_loop__.o)
+ .data          0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_unexpected_.o)
+                0x0000000000001d7a                . = ALIGN (0x2)
+                0x0000000000001d7a                _edata = .
+                0x000000000000dd9a                PROVIDE (__data_load_start, LOADADDR (.data))
+                0x000000000000017a                PROVIDE (__data_size, SIZEOF (.data))
+
+.bss            0x0000000000001d7a     0x18da load address 0x000000000000df14
+                0x0000000000001d7a                PROVIDE (__bss_start, .)
+ *(.bss .bss.*)
+ .bss           0x0000000000001d7a        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/crt0ivtbl64.o
+ .bss           0x0000000000001d7a      0x1c6 example-m2dagnos_power_trace_1_g_fw1.co
+ .bss           0x0000000000001f40        0x4 obj_feuerwhere/contiki-feuerwhere-main.o
+ .bss           0x0000000000001f44        0x0 contiki-feuerwhere.a(contiki-feuerwh)
+ .bss           0x0000000000001f44        0x4 contiki-feuerwhere.a(msp430.o)
+ .bss           0x0000000000001f48        0x2 contiki-feuerwhere.a(watchdog.o)
+ .bss           0x0000000000001f4a        0x4 contiki-feuerwhere.a(uart1x.o)
+ .bss           0x0000000000001f4e        0x2 contiki-feuerwhere.a(node-id.o)
+                0x0000000000001f4e                node_id
+ .bss           0x0000000000001f50        0x0 contiki-feuerwhere.a(button-sensor.o)
+ .bss           0x0000000000001f50        0x0 contiki-feuerwhere.a(button2-sensor.)
+ .bss           0x0000000000001f50        0x0 contiki-feuerwhere.a(trigger.o)
+ .bss           0x0000000000001f50        0x0 contiki-feuerwhere.a(wur-sensor.o)
+ .bss           0x0000000000001f50        0x6 contiki-feuerwhere.a(sensors.o)
+ .bss           0x0000000000001f56        0x8 contiki-feuerwhere.a(cc2520.o)
+ .bss           0x0000000000001f5e        0x0 contiki-feuerwhere.a(cc2520-arch.o)
+ .bss           0x0000000000001f5e        0x0 contiki-feuerwhere.a(cc2520-arch-sfd)
+ .bss           0x0000000000001f5e        0x0 contiki-feuerwhere.a(uart1-putchar.o)
+ .bss           0x0000000000001f5e        0xa contiki-feuerwhere.a(clock.o)
+ .bss           0x0000000000001f68        0x1 contiki-feuerwhere.a(leds.o)
+ .bss           0x0000000000001f69        0x0 contiki-feuerwhere.a(leds-arch.o)
+ .bss           0x0000000000001f69        0x0 contiki-feuerwhere.a(rtimer-arch.o)
+ .bss           0x0000000000001f69        0x0 contiki-feuerwhere.a(autostart.o)
+ .bss           0x0000000000001f69        0x0 contiki-feuerwhere.a(energest.o)
+ *fill*         0x0000000000001f69        0x1 00
+ .bss           0x0000000000001f6a        0x4 contiki-feuerwhere.a(ctimer.o)
+ .bss           0x0000000000001f6e        0x6 contiki-feuerwhere.a(etimer.o)
+ .bss           0x0000000000001f74       0x42 contiki-feuerwhere.a(process.o)
+                0x0000000000001f74                process_current
+                0x0000000000001f76                process_list
+ .bss           0x0000000000001fb6        0x2 contiki-feuerwhere.a(rtimer.o)
+ .bss           0x0000000000001fb8        0x0 contiki-feuerwhere.a(timer.o)
+ .bss           0x0000000000001fb8      0x10a contiki-feuerwhere.a(serial-line.o)
+ .bss           0x00000000000020c2        0x0 contiki-feuerwhere.a(list.o)
+ .bss           0x00000000000020c2        0x0 contiki-feuerwhere.a(memb.o)
+ .bss           0x00000000000020c2        0x0 contiki-feuerwhere.a(random.o)
+ .bss           0x00000000000020c2        0x0 contiki-feuerwhere.a(ringbuf.o)
+ .bss           0x00000000000020c2        0x2 contiki-feuerwhere.a(rime.o)
+ .bss           0x00000000000020c4       0x46 contiki-feuerwhere.a(broadcast-annou)
+ .bss           0x000000000000210a        0x6 contiki-feuerwhere.a(announcement.o)
+ .bss           0x0000000000002110        0x0 contiki-feuerwhere.a(runicast.o)
+ .bss           0x0000000000002110      0x1d8 contiki-feuerwhere.a(m2dagnos.o)
+ .bss           0x00000000000022e8        0x0 contiki-feuerwhere.a(stunicast.o)
+ .bss           0x00000000000022e8       0x2c contiki-feuerwhere.a(timesynch.o)
+ .bss           0x0000000000002314        0x0 contiki-feuerwhere.a(chameleon.o)
+ .bss           0x0000000000002314        0x2 contiki-feuerwhere.a(channel.o)
+ .bss           0x0000000000002316      0x1be contiki-feuerwhere.a(collect.o)
+ .bss           0x00000000000024d4        0x0 contiki-feuerwhere.a(broadcast.o)
+ .bss           0x00000000000024d4        0x0 contiki-feuerwhere.a(unicast.o)
+ .bss           0x00000000000024d4        0x0 contiki-feuerwhere.a(abc.o)
+ .bss           0x00000000000024d4        0x0 contiki-feuerwhere.a(collect-link-es)
+ .bss           0x00000000000024d4      0x17a contiki-feuerwhere.a(collect-neighbo)
+ .bss           0x000000000000264e      0xc20 contiki-feuerwhere.a(queuebuf.o)
+ .bss           0x000000000000326e       0xb8 contiki-feuerwhere.a(packetbuf.o)
+ .bss           0x0000000000003326        0x0 contiki-feuerwhere.a(linkaddr.o)
+ .bss           0x0000000000003326      0x128 contiki-feuerwhere.a(csma.o)
+ .bss           0x000000000000344e        0x0 contiki-feuerwhere.a(mac.o)
+ .bss           0x000000000000344e        0x0 contiki-feuerwhere.a(nullsec.o)
+ .bss           0x000000000000344e        0x0 contiki-feuerwhere.a(ds2411.o)
+ .bss           0x000000000000344e       0x1a contiki-feuerwhere.a(wrimac-broadcas)
+ .bss           0x0000000000003468        0x2 contiki-feuerwhere.a(flash.o)
+ .bss           0x000000000000346a        0x0 contiki-feuerwhere.a(button-isr.o)
+ .bss           0x000000000000346a        0x2 contiki-feuerwhere.a(spi.o)
+                0x000000000000346a                spi_busy
+ .bss           0x000000000000346c        0x0 contiki-feuerwhere.a(packetqueue.o)
+ .bss           0x000000000000346c        0x0 contiki-feuerwhere.a(chameleon-bitop)
+ .bss           0x000000000000346c        0x0 contiki-feuerwhere.a(neighbor-discov)
+ .bss           0x000000000000346c       0x40 contiki-feuerwhere.a(mac-sequence.o)
+ .bss           0x00000000000034ac        0x2 contiki-feuerwhere.a(framer-802154.o)
+ .bss           0x00000000000034ae        0x0 contiki-feuerwhere.a(frame802154.o)
+ .bss           0x00000000000034ae        0x0 contiki-feuerwhere.a(framer.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod16.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod32.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(strncmp.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(memcmp.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(puts.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_mulsi3.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod64.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_reset_vector__.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__watchdog_support.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__init_stack.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__low_level_init.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_copy_data.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_clear_bss.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__stop_progExec__.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_endless_loop__.o)
+ .bss           0x00000000000034ae        0x0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_unexpected_.o)
+ *(COMMON)
+ COMMON         0x00000000000034ae       0x98 example-m2dagnos_power_trace_1_g_fw1.co
+                0x00000000000034ae                ev_init_m2dagnos
+                0x00000000000034b0                c_report_msg
+                0x00000000000034ba                ev_monitoring
+                0x00000000000034bc                c_nti
+                0x00000000000034c2                ev_initializing
+                0x00000000000034c4                c_flags
+                0x00000000000034ce                ev_sleeping
+                0x00000000000034cf                ev_working
+                0x00000000000034d0                ev_sink
+                0x00000000000034d2                c_working_msg
+                0x00000000000034dc                c_node
+                0x000000000000353c                ev_sampling
+                0x000000000000353e                c_broadcast_msg
+                0x0000000000003544                ev_assisting
+                0x0000000000003545                ev_init_rime
+ COMMON         0x0000000000003546        0x4 contiki-feuerwhere.a(contiki-feuerwh)
+                0x0000000000003546                sensors_flags
+ COMMON         0x000000000000354a        0x1 contiki-feuerwhere.a(sensors.o)
+                0x000000000000354a                sensors_event
+ *fill*         0x000000000000354b        0x1 00
+ COMMON         0x000000000000354c       0x13 contiki-feuerwhere.a(cc2520.o)
+                0x000000000000354c                cc2520_sfd_counter
+                0x000000000000354e                cc2520_sfd_start_time
+                0x0000000000003550                cc2520_sfd_end_time
+                0x0000000000003552                cc2520_time_of_departure
+                0x0000000000003554                cc2520_packets_seen
+                0x0000000000003556                cc2520_packets_read
+                0x0000000000003558                cc2520_last_rssi
+                0x000000000000355a                cc2520_time_of_arrival
+                0x000000000000355c                cc2520_authority_level_of_sender
+                0x000000000000355e                cc2520_last_correlation
+ *fill*         0x000000000000355f        0x1 00
+ COMMON         0x0000000000003560       0x56 contiki-feuerwhere.a(energest.o)
+                0x0000000000003560                energest_total_time
+                0x0000000000003590                energest_total_count
+                0x0000000000003592                energest_current_mode
+                0x000000000000359e                energest_current_time
+ COMMON         0x00000000000035b6        0x1 contiki-feuerwhere.a(process.o)
+                0x00000000000035b6                process_maxevents
+ COMMON         0x00000000000035b7        0x1 contiki-feuerwhere.a(serial-line.o)
+                0x00000000000035b7                serial_line_event_message
+ COMMON         0x00000000000035b8        0x6 contiki-feuerwhere.a(m2dagnos.o)
+                0x00000000000035b8                sensed_value_buf
+ COMMON         0x00000000000035be       0x38 contiki-feuerwhere.a(collect.o)
+                0x00000000000035be                stats
+ COMMON         0x00000000000035f6       0x3c contiki-feuerwhere.a(packetbuf.o)
+                0x00000000000035f6                packetbuf_addrs
+                0x00000000000035fe                packetbuf_attrs
+ COMMON         0x0000000000003632        0x2 contiki-feuerwhere.a(linkaddr.o)
+                0x0000000000003632                linkaddr_node_addr
+ COMMON         0x0000000000003634        0x8 contiki-feuerwhere.a(ds2411.o)
+                0x0000000000003634                ds2411_id
+ COMMON         0x000000000000363c       0x18 contiki-feuerwhere.a(button-isr.o)
+                0x000000000000363c                debouncetimer
+                0x0000000000003644                debouncetimerWrx
+                0x000000000000364c                debouncetimer2
+                0x0000000000003654                . = ALIGN (0x2)
+                0x0000000000003654                PROVIDE (__bss_end, .)
+                0x00000000000018da                PROVIDE (__bss_size, SIZEOF (.bss))
+
+.noinit         0x0000000000003654        0x2 load address 0x000000000000df14
+                0x0000000000003654                PROVIDE (__noinit_start, .)
+ *(.noinit .noinit.*)
+ .noinit.crt0   0x0000000000003654        0x2 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__watchdog_support.o)
+                0x0000000000003654                __wdt_clear_value
+                0x0000000000003656                . = ALIGN (0x2)
+                0x0000000000003656                PROVIDE (__noinit_end, .)
+                0x0000000000003656                . = ALIGN (0x2)
+                0x0000000000003656                _end = .
+
+.infomem        0x0000000000001800        0x0
+ *(.infomem)
+                0x0000000000001800                . = ALIGN (0x2)
+ *(.infomem.*)
+
+.infomemnobits  0x0000000000001800        0x0
+ *(.infomemnobits)
+                0x0000000000001800                . = ALIGN (0x2)
+ *(.infomemnobits.*)
+
+.infoa
+ *(.infoa .infoa.*)
+
+.infob
+ *(.infob .infob.*)
+
+.infoc
+ *(.infoc .infoc.*)
+
+.infod
+ *(.infod .infod.*)
+
+.vectors        0x000000000000ff80       0x80
+                0x000000000000ff80                PROVIDE (__vectors_start, .)
+ *(.vectors*)
+ .vectors       0x000000000000ff80       0x80 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/crt0ivtbl64.o
+                0x000000000000ff80                __ivtbl_64
+                0x0000000000010000                _vectors_end = .
+
+.fartext        0x0000000000010000        0x0
+                0x0000000000010000                . = ALIGN (0x2)
+ *(.fartext)
+                0x0000000000010000                . = ALIGN (0x2)
+ *(.fartext.*)
+                0x0000000000010000                _efartext = .
+
+.profiler
+ *(.profiler)
+
+.stab           0x0000000000000000    0x227c4
+ *(.stab)
+ .stab          0x0000000000000000     0x24b4 example-m2dagnos_power_trace_1_g_fw1.co
+ .stab          0x00000000000024b4      0xd38 obj_feuerwhere/contiki-feuerwhere-main.o
+                                       0x1680 (size before relaxing)
+ .stab          0x00000000000031ec      0x270 contiki-feuerwhere.a(contiki-feuerwh)
+                                        0x78c (size before relaxing)
+ .stab          0x000000000000345c      0xa5c contiki-feuerwhere.a(msp430.o)
+                                        0xf9c (size before relaxing)
+ .stab          0x0000000000003eb8      0x3a8 contiki-feuerwhere.a(watchdog.o)
+                                        0x780 (size before relaxing)
+ .stab          0x0000000000004260      0x4d4 contiki-feuerwhere.a(uart1x.o)
+                                        0x9fc (size before relaxing)
+ .stab          0x0000000000004734      0x2c4 contiki-feuerwhere.a(node-id.o)
+                                        0x69c (size before relaxing)
+ .stab          0x00000000000049f8      0x3c0 contiki-feuerwhere.a(button-sensor.o)
+                                        0x8dc (size before relaxing)
+ .stab          0x0000000000004db8      0x3c0 contiki-feuerwhere.a(button2-sensor.)
+                                        0x8dc (size before relaxing)
+ .stab          0x0000000000005178      0x330 contiki-feuerwhere.a(trigger.o)
+                                        0x888 (size before relaxing)
+ .stab          0x00000000000054a8      0x57c contiki-feuerwhere.a(wur-sensor.o)
+                                        0xac8 (size before relaxing)
+ .stab          0x0000000000005a24      0x654 contiki-feuerwhere.a(sensors.o)
+                                        0xb70 (size before relaxing)
+ .stab          0x0000000000006078     0x228c contiki-feuerwhere.a(cc2520.o)
+                                       0x2c28 (size before relaxing)
+ .stab          0x0000000000008304      0x804 contiki-feuerwhere.a(cc2520-arch.o)
+                                       0x1404 (size before relaxing)
+ .stab          0x0000000000008b08      0x33c contiki-feuerwhere.a(cc2520-arch-sfd)
+                                        0x8e8 (size before relaxing)
+ .stab          0x0000000000008e44      0x27c contiki-feuerwhere.a(uart1-putchar.o)
+                                        0x7bc (size before relaxing)
+ .stab          0x00000000000090c0      0x8f4 contiki-feuerwhere.a(clock.o)
+                                        0xdf8 (size before relaxing)
+ .stab          0x00000000000099b4      0x600 contiki-feuerwhere.a(leds.o)
+                                        0x9fc (size before relaxing)
+ .stab          0x0000000000009fb4      0x3cc contiki-feuerwhere.a(leds-arch.o)
+                                        0x8d0 (size before relaxing)
+ .stab          0x000000000000a380      0x3f0 contiki-feuerwhere.a(rtimer-arch.o)
+                                        0x8f4 (size before relaxing)
+ .stab          0x000000000000a770      0x2b8 contiki-feuerwhere.a(autostart.o)
+                                        0x708 (size before relaxing)
+ .stab          0x000000000000aa28      0x498 contiki-feuerwhere.a(energest.o)
+                                        0x8d0 (size before relaxing)
+ .stab          0x000000000000aec0      0x87c contiki-feuerwhere.a(ctimer.o)
+                                        0xd98 (size before relaxing)
+ .stab          0x000000000000b73c      0xae0 contiki-feuerwhere.a(etimer.o)
+                                        0xf60 (size before relaxing)
+ .stab          0x000000000000c21c      0xb7c contiki-feuerwhere.a(process.o)
+                                       0x1014 (size before relaxing)
+ .stab          0x000000000000cd98      0x3fc contiki-feuerwhere.a(rtimer.o)
+                                        0x894 (size before relaxing)
+ .stab          0x000000000000d194      0x378 contiki-feuerwhere.a(timer.o)
+                                        0x768 (size before relaxing)
+ .stab          0x000000000000d50c      0x54c contiki-feuerwhere.a(serial-line.o)
+                                        0xa50 (size before relaxing)
+ .stab          0x000000000000da58      0x7f8 contiki-feuerwhere.a(list.o)
+                                        0x804 (size before relaxing)
+ .stab          0x000000000000e250      0x5c4 contiki-feuerwhere.a(memb.o)
+                                        0xaf8 (size before relaxing)
+ .stab          0x000000000000e814      0x234 contiki-feuerwhere.a(random.o)
+                                        0x63c (size before relaxing)
+ .stab          0x000000000000ea48      0x420 contiki-feuerwhere.a(ringbuf.o)
+                                        0x810 (size before relaxing)
+ .stab          0x000000000000ee68      0xb04 contiki-feuerwhere.a(rime.o)
+                                       0x141c (size before relaxing)
+ .stab          0x000000000000f96c      0x948 contiki-feuerwhere.a(broadcast-annou)
+                                       0x15c0 (size before relaxing)
+ .stab          0x00000000000102b4      0x708 contiki-feuerwhere.a(announcement.o)
+                                        0xb58 (size before relaxing)
+ .stab          0x00000000000109bc      0x918 contiki-feuerwhere.a(runicast.o)
+                                       0x15c0 (size before relaxing)
+ .stab          0x00000000000112d4     0x2aa8 contiki-feuerwhere.a(m2dagnos.o)
+                                       0x37b0 (size before relaxing)
+ .stab          0x0000000000013d7c      0x888 contiki-feuerwhere.a(stunicast.o)
+                                       0x150c (size before relaxing)
+ .stab          0x0000000000014604      0x924 contiki-feuerwhere.a(timesynch.o)
+                                       0x159c (size before relaxing)
+ .stab          0x0000000000014f28      0x5e8 contiki-feuerwhere.a(chameleon.o)
+                                       0x123c (size before relaxing)
+ .stab          0x0000000000015510      0x624 contiki-feuerwhere.a(channel.o)
+                                       0x129c (size before relaxing)
+ .stab          0x0000000000015b34     0x1ff8 contiki-feuerwhere.a(collect.o)
+                                       0x2ce8 (size before relaxing)
+ .stab          0x0000000000017b2c      0x6d8 contiki-feuerwhere.a(broadcast.o)
+                                       0x150c (size before relaxing)
+ .stab          0x0000000000018204      0x624 contiki-feuerwhere.a(unicast.o)
+                                       0x129c (size before relaxing)
+ .stab          0x0000000000018828      0x66c contiki-feuerwhere.a(abc.o)
+                                       0x14a0 (size before relaxing)
+ .stab          0x0000000000018e94      0x5e8 contiki-feuerwhere.a(collect-link-es)
+                                       0x1014 (size before relaxing)
+ .stab          0x000000000001947c      0xffc contiki-feuerwhere.a(collect-neighbo)
+                                       0x1a64 (size before relaxing)
+ .stab          0x000000000001a478      0xa5c contiki-feuerwhere.a(queuebuf.o)
+                                       0x1890 (size before relaxing)
+ .stab          0x000000000001aed4      0xdb0 contiki-feuerwhere.a(packetbuf.o)
+                                       0x1bfc (size before relaxing)
+ .stab          0x000000000001bc84      0x2c4 contiki-feuerwhere.a(linkaddr.o)
+                                        0x6c0 (size before relaxing)
+ .stab          0x000000000001bf48      0xc18 contiki-feuerwhere.a(csma.o)
+                                       0x15b4 (size before relaxing)
+ .stab          0x000000000001cb60      0x210 contiki-feuerwhere.a(mac.o)
+                                        0x684 (size before relaxing)
+ .stab          0x000000000001cd70      0x468 contiki-feuerwhere.a(nullsec.o)
+                                        0xda4 (size before relaxing)
+ .stab          0x000000000001d1d8      0x5f4 contiki-feuerwhere.a(ds2411.o)
+                                        0xb10 (size before relaxing)
+ .stab          0x000000000001d7cc      0xad4 contiki-feuerwhere.a(wrimac-broadcas)
+                                       0x1464 (size before relaxing)
+ .stab          0x000000000001e2a0      0x4a4 contiki-feuerwhere.a(flash.o)
+                                        0x9cc (size before relaxing)
+ .stab          0x000000000001e744      0x3e4 contiki-feuerwhere.a(button-isr.o)
+                                        0x9fc (size before relaxing)
+ .stab          0x000000000001eb28      0x2ac contiki-feuerwhere.a(spi.o)
+                                        0x7b0 (size before relaxing)
+ .stab          0x000000000001edd4      0x720 contiki-feuerwhere.a(packetqueue.o)
+                                        0xf84 (size before relaxing)
+ .stab          0x000000000001f4f4      0xd8c contiki-feuerwhere.a(chameleon-bitop)
+                                       0x1a04 (size before relaxing)
+ .stab          0x0000000000020280      0x8dc contiki-feuerwhere.a(neighbor-discov)
+                                       0x1590 (size before relaxing)
+ .stab          0x0000000000020b5c      0x60c contiki-feuerwhere.a(mac-sequence.o)
+                                       0x1458 (size before relaxing)
+ .stab          0x0000000000021168      0x948 contiki-feuerwhere.a(framer-802154.o)
+                                        0xf6c (size before relaxing)
+ .stab          0x0000000000021ab0      0x918 contiki-feuerwhere.a(frame802154.o)
+                                       0x10ec (size before relaxing)
+ .stab          0x00000000000223c8      0x3fc contiki-feuerwhere.a(framer.o)
+                                        0xc54 (size before relaxing)
+
+.stabstr        0x0000000000000000    0x15d28
+ *(.stabstr)
+ .stabstr       0x0000000000000000    0x15d28 example-m2dagnos_power_trace_1_g_fw1.co
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x140
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod16.o)
+ .debug_aranges
+                0x0000000000000014       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod32.o)
+ .debug_aranges
+                0x0000000000000028       0x14 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(strncmp.o)
+ .debug_aranges
+                0x000000000000003c       0x14 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(memcmp.o)
+ .debug_aranges
+                0x0000000000000050       0x14 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o)
+ .debug_aranges
+                0x0000000000000064       0x14 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+ .debug_aranges
+                0x0000000000000078       0x14 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(puts.o)
+ .debug_aranges
+                0x000000000000008c       0x14 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o)
+ .debug_aranges
+                0x00000000000000a0       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_mulsi3.o)
+ .debug_aranges
+                0x00000000000000b4       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod64.o)
+ .debug_aranges
+                0x00000000000000c8       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__watchdog_support.o)
+ .debug_aranges
+                0x00000000000000dc       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__init_stack.o)
+ .debug_aranges
+                0x00000000000000f0       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_copy_data.o)
+ .debug_aranges
+                0x0000000000000104       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_clear_bss.o)
+ .debug_aranges
+                0x0000000000000118       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_endless_loop__.o)
+ .debug_aranges
+                0x000000000000012c       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_unexpected_.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x11b2
+ *(.debug_info)
+ .debug_info    0x0000000000000000       0xe0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod16.o)
+ .debug_info    0x00000000000000e0       0xe0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod32.o)
+ .debug_info    0x00000000000001c0       0xbb /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(strncmp.o)
+ .debug_info    0x000000000000027b       0xe8 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(memcmp.o)
+ .debug_info    0x0000000000000363      0x105 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o)
+ .debug_info    0x0000000000000468      0x565 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+ .debug_info    0x00000000000009cd       0x96 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(puts.o)
+ .debug_info    0x0000000000000a63      0x13f /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o)
+ .debug_info    0x0000000000000ba2       0xe0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_mulsi3.o)
+ .debug_info    0x0000000000000c82       0xe0 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod64.o)
+ .debug_info    0x0000000000000d62       0xb8 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__watchdog_support.o)
+ .debug_info    0x0000000000000e1a       0xb8 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__init_stack.o)
+ .debug_info    0x0000000000000ed2       0xb8 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_copy_data.o)
+ .debug_info    0x0000000000000f8a       0xb8 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_clear_bss.o)
+ .debug_info    0x0000000000001042       0xb8 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_endless_loop__.o)
+ .debug_info    0x00000000000010fa       0xb8 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_unexpected_.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x0000000000000000      0x5ee
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod16.o)
+ .debug_abbrev  0x0000000000000014       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod32.o)
+ .debug_abbrev  0x0000000000000028       0x7c /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(strncmp.o)
+ .debug_abbrev  0x00000000000000a4       0x9b /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(memcmp.o)
+ .debug_abbrev  0x000000000000013f       0xd0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o)
+ .debug_abbrev  0x000000000000020f      0x1ef /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+ .debug_abbrev  0x00000000000003fe       0x60 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(puts.o)
+ .debug_abbrev  0x000000000000045e       0xf0 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o)
+ .debug_abbrev  0x000000000000054e       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_mulsi3.o)
+ .debug_abbrev  0x0000000000000562       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod64.o)
+ .debug_abbrev  0x0000000000000576       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__watchdog_support.o)
+ .debug_abbrev  0x000000000000058a       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__init_stack.o)
+ .debug_abbrev  0x000000000000059e       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_copy_data.o)
+ .debug_abbrev  0x00000000000005b2       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_clear_bss.o)
+ .debug_abbrev  0x00000000000005c6       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_endless_loop__.o)
+ .debug_abbrev  0x00000000000005da       0x14 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_unexpected_.o)
+
+.debug_line     0x0000000000000000      0xa99
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x9c /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod16.o)
+ .debug_line    0x000000000000009c       0xa7 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod32.o)
+ .debug_line    0x0000000000000143       0x75 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(strncmp.o)
+ .debug_line    0x00000000000001b8       0x73 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(memcmp.o)
+ .debug_line    0x000000000000022b       0x72 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o)
+ .debug_line    0x000000000000029d      0x2ce /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+ .debug_line    0x000000000000056b       0x4d /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(puts.o)
+ .debug_line    0x00000000000005b8       0x4f /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o)
+ .debug_line    0x0000000000000607       0xa2 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_mulsi3.o)
+ .debug_line    0x00000000000006a9       0xd5 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libgcc.a(_udivmod64.o)
+ .debug_line    0x000000000000077e       0x84 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__watchdog_support.o)
+ .debug_line    0x0000000000000802       0x82 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(__init_stack.o)
+ .debug_line    0x0000000000000884       0x88 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_copy_data.o)
+ .debug_line    0x000000000000090c       0x88 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_clear_bss.o)
+ .debug_line    0x0000000000000994       0x83 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_endless_loop__.o)
+ .debug_line    0x0000000000000a17       0x82 /usr/lib/gcc/msp430/4.6.3/mcpu-430x/mmpy-16/libcrt0.a(_unexpected_.o)
+
+.debug_frame    0x0000000000000000      0x156
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x24 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(strncmp.o)
+ .debug_frame   0x0000000000000024       0x24 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(memcmp.o)
+ .debug_frame   0x0000000000000048       0x2a /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o)
+ .debug_frame   0x0000000000000072       0x84 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+ .debug_frame   0x00000000000000f6       0x24 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(puts.o)
+ .debug_frame   0x000000000000011a       0x3c /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o)
+
+.debug_str      0x0000000000000000      0x382
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0xc4 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(strncmp.o)
+                                         0xfd (size before relaxing)
+ .debug_str     0x00000000000000c4       0x19 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(memcmp.o)
+                                         0xfb (size before relaxing)
+ .debug_str     0x00000000000000dd       0x40 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o)
+                                        0x12a (size before relaxing)
+ .debug_str     0x000000000000011d      0x221 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+                                        0x375 (size before relaxing)
+ .debug_str     0x000000000000033e       0x15 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(puts.o)
+                                         0xf0 (size before relaxing)
+ .debug_str     0x0000000000000353       0x2f /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o)
+                                        0x10f (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x7ba
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x38 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(strncmp.o)
+ .debug_loc     0x0000000000000038       0x5e /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(memcmp.o)
+ .debug_loc     0x0000000000000096       0x38 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(printf.o)
+ .debug_loc     0x00000000000000ce      0x697 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+ .debug_loc     0x0000000000000765       0x26 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(puts.o)
+ .debug_loc     0x000000000000078b       0x2f /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(rand.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000       0x18
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x18 /usr/lib/gcc/msp430/4.6.3/../../../../msp430/lib/mcpu-430x/mmpy-16/libc.a(vuprintf.o)
+                0x0000000000005c00                PROVIDE (__stack, (ORIGIN (ram) + 0x4000))
+                0x000000000000dd9a                PROVIDE (__data_start_rom, _etext)
+                0x000000000000df14                PROVIDE (__data_end_rom, (_etext + SIZEOF (.data)))
+OUTPUT(example-m2dagnos_power_trace_1_g_fw1.feuerwhere elf32-msp430)
